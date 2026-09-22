@@ -270,8 +270,82 @@ orderForm.addEventListener('submit', (e) => {
   checkoutModal.classList.remove('active');
 });
 
-// Inicializar catálogo al cargar
+// Inicializar catálogo y efectos boutique al cargar
 document.addEventListener('DOMContentLoaded', () => {
   renderCatalog();
   updateCart();
+  initStardust();
 });
+
+// Canvas de Partículas Estelares de Oro Rosa (Stardust Boutique)
+function initStardust() {
+  const canvas = document.getElementById('stardustCanvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let particles = [];
+  const PARTICLE_COUNT = 55;
+
+  function resize() {
+    width = canvas.width = canvas.parentElement.offsetWidth;
+    height = canvas.height = canvas.parentElement.offsetHeight;
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  class Particle {
+    constructor() {
+      this.reset(true);
+    }
+
+    reset(initial = false) {
+      this.x = Math.random() * width;
+      this.y = initial ? Math.random() * height : height + 10;
+      this.size = Math.random() * 2.2 + 0.6;
+      this.speedY = Math.random() * 0.45 + 0.15;
+      this.speedX = (Math.random() - 0.5) * 0.3;
+      this.opacity = Math.random() * 0.6 + 0.2;
+      this.pulseSpeed = Math.random() * 0.02 + 0.008;
+      this.pulse = Math.random() * Math.PI;
+      this.color = Math.random() > 0.35 ? '230, 194, 168' : '244, 222, 208'; // Oro rosa / Champagne
+    }
+
+    update() {
+      this.y -= this.speedY;
+      this.x += this.speedX;
+      this.pulse += this.pulseSpeed;
+
+      if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+        this.reset();
+      }
+    }
+
+    draw() {
+      const alpha = (Math.sin(this.pulse) * 0.35 + 0.65) * this.opacity;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+      ctx.shadowBlur = this.size * 5;
+      ctx.shadowColor = `rgba(${this.color}, 0.8)`;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push(new Particle());
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    for (let p of particles) {
+      p.update();
+      p.draw();
+    }
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+

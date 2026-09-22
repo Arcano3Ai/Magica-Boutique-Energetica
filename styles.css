@@ -205,35 +205,61 @@ body {
   justify-content: center;
 }
 
-/* HERO SECTION */
+/* HERO SECTION — BOUTIQUE ÉPICA */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 94vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 24px 70px;
-  background: radial-gradient(circle at 50% 30%, #271922 0%, var(--bg-deep) 75%);
-  border-bottom: 1px solid var(--border-hairline);
+  padding: 120px 24px 80px;
+  background-color: var(--bg-deep);
+  border-bottom: 1px solid var(--border-gold);
   overflow: hidden;
 }
 
-.hero-bg-glow {
+.hero-backdrop {
   position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(230, 194, 168, 0.12) 0%, transparent 70%);
+  inset: -10px;
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  filter: brightness(0.72) contrast(1.18) saturate(1.1);
+  transform: scale(1.03);
+  animation: slowSubtleFloat 24s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+@keyframes slowSubtleFloat {
+  0% { transform: scale(1.03) translateY(0); }
+  100% { transform: scale(1.08) translateY(-12px); }
+}
+
+.hero-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 50% 30%, rgba(230, 194, 168, 0.15) 0%, rgba(9, 8, 10, 0.4) 50%, rgba(9, 8, 10, 0.94) 85%),
+    linear-gradient(180deg, rgba(9, 8, 10, 0.85) 0%, transparent 20%, transparent 60%, var(--bg-deep) 100%);
+  z-index: 1;
   pointer-events: none;
 }
 
-.hero-container {
-  max-width: 880px;
-  position: relative;
+.stardust-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
   z-index: 2;
+}
+
+.hero-container {
+  max-width: 900px;
+  position: relative;
+  z-index: 3;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
 
 .hero-badge {
@@ -375,9 +401,10 @@ body {
 
 /* PRESTIGE STRIP */
 .prestige-strip {
-  background: var(--bg-velvet);
+  background: radial-gradient(circle at 50% 0%, #1e1925 0%, var(--bg-velvet) 70%);
   border-bottom: 1px solid var(--border-hairline);
-  padding: 48px 0;
+  padding: 56px 0;
+  position: relative;
 }
 
 .container {
@@ -418,9 +445,14 @@ body {
   line-height: 1.55;
 }
 
-/* CATALOG SECTION */
+/* CATALOG SECTION — BOUTIQUE SHOWROOM */
 .catalog-section {
-  padding: 110px 0;
+  padding: 120px 0;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(216, 152, 134, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(230, 194, 168, 0.08) 0%, transparent 45%),
+    linear-gradient(180deg, var(--bg-deep) 0%, #0d0c10 50%, var(--bg-deep) 100%);
+  position: relative;
 }
 
 .section-title-wrap {
