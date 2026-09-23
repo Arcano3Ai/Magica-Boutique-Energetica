@@ -4,30 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MÁGICA | Alta Joyería Holística & Cuarzos de Colección</title>
-  <meta name="description" content="Alta joyería de cuarzos naturales y gemas sagradas intencionadas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
+  <meta name="description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Top Luxury Announcement -->
   <aside class="luxury-bar">
     <div class="luxury-bar-inner">
-      <span>✦ EDICIÓN PRIVADA DISPONIBLE · ENVÍO PRIORITARIO ASEGURADO DE CORTESÍA A TODO EL MUNDO ✦</span>
+      <span>✦ EDICIÓN PRIVADA DISPONIBLE · ENVÍO COURIER PRIORITARIO ASEGURADO DE CORTESÍA A TODO EL MUNDO · INVERSIÓN FIJA $89 USD ✦</span>
     </div>
   </aside>
 
   <!-- Navegación Principal -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir Menú de Navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav class="nav-links nav-left">
         <a href="#catalogo">Colección</a>
-        <a href="#curaduria">Curaduría</a>
+        <a href="#oraculo">Oráculo Alquímico</a>
+        <a href="#lookbook">Lookbook Stacking</a>
       </nav>
       
       <a href="#" class="brand-container">
-        <img src="assets/Catalogo/logo-magica.jpg" alt="Logo Mágica" class="brand-crest">
+        <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Logo Mágica" class="brand-crest">
         <div class="brand-text-block">
           <span class="brand-title">MÁGICA</span>
           <span class="brand-slogan">CONEXIÓN · INTENCIÓN · EQUILIBRIO · ENERGÍA</span>
@@ -36,6 +43,9 @@
 
       <div class="nav-links nav-right">
         <a href="#ritual">El Ritual</a>
+        <a href="#tallas">Tallas & Calidad</a>
+        <a href="#testimonios">Coleccionistas</a>
+        <a href="#faq">FAQ</a>
         <button class="cart-trigger" id="cartTrigger" aria-label="Abrir Bolsa de Joyas">
           <span class="bag-icon">❦</span>
           <span class="bag-text">Bolsa</span>
@@ -45,6 +55,31 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="brand-text-block">
+        <span class="brand-title">MÁGICA</span>
+        <span class="brand-slogan">ALTA JOYERÍA ENERGÉTICA</span>
+      </div>
+    </div>
+    <nav class="mobile-nav-list">
+      <a href="#catalogo" class="mobile-nav-link">✦ Colección de Joyas</a>
+      <a href="#oraculo" class="mobile-nav-link">✦ Oráculo & Recomendador</a>
+      <a href="#lookbook" class="mobile-nav-link">✦ Lookbook & Stacking</a>
+      <a href="#ritual" class="mobile-nav-link">✦ El Ritual de Consagración</a>
+      <a href="#tallas" class="mobile-nav-link">✦ Guía de Tallas & Taller</a>
+      <a href="#testimonios" class="mobile-nav-link">✦ Opiniones de Clientes VIP</a>
+      <a href="#faq" class="mobile-nav-link">✦ Preguntas Frecuentes</a>
+      <a href="#circulo" class="mobile-nav-link">✦ Círculo Íntimo VIP</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <p>Inversión fija por pieza: <strong>$89.00 USD</strong></p>
+      <small>Cofre The Rose Vault y Envío de Cortesía</small>
+    </div>
+  </aside>
+
   <!-- Hero Section Editorial Boutique -->
   <section class="hero">
     <div class="hero-backdrop" style="background-image: url('assets/Media/epic_luxury_bg.jpg');"></div>
@@ -52,20 +87,20 @@
     <canvas id="stardustCanvas" class="stardust-canvas"></canvas>
     <div class="hero-container">
       <div class="hero-badge">
-        <span class="badge-dot"></span> BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA
+        <span class="badge-dot"></span> BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA HOLÍSTICA
       </div>
       <h1 class="hero-headline">
         La Esencia de la Tierra <br>
         <span class="hero-script">Elevada al Máximo Lujo</span>
       </h1>
       <p class="hero-subtext">
-        Cuarzos sagrados seleccionados uno a uno por su pureza cristalina y resonancia armónica. 
+        Cuarzos sagrados seleccionados uno a uno por su pureza cristalina y resonancia armónica a 432 Hz. 
         Un amuleto consciente de <strong>$89.00 USD</strong> forjado en orfebrería fina para ser el testamento silencioso de tu poder personal.
       </p>
 
       <div class="hero-action-group">
-        <a href="#catalogo" class="btn btn-gold">Descubrir Adquisiciones</a>
-        <a href="#ritual" class="btn btn-translucent">Conocer la Consagración</a>
+        <a href="#catalogo" class="btn btn-gold">Explorar la Colección</a>
+        <a href="#oraculo" class="btn btn-translucent">Consultar el Oráculo Astral</a>
       </div>
 
       <div class="hero-stats-bar">
@@ -83,11 +118,16 @@
           <span class="stat-value">$89 USD</span>
           <span class="stat-desc">Inversión Fija por Joya</span>
         </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+          <span class="stat-value">18K</span>
+          <span class="stat-desc">Acabados en Oro y Plata 925</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Banner de Distinción -->
+  <!-- Banner de Distinción de la Casa -->
   <section class="prestige-strip" id="curaduria">
     <div class="container">
       <div class="prestige-grid">
@@ -99,7 +139,7 @@
         <div class="prestige-card">
           <div class="prestige-icon">✧</div>
           <h3>Acabados de Orfebrería</h3>
-          <p>Herrajes bañados en oro rosa de 18K y plata pulida de resistencia perpetua.</p>
+          <p>Herrajes bañados en oro de 18K y plata pulida con resistencia perpetua.</p>
         </div>
         <div class="prestige-card">
           <div class="prestige-icon">𓇢</div>
@@ -108,37 +148,145 @@
         </div>
         <div class="prestige-card">
           <div class="prestige-icon">🜂</div>
-          <h3>Estuche The Vault</h3>
-          <p>Cofre rígido marfil magnético, saco de terciopelo y certificado de folio único.</p>
+          <h3>Estuche The Rose Vault</h3>
+          <p>Cofre rígido marfil magnético, saco de gamuza y certificado de folio único.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Catálogo Principal de Lujo -->
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: ORÁCULO ALQUÍMICO / RECOMENDADOR DE GEMAS -->
+  <!-- ===================================================================== -->
+  <section class="oracle-section" id="oraculo">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="gold-overline">EXPERIENCIA INTERACTIVA CON SONIDO SAGRADO</span>
+        <h2 class="section-title">El Oráculo de Gemas</h2>
+        <p class="section-subtitle">
+          Sincroniza tu energía natal con la gema que tu campo áurico requiere en este momento. Selecciona tu intención y signo zodiacal para recibir la recomendación armónica.
+        </p>
+      </div>
+
+      <div class="oracle-container">
+        <!-- Paso 1: Intención -->
+        <div class="oracle-step-block">
+          <div class="step-header">
+            <span class="step-num">PASO 01</span>
+            <h4>¿Qué frecuencia deseas activar en tu vida?</h4>
+          </div>
+          <div class="oracle-intents-grid">
+            <button class="oracle-intent-card" onclick="selectOracleIntention('proteccion', this)">
+              <span class="o-icon">🛡️</span>
+              <strong>Protección & Blindaje</strong>
+              <small>Disipa energía densa y envidias</small>
+            </button>
+            <button class="oracle-intent-card" onclick="selectOracleIntention('abundancia', this)">
+              <span class="o-icon">👑</span>
+              <strong>Abundancia & Fortuna</strong>
+              <small>Multiplica oportunidades y éxito</small>
+            </button>
+            <button class="oracle-intent-card" onclick="selectOracleIntention('sabiduria', this)">
+              <span class="o-icon">👁️</span>
+              <strong>Sabiduría & Clarividencia</strong>
+              <small>Abre la intuición y tercer ojo</small>
+            </button>
+            <button class="oracle-intent-card" onclick="selectOracleIntention('amor', this)">
+              <span class="o-icon">💖</span>
+              <strong>Amor Propio & Armonía</strong>
+              <small>Sana el corazón y atrae luz</small>
+            </button>
+            <button class="oracle-intent-card" onclick="selectOracleIntention('espiritualidad', this)">
+              <span class="o-icon">✨</span>
+              <strong>Espiritualidad & Paz</strong>
+              <small>Calma mental y alta vibración</small>
+            </button>
+          </div>
+        </div>
+
+        <!-- Paso 2: Signo Zodiacal -->
+        <div class="oracle-step-block">
+          <div class="step-header">
+            <span class="step-num">PASO 02</span>
+            <h4>Selecciona tu Signo Zodiacal (Sol o Ascendente)</h4>
+          </div>
+          <div class="oracle-zodiac-row">
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Aries', this)">♈ Aries</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Tauro', this)">♉ Tauro</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Géminis', this)">♊ Géminis</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Cáncer', this)">♋ Cáncer</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Leo', this)">♌ Leo</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Virgo', this)">♍ Virgo</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Libra', this)">♎ Libra</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Escorpio', this)">♏ Escorpio</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Sagitario', this)">♐ Sagitario</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Capricornio', this)">♑ Capricornio</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Acuario', this)">♒ Acuario</button>
+            <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Piscis', this)">♓ Piscis</button>
+          </div>
+        </div>
+
+        <!-- Resultado Dinámico del Oráculo -->
+        <div class="oracle-result-wrapper" id="oracleResultBox">
+          <div class="oracle-prompt">
+            <span class="oracle-prompt-icon">✧</span>
+            <p>Selecciona tu <strong>Intención Principal</strong> y tu <strong>Signo Zodiacal</strong> para que el oráculo revele tu mineral rector con frecuencia de 432 Hz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CATÁLOGO PRINCIPAL CON FILTROS Y BÚSQUEDA -->
+  <!-- ===================================================================== -->
   <section class="catalog-section" id="catalogo">
     <div class="container">
       <div class="section-title-wrap">
-        <span class="gold-overline">PIEZAS DE EDICIÓN LIMITADA</span>
+        <span class="gold-overline">PIEZAS DE EDICIÓN LIMITADA · REAL WORKSHOP PHOTOGRAPHY</span>
         <h2 class="section-title">El Catálogo Selecto</h2>
         <p class="section-subtitle">
-          Fotografías reales de nuestra orfebrería de taller. Cada pieza es irrepetible en tonalidad y veta mineral.
+          Fotografías reales de nuestra orfebrería de taller. Cada pieza es irrepetible en tonalidad, gramaje y veta mineral.
         </p>
         <div class="price-pill">
           <span>Inversión exclusiva:</span>
           <strong>$89.00 USD c/u</strong>
-          <small>· Incluye packaging de colección y envío preferente</small>
+          <small>· Incluye cofre The Rose Vault y envío prioritario asegurado</small>
         </div>
       </div>
 
-      <!-- Grid de Productos -->
+      <!-- Barra de Filtrado y Búsqueda -->
+      <div class="catalog-controls">
+        <div class="filter-pills-bar">
+          <button class="filter-pill active" onclick="setCategoryFilter('all', this)">Todas las Joyas</button>
+          <button class="filter-pill" onclick="setCategoryFilter('proteccion', this)">Protección & Blindaje</button>
+          <button class="filter-pill" onclick="setCategoryFilter('abundancia', this)">Abundancia & Fortuna</button>
+          <button class="filter-pill" onclick="setCategoryFilter('sabiduria', this)">Sabiduría & Intuición</button>
+          <button class="filter-pill" onclick="setCategoryFilter('amor', this)">Amor & Frecuencia</button>
+        </div>
+
+        <div class="catalog-search-wrap">
+          <span class="search-symbol">🔍</span>
+          <input 
+            type="text" 
+            id="catalogSearchInput" 
+            placeholder="Buscar por gema, chakra o intención..." 
+            oninput="handleCatalogSearch(event)"
+            aria-label="Buscar joyas"
+          >
+        </div>
+      </div>
+
+      <!-- Grid Dinámica de Productos -->
       <div class="luxury-grid" id="productsGrid">
-        <!-- Renderizado dinámico desde app.js con imágenes reales -->
+        <!-- Renderizado dinámico desde app.js -->
       </div>
     </div>
   </section>
 
-  <!-- Sección Ritual & Packaging Exclusivo -->
+  <!-- ===================================================================== -->
+  <!-- SECCIÓN RITUAL & PACKAGING EXCLUSIVO -->
+  <!-- ===================================================================== -->
   <section class="ritual-section" id="ritual">
     <div class="container">
       <div class="ritual-wrapper">
@@ -146,28 +294,28 @@
           <span class="gold-overline">LA ALQUIMIA DETRÁS DE MÁGICA</span>
           <h2 class="ritual-title">La Belleza del Propósito Consciente</h2>
           <p class="ritual-lead">
-            No creemos en la producción en masa. Cada pulsera de <strong>Mágica</strong> nace bajo la premisa de la alta orfebrería meditada: seleccionar la gema con la gravedad, brillo y resonancia precisa para su guardián.
+            No creemos en la producción en masa ni en minerales sintéticos. Cada pulsera de <strong>Mágica</strong> nace bajo la premisa de la alta orfebrería meditada: seleccionar la gema con la gravedad, brillo y resonancia precisa para su guardián.
           </p>
           <div class="ritual-features">
             <div class="rf-item">
               <span class="rf-num">I</span>
               <div>
-                <h4>Selección Criterio Gemológico</h4>
-                <p>Inspección microscópica de vetas, dureza Mohs y saturación de color natural.</p>
+                <h4>Selección de Criterio Gemológico</h4>
+                <p>Inspección microscópica de vetas, dureza Mohs y saturación de color natural en cada esfera y cabujón.</p>
               </div>
             </div>
             <div class="rf-item">
               <span class="rf-num">II</span>
               <div>
-                <h4>Alineación bajo Frecuencia Sonora</h4>
-                <p>Cada pulsera descansa sobre drusa de cuarzo cristal y es bañada en cuencos de cristal de cuarzo.</p>
+                <h4>Alineación bajo Frecuencia Sonora 432 Hz</h4>
+                <p>Cada pulsera descansa sobre drusa de cuarzo cristal y es bañada acústicamente con cuencos de cuarzo antes de ser embalada.</p>
               </div>
             </div>
             <div class="rf-item">
               <span class="rf-num">III</span>
               <div>
-                <h4>El Estuche de Colección de Cortesía</h4>
-                <p>Recibe tu pieza dentro del exclusivo cofre <em>Mágica Rose Vault</em> listo para regalar o atesorar.</p>
+                <h4>El Estuche de Colección The Rose Vault</h4>
+                <p>Recibe tu pieza dentro del exclusivo cofre rígido marfil con pan de oro rosa, listo para obsequiar o atesorar.</p>
               </div>
             </div>
           </div>
@@ -176,15 +324,15 @@
         <div class="ritual-visual">
           <div class="vault-showcase">
             <div class="vault-inner">
-              <img src="assets/Catalogo/logo-magica.jpg" alt="Mágica Vault" class="vault-logo-img">
+              <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica Crest" class="vault-logo-img">
               <div class="vault-tag">EMPAQUE SIGNATURE INCLUIDO</div>
               <h3>Mágica Velvet & Rose Vault</h3>
-              <p>Valorado en $35 USD, incluido de cortesía con tu compra de $89 USD:</p>
+              <p>Valorado en $35 USD, incluido de cortesía con tu inversión de $89 USD:</p>
               <ul class="vault-list">
-                <li><span>✦</span> Cofre rígido con grabado en pan de oro rosa</li>
-                <li><span>✦</span> Certificado de Autenticidad Mineral numerado</li>
-                <li><span>✦</span> Funda de viaje en gamuza de seda ultra suave</li>
-                <li><span>✦</span> Guía privada de recarga lunar para tu cuarzo</li>
+                <li><span>✦</span> Cofre rígido con cierre magnético y grabado en pan de oro rosa</li>
+                <li><span>✦</span> Certificado de Autenticidad Mineral numerado con Folio Privado</li>
+                <li><span>✦</span> Funda protectora de viaje en gamuza de seda ultra suave</li>
+                <li><span>✦</span> Guía privada de recarga y sincronización lunar para tu cuarzo</li>
               </ul>
             </div>
           </div>
@@ -193,17 +341,351 @@
     </div>
   </section>
 
-  <!-- Quick View Modal (Detalle de la Joya) -->
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: LOOKBOOK EDITORIAL & "EL ARTE DEL STACKING" -->
+  <!-- ===================================================================== -->
+  <section class="lookbook-section" id="lookbook">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="gold-overline">GALERÍA EDITORIAL EN MUÑECA</span>
+        <h2 class="section-title">El Arte del Stacking Consciente</h2>
+        <p class="section-subtitle">
+          Descubre cómo lucen nuestras piezas en el día a día. Aprende a combinar dos o tres brazaletes para crear una armonía estética imponente y multiplicar sus efectos bioenergéticos.
+        </p>
+      </div>
+
+      <div class="lookbook-grid">
+        <div class="lookbook-card lookbook-large">
+          <div class="lookbook-img-box">
+            <img src="assets/Catalogo/774508968_18081052451421186_3480494639016074095_n.jpg" alt="Stacking Alquímico de Amatista y Oro" loading="lazy">
+            <span class="lookbook-tag">El Trío de la Sabiduría</span>
+          </div>
+          <div class="lookbook-content">
+            <h4>Stacking Tri-Frecuencia: Amatista, Cuarzo Cristal & Oro</h4>
+            <p>La combinación predilecta para profesionales y líderes creativos. Mientras la amatista purifica la mente de sobrecarga mental, el cuarzo cristal amplifica la intención y los acentos dorados anclan la prosperidad.</p>
+            <div class="stacking-formula">
+              <span>Transmutación + Claridad + Manifestación</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-card">
+          <div class="lookbook-img-box">
+            <img src="assets/Catalogo/770457909_18080342243421186_667753910894273541_n.jpg" alt="Lapislázuli Cabujón Soberana en muñeca" loading="lazy">
+            <span class="lookbook-tag">Pieza Solitaria de Autor</span>
+          </div>
+          <div class="lookbook-content">
+            <h4>Lapislázuli Cabujón Soberana</h4>
+            <p>Una presencia imponente por sí sola. Su gema central ovalada reposa en el pulso interior, estimulando la serenidad y la comunicación persuasiva.</p>
+          </div>
+        </div>
+
+        <div class="lookbook-card">
+          <div class="lookbook-img-box">
+            <img src="assets/Catalogo/772889456_18080358014421186_4636135969191559439_n.jpg" alt="Cuarzo Rosa & Flor de Nácar en muñeca" loading="lazy">
+            <span class="lookbook-tag">Delicadeza Sublime</span>
+          </div>
+          <div class="lookbook-content">
+            <h4>Cuarzo Rosa & Corona de Nácar</h4>
+            <p>Tonos pasteles translúcidos que armonizan con atuendos en lino, seda o blanco puro. Suave al tacto y dotada de hematitas que desvían tensiones.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stacking-tips-banner">
+        <div class="tip-col">
+          <span class="tip-num">01</span>
+          <h5>Muñeca Izquierda</h5>
+          <p>La mano receptiva. Úsala aquí para absorber la calma, el amor propio y la protección espiritual del cuarzo.</p>
+        </div>
+        <div class="tip-divider"></div>
+        <div class="tip-col">
+          <span class="tip-num">02</span>
+          <h5>Muñeca Derecha</h5>
+          <p>La mano proyectiva. Úsala aquí para irradiar confianza en negociaciones, liderazgo y atracción de abundancia.</p>
+        </div>
+        <div class="tip-divider"></div>
+        <div class="tip-col">
+          <span class="tip-num">03</span>
+          <h5>Regla de Oro: Máximo 3 Gemas</h5>
+          <p>Permite que las vibraciones no compitan entre sí combinando un anclaje (ónix/turmalina) con un cuarzo de luz (lapislázuli/jade).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: GUÍA DE TALLAS & ORFEBRERÍA CERTIFICADA -->
+  <!-- ===================================================================== -->
+  <section class="sizing-section" id="tallas">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="gold-overline">AJUSTE ERGONÓMICO A TU MEDIDA</span>
+        <h2 class="section-title">Guía de Tallas & Orfebrería</h2>
+        <p class="section-subtitle">
+          Cada muñeca es un templo único. Nuestras piezas son ensambladas con cordón elástico náutico de memoria indeformable o confeccionadas a tu medida personalizada.
+        </p>
+      </div>
+
+      <div class="sizing-grid">
+        <div class="sizing-tester-box">
+          <h3>Probador Interactivo de Talla</h3>
+          <p class="tester-intro">Selecciona tu circunferencia aproximada para conocer el calce recomendado:</p>
+          
+          <div class="size-buttons-group">
+            <button class="size-select-btn" onclick="selectWristSizeTest('Petite (15 cm)', 'Recomendada para muñecas delgadas o quienes prefieren un calce ceñido sin oscilación al escribir.', this)">
+              <strong>15.0 cm</strong>
+              <small>Petite</small>
+            </button>
+            <button class="size-select-btn active" onclick="selectWristSizeTest('Estándar Mujer (16.5 cm)', 'Nuestra medida signature más vendida. Brinda caída fluida y elegante con libertad de movimiento en la muñeca.', this)">
+              <strong>16.5 cm</strong>
+              <small>Estándar</small>
+            </button>
+            <button class="size-select-btn" onclick="selectWristSizeTest('Comfort / Hombre (18.0 cm)', 'Diseñada para muñecas más anchas o quienes gustan de un porte relajado y espacioso.', this)">
+              <strong>18.0 cm</strong>
+              <small>Comfort</small>
+            </button>
+            <button class="size-select-btn" onclick="selectWristSizeTest('Medida a Medida', 'Tu concierge solicitará tu centímetro exacto por WhatsApp para ajustar los nudos antes del envío sin costo adicional.', this)">
+              <strong>Personalizada</strong>
+              <small>A Medida</small>
+            </button>
+          </div>
+
+          <div class="size-result-box" id="sizeResultDisplay">
+            <div class="size-feedback">
+              <span class="size-tag-bold">Talla Seleccionada: Estándar Mujer (16.5 cm)</span>
+              <p>Nuestra medida signature más vendida. Brinda caída fluida y elegante con libertad de movimiento en la muñeca.</p>
+              <small>✓ Todos nuestros hilos utilizan silicona náutica con memoria elástica indeformable y garantía de ajuste perpetuo.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="quality-badges-box">
+          <h3>Sellos de Orfebrería de Taller</h3>
+          <div class="quality-item">
+            <div class="q-icon">💎</div>
+            <div>
+              <h4>Minerales 100% Genuinos No Sintéticos</h4>
+              <p>Cada cuenta es una obra de arte geológica con variaciones cromáticas naturales irrepetibles. No usamos resinas ni imitaciones plásticas.</p>
+            </div>
+          </div>
+          <div class="quality-item">
+            <div class="q-icon">👑</div>
+            <div>
+              <h4>Baño de Oro de 18K & Plata 925</h4>
+              <p>Herrajes tratados con doble capa galvánica de sellado protector antialérgico, libre de níquel y plomo para pieles sensibles.</p>
+            </div>
+          </div>
+          <div class="quality-item">
+            <div class="q-icon">⚓</div>
+            <div>
+              <h4>Núcleo Náutico Ultra-Resistente</h4>
+              <p>Cuádruple trenzado elastomérico japonés con memoria de tracción, resistente al uso continuo sin holguras prematuras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: TESTIMONIOS DE COLECCIONISTAS VIP -->
+  <!-- ===================================================================== -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="gold-overline">EXPERIENCIAS REALES DE NUESTRA COMUNIDAD</span>
+        <h2 class="section-title">Voces de Coleccionistas</h2>
+        <p class="section-subtitle">
+          Mujeres y hombres de alta exigencia que eligen MÁGICA como su escudo energético diario.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="stars-gold">★★★★★</div>
+            <span class="verified-badge">Compra Verificada</span>
+          </div>
+          <p class="testimonial-quote">
+            "El estuche The Rose Vault es un espectáculo en sí mismo, pero cuando abrí el cofre y toqué el Lapislázuli Imperial sentí una vibración y frialdad mineral inconfundible. Es alta joyería con alma."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VM</div>
+            <div class="author-info">
+              <strong>Valentina Morales</strong>
+              <small>Empresaria · CDMX, México</small>
+              <span class="piece-bought">Pieza: Lapislázuli Imperial & Plata</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="stars-gold">★★★★★</div>
+            <span class="verified-badge">Compra Verificada</span>
+          </div>
+          <p class="testimonial-quote">
+            "Tenía dudas sobre mi talla y por WhatsApp me atendieron como si estuviera en una boutique de la Quinta Avenida. La pulsera de Turmalina Negra y Pez Dorado no me la quito nunca para mis juntas de consejo."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RA</div>
+            <div class="author-info">
+              <strong>Rodrigo Alarcón</strong>
+              <small>Arquitecto · Madrid, España</small>
+              <span class="piece-bought">Pieza: Turmalina Negra & Pez de Oro</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="stars-gold">★★★★★</div>
+            <span class="verified-badge">Compra Verificada</span>
+          </div>
+          <p class="testimonial-quote">
+            "Compré el Jade Dorado y el Cuarzo Blanco para hacer Stacking como sugieren en la web. La elegancia de las rondelas doradas y la suavidad del jade es inigualable. Llegó a Miami en solo 3 días."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CG</div>
+            <div class="author-info">
+              <strong>Camila Garza</strong>
+              <small>Directora de Arte · Miami, FL</small>
+              <span class="piece-bought">Piezas: Jade Dorado & Cuarzo Blanco</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: PREGUNTAS FRECUENTES (FAQ ACCORDION) -->
+  <!-- ===================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="gold-overline">CLARIDAD & GARANTÍAS DE COMPRA</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">
+          Todo lo que deseas saber sobre nuestros minerales sagrados, envíos asegurados y rituales de conservación.
+        </p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>¿Cómo sé si los cuarzos son 100% naturales y no imitaciones sintéticas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Todos los minerales de <strong>MÁGICA</strong> son seleccionados en bruto de yacimientos éticos certificados. Cada gema posee inclusiones microscópicas naturales (como la pirita dorada en el lapislázuli o las vetas nubosas del cuarzo blanco), manteniendo la densidad, frialdad mineral y resonancia que ningún vidrio o resina plástica puede replicar. Cada orden se entrega con su Certificado de Autenticidad Mineral numerado.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿En qué consiste el ritual de consagración a 432 Hz antes de enviarse?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Antes del sellado en su cofre <em>The Rose Vault</em>, cada pieza pasa por una doble limpieza energética: un sahumerio sutil de salvia blanca y palo santo cultivado éticamente, seguido de un reposo sobre drusas de cuarzo cristal y armonización acústica con cuencos de cuarzo afinados a la frecuencia sanadora de 432 Hz, asegurando que tu joya llegue a ti con su campo áurico neutro y listo para programar tu intención.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué incluye el estuche de colección The Rose Vault de cortesía?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Por tu inversión fija de <strong>$89.00 USD</strong>, recibes de cortesía nuestro empaque de alta gama (valorado en $35 USD): cofre rígido de cierre magnético con pan de oro rosa, bolsa de gamuza de viaje, paño abrillantador de orfebrería, el Certificado Nominativo de Autenticidad y la Guía Impresa de Recarga y Cuidados Lunares.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo elijo la medida correcta y qué pasa si no me queda?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              En el probador interactivo de nuestra web y en el checkout puedes seleccionar entre 15cm (Petite), 16.5cm (Estándar más habitual) y 18cm (Comfort). Si tienes una medida específica, puedes marcar <em>Personalizada</em> y tu concierge privada verificará el centímetro exacto por WhatsApp antes de confeccionar el nudo. Contamos con garantía total de ajuste.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuáles son los tiempos de entrega y cobertura internacional?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ofrecemos envío express prioritario asegurado sin costo adicional. Los envíos nacionales tardan de 2 a 4 días hábiles, mientras que los envíos internacionales (EE.UU., Canadá, Europa y Latinoamérica) se entregan entre 4 y 7 días hábiles con número de seguimiento satelital privado.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo mojar mi pulsera de cuarzos o usarla al dormir?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Aunque nuestros herrajes en oro de 18K y plata 925 cuentan con sellado hidrófugo y el hilo elástico es de silicona náutica, recomendamos retirar la pieza antes de entrar al mar, albercas con cloro o saunas para preservar el lustre del oro y la vibración sutil de la piedra. Puedes dormir con ella si buscas protección y sueños lúcidos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- NUEVA SECCIÓN: CLUB PRIVADO "EL CÍRCULO ÍNTIMO" -->
+  <!-- ===================================================================== -->
+  <section class="vip-club-section" id="circulo">
+    <div class="container">
+      <div class="vip-club-card">
+        <div class="vip-badge">✦ ACCESO PRIVADO POR INVITACIÓN ✦</div>
+        <h2>El Círculo Íntimo de Mágica</h2>
+        <p>
+          Únete a nuestra logia privada de coleccionistas. Recibe el calendario lunar de recarga de gemas, acceso 48 horas antes a lotes minerales únicos y lecturas astrológicas de luna llena.
+        </p>
+
+        <form id="vipClubForm" class="vip-form">
+          <div class="vip-input-group">
+            <input type="email" id="vipEmail" placeholder="Tu correo electrónico más privado..." required>
+            <button type="submit" class="btn btn-gold">Solicitar Membresía</button>
+          </div>
+          <small class="vip-privacy-note">🔒 Cero spam. Respetamos tu privacidad con discreción absoluta.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- QUICK VIEW MODAL (DETALLE GEMOLÓGICO) -->
+  <!-- ===================================================================== -->
   <div class="quickview-modal" id="quickViewModal">
     <div class="quickview-dialog">
-      <button class="modal-close-btn" id="closeQuickView">&times;</button>
+      <button class="modal-close-btn" id="closeQuickView" aria-label="Cerrar Ficha">&times;</button>
       <div class="quickview-body" id="quickViewContent">
-        <!-- Renderizado dinámico -->
+        <!-- Renderizado dinámico desde app.js -->
       </div>
     </div>
   </div>
 
-  <!-- Drawer de la Bolsa de Joyas -->
+  <!-- ===================================================================== -->
+  <!-- DRAWER DE LA BOLSA DE JOYAS -->
+  <!-- ===================================================================== -->
   <div class="cart-backdrop" id="cartOverlay"></div>
   <aside class="cart-drawer" id="cartDrawer">
     <div class="cart-top">
@@ -211,64 +693,66 @@
         <span class="gold-sparkle">✦</span>
         <h3>Bolsa de Joyas</h3>
       </div>
-      <button class="cart-close" id="closeCart">&times;</button>
+      <button class="cart-close" id="closeCart" aria-label="Cerrar Bolsa">&times;</button>
     </div>
 
     <div class="cart-content" id="cartItems">
-      <!-- Elementos del carrito -->
+      <!-- Elementos del carrito dinámicos -->
     </div>
 
     <div class="cart-bottom">
       <div class="cart-summary-line">
-        <span>Inversión Total</span>
+        <span>Inversión Total Certificada</span>
         <span class="cart-total-amount" id="cartTotalVal">$0.00 USD</span>
       </div>
-      <p class="cart-benefit-text">✓ Envío Express Courier Asegurado incluido</p>
+      <p class="cart-benefit-text">✓ Envío Priority Courier Asegurado mundial sin cargo adicional</p>
       <button class="btn btn-gold btn-checkout" id="checkoutBtn" disabled>
         Proceder a la Adquisición Privada
       </button>
     </div>
   </aside>
 
-  <!-- Modal Checkout Exclusivo -->
+  <!-- ===================================================================== -->
+  <!-- MODAL CHECKOUT EXCLUSIVO -->
+  <!-- ===================================================================== -->
   <div class="checkout-modal" id="checkoutModal">
     <div class="checkout-dialog">
-      <button class="modal-close-btn" id="modalClose">&times;</button>
+      <button class="modal-close-btn" id="modalClose" aria-label="Cerrar Orden">&times;</button>
       <div class="checkout-header">
-        <span class="gold-overline">ORDEN DE ALTA JOYERÍA</span>
+        <span class="gold-overline">ORDEN DE ALTA ORFEBRERÍA</span>
         <h3>Adquisición Privada Mágica</h3>
-        <p>Completa tus datos para emitir tu certificado nominativo y preparar tu entrega.</p>
+        <p>Completa tus datos para emitir tu certificado nominativo con folio reservado y preparar tu entrega asegurada.</p>
       </div>
 
       <form id="orderForm" class="luxury-form">
         <div class="form-row">
           <div class="form-group">
-            <label>Nombre y Apellidos</label>
+            <label>Nombre y Apellidos de la/del Guardián</label>
             <input type="text" placeholder="Ej. Valentina Morales" required id="custName">
           </div>
           <div class="form-group">
-            <label>Teléfono WhatsApp</label>
+            <label>Teléfono WhatsApp (Para coordinación directa)</label>
             <input type="tel" placeholder="+52 / +1 / Teléfono" required id="custPhone">
           </div>
         </div>
 
         <div class="form-group">
-          <label>Correo Electrónico (Para envío de guía y certificado)</label>
+          <label>Correo Electrónico (Para envío de guía satelital y certificado)</label>
           <input type="email" placeholder="valentina@lujo.com" required id="custEmail">
         </div>
 
         <div class="form-group">
           <label>Dirección de Envío Privada</label>
-          <input type="text" placeholder="Calle, Número exterior/interior, Colonia, Ciudad, C.P." required id="custAddress">
+          <input type="text" placeholder="Calle, Número, Colonia, Ciudad, Código Postal, País" required id="custAddress">
         </div>
 
         <div class="form-group">
           <label>Talla de Muñeca Deseada</label>
           <select id="custSize">
-            <option value="16cm">Estándar Mujer (16 cm - 16.5 cm)</option>
-            <option value="15cm">Petite (15 cm - 15.5 cm)</option>
-            <option value="18cm">Comfort / Hombre (17.5 cm - 18.5 cm)</option>
-            <option value="personalizada">Medida especial a coordinar por WhatsApp</option>
+            <option value="16.5cm Estándar">Estándar Mujer (16 cm - 16.5 cm) — Más Recomendada</option>
+            <option value="15cm Petite">Petite (15 cm - 15.5 cm)</option>
+            <option value="18cm Comfort">Comfort / Hombre (17.5 cm - 18.5 cm)</option>
+            <option value="Medida Personalizada">Medida especial a coordinar con concierge por WhatsApp</option>
           </select>
         </div>
 
@@ -277,40 +761,53 @@
         <button type="submit" class="btn btn-gold btn-full">
           Confirmar y Reservar Piezas ($89 USD c/u)
         </button>
-        <p class="secure-legend">🔒 Pago y coordinación segura cifrada de extremo a extremo.</p>
+        <p class="secure-legend">🔒 Transacción cifrada y atención personalizada de concierge vía WhatsApp.</p>
       </form>
     </div>
   </div>
+
+  <!-- Botón Flotante de Concierge WhatsApp -->
+  <a href="https://wa.me/?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Joyera Concierge por WhatsApp">
+    <div class="concierge-bubble">
+      <span class="concierge-pulse"></span>
+      <span class="concierge-text">Concierge En Línea</span>
+    </div>
+    <div class="concierge-icon-circle">
+      <span>❦</span>
+    </div>
+  </a>
 
   <!-- Footer de Prestigio -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand-side">
         <div class="footer-logo-row">
-          <img src="assets/Catalogo/logo-magica.jpg" alt="Mágica" class="footer-mini-logo">
+          <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica" class="footer-mini-logo">
           <span class="footer-brand-name">MÁGICA</span>
         </div>
         <p class="footer-tagline">Conexión · Intención · Equilibrio · Energía</p>
         <p class="footer-bio">
-          Joyería de intención superior inspirada en la sabiduría de las piedras sagradas y el arte de la orfebrería de lujo.
+          Joyería de intención superior inspirada en la sabiduría ancestral de las gemas sagradas y el arte de la orfebrería de taller de lujo.
         </p>
       </div>
 
       <div class="footer-links-col">
-        <h5>Colección</h5>
+        <h5>Navegación</h5>
         <ul>
-          <li><a href="#catalogo">Lapislázuli Imperial</a></li>
-          <li><a href="#catalogo">Ónix & Turmalina</a></li>
-          <li><a href="#catalogo">Jade y Cuarzo Blanco</a></li>
-          <li><a href="#catalogo">Amuletos de Fortuna</a></li>
+          <li><a href="#catalogo">Catálogo Completo</a></li>
+          <li><a href="#oraculo">Oráculo Alquímico</a></li>
+          <li><a href="#lookbook">Lookbook Stacking</a></li>
+          <li><a href="#ritual">El Ritual 432 Hz</a></li>
+          <li><a href="#tallas">Guía de Tallas</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
         </ul>
       </div>
 
       <div class="footer-concierge-col">
-        <h5>Concierge Privado</h5>
-        <p>¿Buscas una gema afín a tu signo ascendente o intención específica?</p>
+        <h5>Concierge & Redes</h5>
+        <p>¿Buscas una gema afín a tu carta astral o deseas una asesoría personalizada?</p>
         <a href="https://www.instagram.com/magica.444/" target="_blank" class="instagram-btn">
-          <span>Seguir en Instagram</span>
+          <span>Visitar Instagram Oficial</span>
           <strong>@magica.444 ↗</strong>
         </a>
       </div>
@@ -318,8 +815,8 @@
 
     <div class="footer-copyright">
       <div class="container copyright-flex">
-        <span>© 2026 MÁGICA. Todos los derechos reservados. Joyería fina registrada.</span>
-        <span>Autenticidad Mineral Garantizada · $89 USD</span>
+        <span>© 2026 MÁGICA. Todos los derechos reservados. Joyería holística de autor.</span>
+        <span>Autenticidad Mineral Garantizada · Inversión Fija $89 USD</span>
       </div>
     </div>
   </footer>
