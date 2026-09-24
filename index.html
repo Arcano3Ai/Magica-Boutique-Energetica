@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MÁGICA | Alta Joyería Holística & Cuarzos de Colección</title>
   <meta name="description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
+
+  <!-- Metadatos de Redes Sociales & WhatsApp Preview (Open Graph & Twitter Cards) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MÁGICA Boutique">
+  <meta property="og:title" content="MÁGICA | Alta Joyería Holística & Cuarzos de Colección">
+  <meta property="og:description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
+  <meta property="og:url" content="https://arcano3ai.github.io/Magica-Boutique-Energetica/">
+  <meta property="og:image" content="https://arcano3ai.github.io/Magica-Boutique-Energetica/assets/Media/og-share-whatsapp.jpg">
+  <meta property="og:image:secure_url" content="https://arcano3ai.github.io/Magica-Boutique-Energetica/assets/Media/og-share-whatsapp.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="MÁGICA - Sello Ancestral de Alta Joyería Holística">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MÁGICA | Alta Joyería Holística & Cuarzos de Colección">
+  <meta name="twitter:description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
+  <meta name="twitter:image" content="https://arcano3ai.github.io/Magica-Boutique-Energetica/assets/Media/og-share-whatsapp.jpg">
+
+  <link rel="icon" type="image/jpeg" href="assets/Media/og-share-whatsapp.jpg">
+  <link rel="apple-touch-icon" href="assets/Media/og-share-whatsapp.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +36,14 @@
   <!-- Top Luxury Announcement -->
   <aside class="luxury-bar">
     <div class="luxury-bar-inner">
-      <span>✦ EDICIÓN PRIVADA DISPONIBLE · ENVÍO COURIER PRIORITARIO ASEGURADO DE CORTESÍA A TODO EL MUNDO · INVERSIÓN FIJA $89 USD ✦</span>
+      <span id="topAnnouncement"><span data-i18n="top_announcement">✦ EDICIÓN PRIVADA DISPONIBLE · WHATSAPP CONCIERGE: </span><a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="luxury-bar-wa-link">+52 1 81 1031 6819</a><span data-i18n="top_announcement_end"> · ENVÍO PRIORITARIO ASEGURADO · $89 USD ✦</span></span>
+      <div class="lang-selector-group top-bar-lang" role="group" aria-label="Language Selector">
+        <button class="lang-btn active" data-lang="es" onclick="switchLanguage('es')" title="Español">ES</button>
+        <span class="lang-divider">·</span>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')" title="English">EN</button>
+        <span class="lang-divider">·</span>
+        <button class="lang-btn" data-lang="ga" onclick="switchLanguage('ga')" title="Gaeilge">GA</button>
+      </div>
     </div>
   </aside>
 
@@ -28,27 +57,39 @@
       </button>
 
       <nav class="nav-links nav-left">
-        <a href="#catalogo">Colección</a>
-        <a href="#oraculo">Oráculo Alquímico</a>
-        <a href="#lookbook">Lookbook Stacking</a>
+        <a href="#catalogo" data-i18n="nav_collection">Colección</a>
+        <a href="#oraculo" data-i18n="nav_oracle">Oráculo Alquímico</a>
+        <a href="#lookbook" data-i18n="nav_lookbook">Lookbook Stacking</a>
       </nav>
       
       <a href="#" class="brand-container">
         <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Logo Mágica" class="brand-crest">
         <div class="brand-text-block">
-          <span class="brand-title">MÁGICA</span>
-          <span class="brand-slogan">CONEXIÓN · INTENCIÓN · EQUILIBRIO · ENERGÍA</span>
+          <span class="brand-title" data-i18n="brand_title">MÁGICA</span>
+          <span class="brand-slogan" data-i18n="brand_slogan">CONEXIÓN · INTENCIÓN · EQUILIBRIO · ENERGÍA</span>
         </div>
       </a>
 
-      <div class="nav-links nav-right">
-        <a href="#ritual">El Ritual</a>
-        <a href="#tallas">Tallas & Calidad</a>
-        <a href="#testimonios">Coleccionistas</a>
-        <a href="#faq">FAQ</a>
+      <div class="nav-actions-right">
+        <nav class="nav-links nav-right">
+          <a href="#ritual" data-i18n="nav_ritual">El Ritual</a>
+          <a href="#tallas" data-i18n="nav_sizes">Tallas & Calidad</a>
+          <a href="#testimonios" data-i18n="nav_testimonials">Coleccionistas</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          
+          <!-- Language Switcher Desktop -->
+          <div class="lang-selector-group nav-lang" role="group" aria-label="Language Selector">
+            <button class="lang-btn active" data-lang="es" onclick="switchLanguage('es')" title="Español">ES</button>
+            <span class="lang-divider">·</span>
+            <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')" title="English">EN</button>
+            <span class="lang-divider">·</span>
+            <button class="lang-btn" data-lang="ga" onclick="switchLanguage('ga')" title="Gaeilge">GA</button>
+          </div>
+        </nav>
+
         <button class="cart-trigger" id="cartTrigger" aria-label="Abrir Bolsa de Joyas">
           <span class="bag-icon">❦</span>
-          <span class="bag-text">Bolsa</span>
+          <span class="bag-text" data-i18n="nav_bag">Bolsa</span>
           <span class="cart-count" id="cartCount">0</span>
         </button>
       </div>
@@ -60,23 +101,36 @@
   <aside class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-header">
       <div class="brand-text-block">
-        <span class="brand-title">MÁGICA</span>
-        <span class="brand-slogan">ALTA JOYERÍA ENERGÉTICA</span>
+        <span class="brand-title" data-i18n="brand_title">MÁGICA</span>
+        <span class="brand-slogan" data-i18n="brand_subtitle">ALTA JOYERÍA ENERGÉTICA</span>
+      </div>
+      <div class="mobile-lang-row">
+        <span class="mobile-lang-title">Teanga / Language:</span>
+        <div class="lang-selector-group">
+          <button class="lang-btn active" data-lang="es" onclick="switchLanguage('es')">ES</button>
+          <span class="lang-divider">·</span>
+          <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+          <span class="lang-divider">·</span>
+          <button class="lang-btn" data-lang="ga" onclick="switchLanguage('ga')">GA</button>
+        </div>
       </div>
     </div>
     <nav class="mobile-nav-list">
-      <a href="#catalogo" class="mobile-nav-link">✦ Colección de Joyas</a>
-      <a href="#oraculo" class="mobile-nav-link">✦ Oráculo & Recomendador</a>
-      <a href="#lookbook" class="mobile-nav-link">✦ Lookbook & Stacking</a>
-      <a href="#ritual" class="mobile-nav-link">✦ El Ritual de Consagración</a>
-      <a href="#tallas" class="mobile-nav-link">✦ Guía de Tallas & Taller</a>
-      <a href="#testimonios" class="mobile-nav-link">✦ Opiniones de Clientes VIP</a>
-      <a href="#faq" class="mobile-nav-link">✦ Preguntas Frecuentes</a>
-      <a href="#circulo" class="mobile-nav-link">✦ Círculo Íntimo VIP</a>
+      <a href="#catalogo" class="mobile-nav-link" data-i18n="nav_collection">✦ Colección de Joyas</a>
+      <a href="#oraculo" class="mobile-nav-link" data-i18n="nav_oracle">✦ Oráculo & Recomendador</a>
+      <a href="#lookbook" class="mobile-nav-link" data-i18n="nav_lookbook">✦ Lookbook & Stacking</a>
+      <a href="#ritual" class="mobile-nav-link" data-i18n="nav_ritual">✦ El Ritual de Consagración</a>
+      <a href="#tallas" class="mobile-nav-link" data-i18n="nav_sizes">✦ Guía de Tallas & Taller</a>
+      <a href="#testimonios" class="mobile-nav-link" data-i18n="nav_testimonials">✦ Opiniones de Clientes VIP</a>
+      <a href="#faq" class="mobile-nav-link" data-i18n="nav_faq">✦ Preguntas Frecuentes</a>
+      <a href="#circulo" class="mobile-nav-link" data-i18n="nav_club">✦ Círculo Íntimo VIP</a>
     </nav>
     <div class="mobile-menu-footer">
-      <p>Inversión fija por pieza: <strong>$89.00 USD</strong></p>
-      <small>Cofre The Rose Vault y Envío de Cortesía</small>
+      <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="mobile-whatsapp-btn">
+        <span>❦</span> WhatsApp Concierge: +52 1 81 1031 6819
+      </a>
+      <p><span data-i18n="card_fixed_investment">Inversión fija</span>: <strong data-i18n="fixed_price">$89.00 USD</strong></p>
+      <small data-i18n="vault_perk3">Cofre The Rose Vault y Envío de Cortesía</small>
     </div>
   </aside>
 
@@ -87,41 +141,44 @@
     <canvas id="stardustCanvas" class="stardust-canvas"></canvas>
     <div class="hero-container">
       <div class="hero-badge">
-        <span class="badge-dot"></span> BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA HOLÍSTICA
+        <span class="badge-dot"></span> <span data-i18n="hero_badge">BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA HOLÍSTICA</span>
       </div>
       <h1 class="hero-headline">
-        La Esencia de la Tierra <br>
-        <span class="hero-script">Elevada al Máximo Lujo</span>
+        <span data-i18n="hero_headline_1">La Esencia de la Tierra</span> <br>
+        <span class="hero-script" data-i18n="hero_headline_script">Elevada al Máximo Lujo</span>
       </h1>
-      <p class="hero-subtext">
+      <p class="hero-subtext" data-i18n="hero_subtext">
         Cuarzos sagrados seleccionados uno a uno por su pureza cristalina y resonancia armónica a 432 Hz. 
         Un amuleto consciente de <strong>$89.00 USD</strong> forjado en orfebrería fina para ser el testamento silencioso de tu poder personal.
       </p>
 
       <div class="hero-action-group">
-        <a href="#catalogo" class="btn btn-gold">Explorar la Colección</a>
-        <a href="#oraculo" class="btn btn-translucent">Consultar el Oráculo Astral</a>
+        <a href="#catalogo" class="btn btn-gold" data-i18n="hero_cta_explore">Explorar la Colección</a>
+        <a href="#oraculo" class="btn btn-translucent" data-i18n="hero_cta_oracle">Consultar el Oráculo Astral</a>
+        <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="btn btn-whatsapp-hero" aria-label="Hablar con Concierge por WhatsApp (+52 1 81 1031 6819)">
+          <span>❦</span> <span data-i18n="hero_cta_wa">WhatsApp Concierge: +52 1 81 1031 6819</span>
+        </a>
       </div>
 
       <div class="hero-stats-bar">
         <div class="stat-item">
-          <span class="stat-value">100%</span>
-          <span class="stat-desc">Gemas Naturales Grado AAA+</span>
+          <span class="stat-value" data-i18n="hero_stat_aaa">100%</span>
+          <span class="stat-desc" data-i18n="hero_stat_aaa_desc">Gemas Naturales Grado AAA+</span>
         </div>
         <div class="stat-divider">|</div>
         <div class="stat-item">
-          <span class="stat-value">432 Hz</span>
-          <span class="stat-desc">Frecuencia de Consagración</span>
+          <span class="stat-value" data-i18n="hero_stat_hz">432 Hz</span>
+          <span class="stat-desc" data-i18n="hero_stat_hz_desc">Frecuencia de Consagración</span>
         </div>
         <div class="stat-divider">|</div>
         <div class="stat-item">
-          <span class="stat-value">$89 USD</span>
-          <span class="stat-desc">Inversión Fija por Joya</span>
+          <span class="stat-value" data-i18n="hero_stat_price">$89 USD</span>
+          <span class="stat-desc" data-i18n="hero_stat_price_desc">Inversión Fija por Joya</span>
         </div>
         <div class="stat-divider">|</div>
         <div class="stat-item">
-          <span class="stat-value">18K</span>
-          <span class="stat-desc">Acabados en Oro y Plata 925</span>
+          <span class="stat-value" data-i18n="hero_stat_metal">18K</span>
+          <span class="stat-desc" data-i18n="hero_stat_metal_desc">Acabados en Oro y Plata 925</span>
         </div>
       </div>
     </div>
@@ -133,23 +190,23 @@
       <div class="prestige-grid">
         <div class="prestige-card">
           <div class="prestige-icon">❖</div>
-          <h3>Extracción Ética</h3>
-          <p>Yacimientos sostenibles seleccionados. Minerales no irradiados químicamente.</p>
+          <h3 data-i18n="pillar_1_title">Gemas Naturales Grado AAA+</h3>
+          <p data-i18n="pillar_1_desc">Extracción ética sin tratamientos térmicos invasivos ni imitaciones sintéticas.</p>
         </div>
         <div class="prestige-card">
           <div class="prestige-icon">✧</div>
-          <h3>Acabados de Orfebrería</h3>
-          <p>Herrajes bañados en oro de 18K y plata pulida con resistencia perpetua.</p>
+          <h3 data-i18n="pillar_2_title">Orfebrería en Oro 18K & Plata</h3>
+          <p data-i18n="pillar_2_desc">Herrajes nobles forjados a mano con sellado hidrófugo y durabilidad eterna.</p>
         </div>
         <div class="prestige-card">
           <div class="prestige-icon">𓇢</div>
-          <h3>Elixir & Sahumerio</h3>
-          <p>Limpia ritualizada con salvia blanca y brisa de cuarzos antes de ser sellada.</p>
+          <h3 data-i18n="pillar_3_title">Sintonización Sagrada 432 Hz</h3>
+          <p data-i18n="pillar_3_desc">Cada lote es consagrado bajo campanas tibetanas y cuencos de cuarzo cristalino.</p>
         </div>
         <div class="prestige-card">
           <div class="prestige-icon">🜂</div>
-          <h3>Estuche The Rose Vault</h3>
-          <p>Cofre rígido marfil magnético, saco de gamuza y certificado de folio único.</p>
+          <h3 data-i18n="pillar_4_title">El Estuche The Rose Vault</h3>
+          <p data-i18n="pillar_4_desc">Presentación rígida de terciopelo marfil con certificado gemológico nominativo.</p>
         </div>
       </div>
     </div>
@@ -161,9 +218,9 @@
   <section class="oracle-section" id="oraculo">
     <div class="container">
       <div class="section-title-wrap">
-        <span class="gold-overline">EXPERIENCIA INTERACTIVA CON SONIDO SAGRADO</span>
-        <h2 class="section-title">El Oráculo de Gemas</h2>
-        <p class="section-subtitle">
+        <span class="gold-overline" data-i18n="oracle_overline">SINTONIZACIÓN ASTRAL & FRECUENCIA 432 HZ</span>
+        <h2 class="section-title" data-i18n="oracle_title">El Oráculo Alquímico</h2>
+        <p class="section-subtitle" data-i18n="oracle_subtitle">
           Sincroniza tu energía natal con la gema que tu campo áurico requiere en este momento. Selecciona tu intención y signo zodiacal para recibir la recomendación armónica.
         </p>
       </div>
@@ -173,32 +230,32 @@
         <div class="oracle-step-block">
           <div class="step-header">
             <span class="step-num">PASO 01</span>
-            <h4>¿Qué frecuencia deseas activar en tu vida?</h4>
+            <h4 data-i18n="oracle_step1">¿Qué frecuencia deseas activar en tu vida?</h4>
           </div>
           <div class="oracle-intents-grid">
             <button class="oracle-intent-card" onclick="selectOracleIntention('proteccion', this)">
               <span class="o-icon">🛡️</span>
-              <strong>Protección & Blindaje</strong>
+              <strong data-i18n="intention_proteccion">Protección & Blindaje</strong>
               <small>Disipa energía densa y envidias</small>
             </button>
             <button class="oracle-intent-card" onclick="selectOracleIntention('abundancia', this)">
               <span class="o-icon">👑</span>
-              <strong>Abundancia & Fortuna</strong>
+              <strong data-i18n="intention_abundancia">Abundancia & Fortuna</strong>
               <small>Multiplica oportunidades y éxito</small>
             </button>
             <button class="oracle-intent-card" onclick="selectOracleIntention('sabiduria', this)">
               <span class="o-icon">👁️</span>
-              <strong>Sabiduría & Clarividencia</strong>
+              <strong data-i18n="intention_sabiduria">Sabiduría & Clarividencia</strong>
               <small>Abre la intuición y tercer ojo</small>
             </button>
             <button class="oracle-intent-card" onclick="selectOracleIntention('amor', this)">
               <span class="o-icon">💖</span>
-              <strong>Amor Propio & Armonía</strong>
+              <strong data-i18n="intention_amor">Amor Propio & Armonía</strong>
               <small>Sana el corazón y atrae luz</small>
             </button>
-            <button class="oracle-intent-card" onclick="selectOracleIntention('espiritualidad', this)">
+            <button class="oracle-intent-card" onclick="selectOracleIntention('serenidad', this)">
               <span class="o-icon">✨</span>
-              <strong>Espiritualidad & Paz</strong>
+              <strong data-i18n="intention_serenidad">Espiritualidad & Paz</strong>
               <small>Calma mental y alta vibración</small>
             </button>
           </div>
@@ -208,7 +265,7 @@
         <div class="oracle-step-block">
           <div class="step-header">
             <span class="step-num">PASO 02</span>
-            <h4>Selecciona tu Signo Zodiacal (Sol o Ascendente)</h4>
+            <h4 data-i18n="oracle_step2">Selecciona tu Signo Zodiacal (Sol o Ascendente)</h4>
           </div>
           <div class="oracle-zodiac-row">
             <button class="oracle-zodiac-pill" onclick="selectOracleZodiac('Aries', this)">♈ Aries</button>
@@ -243,26 +300,26 @@
   <section class="catalog-section" id="catalogo">
     <div class="container">
       <div class="section-title-wrap">
-        <span class="gold-overline">PIEZAS DE EDICIÓN LIMITADA · REAL WORKSHOP PHOTOGRAPHY</span>
-        <h2 class="section-title">El Catálogo Selecto</h2>
-        <p class="section-subtitle">
+        <span class="gold-overline" data-i18n="catalog_overline">PIEZAS DE EDICIÓN LIMITADA · REAL WORKSHOP PHOTOGRAPHY</span>
+        <h2 class="section-title" data-i18n="catalog_title">El Catálogo Selecto</h2>
+        <p class="section-subtitle" data-i18n="catalog_subtitle">
           Fotografías reales de nuestra orfebrería de taller. Cada pieza es irrepetible en tonalidad, gramaje y veta mineral.
         </p>
         <div class="price-pill">
-          <span>Inversión exclusiva:</span>
-          <strong>$89.00 USD c/u</strong>
-          <small>· Incluye cofre The Rose Vault y envío prioritario asegurado</small>
+          <span data-i18n="card_fixed_investment">Inversión fija:</span>
+          <strong data-i18n="fixed_price">$89.00 USD c/u</strong>
+          <small data-i18n="vault_perk3">· Incluye cofre The Rose Vault y envío prioritario asegurado</small>
         </div>
       </div>
 
       <!-- Barra de Filtrado y Búsqueda -->
       <div class="catalog-controls">
         <div class="filter-pills-bar">
-          <button class="filter-pill active" onclick="setCategoryFilter('all', this)">Todas las Joyas</button>
-          <button class="filter-pill" onclick="setCategoryFilter('proteccion', this)">Protección & Blindaje</button>
-          <button class="filter-pill" onclick="setCategoryFilter('abundancia', this)">Abundancia & Fortuna</button>
-          <button class="filter-pill" onclick="setCategoryFilter('sabiduria', this)">Sabiduría & Intuición</button>
-          <button class="filter-pill" onclick="setCategoryFilter('amor', this)">Amor & Frecuencia</button>
+          <button class="filter-pill active" onclick="setCategoryFilter('all', this)" data-i18n="filter_all">Todas las Joyas</button>
+          <button class="filter-pill" onclick="setCategoryFilter('proteccion', this)" data-i18n="filter_protection">Protección</button>
+          <button class="filter-pill" onclick="setCategoryFilter('abundancia', this)" data-i18n="filter_abundance">Abundancia</button>
+          <button class="filter-pill" onclick="setCategoryFilter('sabiduria', this)" data-i18n="filter_wisdom">Sabiduría</button>
+          <button class="filter-pill" onclick="setCategoryFilter('amor', this)" data-i18n="filter_love">Alta Frecuencia</button>
         </div>
 
         <div class="catalog-search-wrap">
@@ -271,6 +328,7 @@
             type="text" 
             id="catalogSearchInput" 
             placeholder="Buscar por gema, chakra o intención..." 
+            data-i18n-placeholder="catalog_search_placeholder"
             oninput="handleCatalogSearch(event)"
             aria-label="Buscar joyas"
           >
@@ -291,31 +349,31 @@
     <div class="container">
       <div class="ritual-wrapper">
         <div class="ritual-story">
-          <span class="gold-overline">LA ALQUIMIA DETRÁS DE MÁGICA</span>
-          <h2 class="ritual-title">La Belleza del Propósito Consciente</h2>
-          <p class="ritual-lead">
-            No creemos en la producción en masa ni en minerales sintéticos. Cada pulsera de <strong>Mágica</strong> nace bajo la premisa de la alta orfebrería meditada: seleccionar la gema con la gravedad, brillo y resonancia precisa para su guardián.
+          <span class="gold-overline" data-i18n="ritual_overline">DEVOCIÓN POR EL ORIGEN Y EL OFICIO</span>
+          <h2 class="ritual-title" data-i18n="ritual_title">El Ritual de Consagración</h2>
+          <p class="ritual-lead" data-i18n="ritual_p1">
+            En Mágica, una pulsera no es un accesorio decorativo: es un vórtice energético que se fusiona con tu pulso arterial. Antes de ingresar a su estuche, cada espécimen reposa sobre una cama de selenita marroquí y es expuesto a secuencias armónicas de 432 Hz.
           </p>
           <div class="ritual-features">
             <div class="rf-item">
               <span class="rf-num">I</span>
               <div>
-                <h4>Selección de Criterio Gemológico</h4>
-                <p>Inspección microscópica de vetas, dureza Mohs y saturación de color natural en cada esfera y cabujón.</p>
+                <h4 data-i18n="pillar_1_title">Gemas Naturales Grado AAA+</h4>
+                <p data-i18n="pillar_1_desc">Extracción ética sin tratamientos térmicos invasivos ni imitaciones sintéticas.</p>
               </div>
             </div>
             <div class="rf-item">
               <span class="rf-num">II</span>
               <div>
-                <h4>Alineación bajo Frecuencia Sonora 432 Hz</h4>
-                <p>Cada pulsera descansa sobre drusa de cuarzo cristal y es bañada acústicamente con cuencos de cuarzo antes de ser embalada.</p>
+                <h4 data-i18n="pillar_3_title">Sintonización Sagrada 432 Hz</h4>
+                <p data-i18n="pillar_3_desc">Cada lote es consagrado bajo campanas tibetanas y cuencos de cuarzo cristalino.</p>
               </div>
             </div>
             <div class="rf-item">
               <span class="rf-num">III</span>
               <div>
-                <h4>El Estuche de Colección The Rose Vault</h4>
-                <p>Recibe tu pieza dentro del exclusivo cofre rígido marfil con pan de oro rosa, listo para obsequiar o atesorar.</p>
+                <h4 data-i18n="pillar_4_title">El Estuche The Rose Vault</h4>
+                <p data-i18n="pillar_4_desc">Presentación rígida de terciopelo marfil con certificado gemológico nominativo.</p>
               </div>
             </div>
           </div>
@@ -326,13 +384,12 @@
             <div class="vault-inner">
               <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica Crest" class="vault-logo-img">
               <div class="vault-tag">EMPAQUE SIGNATURE INCLUIDO</div>
-              <h3>Mágica Velvet & Rose Vault</h3>
-              <p>Valorado en $35 USD, incluido de cortesía con tu inversión de $89 USD:</p>
+              <h3 data-i18n="vault_title">Cofre The Rose Vault (De Cortesía)</h3>
+              <p data-i18n="vault_desc">Cada adquisición se despacha en nuestro packaging insignia: cofre rígido forrado en lino crudo y terciopelo, lazo de seda, gamuza de limpieza y certificado de autenticidad.</p>
               <ul class="vault-list">
-                <li><span>✦</span> Cofre rígido con cierre magnético y grabado en pan de oro rosa</li>
-                <li><span>✦</span> Certificado de Autenticidad Mineral numerado con Folio Privado</li>
-                <li><span>✦</span> Funda protectora de viaje en gamuza de seda ultra suave</li>
-                <li><span>✦</span> Guía privada de recarga y sincronización lunar para tu cuarzo</li>
+                <li><span>✦</span> <span data-i18n="vault_perk1">Estuche rígido de preservación mineral</span></li>
+                <li><span>✦</span> <span data-i18n="vault_perk2">Certificado gemológico nominativo con folio</span></li>
+                <li><span>✦</span> <span data-i18n="vault_perk3">Envío Priority Courier Asegurado mundial sin cargo</span></li>
               </ul>
             </div>
           </div>
@@ -347,10 +404,10 @@
   <section class="lookbook-section" id="lookbook">
     <div class="container">
       <div class="section-title-wrap">
-        <span class="gold-overline">GALERÍA EDITORIAL EN MUÑECA</span>
-        <h2 class="section-title">El Arte del Stacking Consciente</h2>
-        <p class="section-subtitle">
-          Descubre cómo lucen nuestras piezas en el día a día. Aprende a combinar dos o tres brazaletes para crear una armonía estética imponente y multiplicar sus efectos bioenergéticos.
+        <span class="gold-overline" data-i18n="lookbook_overline">ARMONÍA VISUAL Y DUALIDAD DE PODER</span>
+        <h2 class="section-title" data-i18n="lookbook_title">El Arte del Stacking Energético</h2>
+        <p class="section-subtitle" data-i18n="lookbook_subtitle">
+          Combina dos o tres piezas para crear campos complementarios de fuerza protectora y atracción magnética.
         </p>
       </div>
 
@@ -394,22 +451,33 @@
 
       <div class="stacking-tips-banner">
         <div class="tip-col">
-          <span class="tip-num">01</span>
-          <h5>Muñeca Izquierda</h5>
-          <p>La mano receptiva. Úsala aquí para absorber la calma, el amor propio y la protección espiritual del cuarzo.</p>
+          <span class="tip-num" data-i18n="lookbook_tip1_num">01</span>
+          <h5 data-i18n="lookbook_tip1_title">Muñeca Izquierda</h5>
+          <p data-i18n="lookbook_tip1_desc">La mano receptiva. Úsala aquí para absorber la calma, el amor propio y la protección espiritual del cuarzo.</p>
         </div>
         <div class="tip-divider"></div>
         <div class="tip-col">
-          <span class="tip-num">02</span>
-          <h5>Muñeca Derecha</h5>
-          <p>La mano proyectiva. Úsala aquí para irradiar confianza en negociaciones, liderazgo y atracción de abundancia.</p>
+          <span class="tip-num" data-i18n="lookbook_tip2_num">02</span>
+          <h5 data-i18n="lookbook_tip2_title">Muñeca Derecha</h5>
+          <p data-i18n="lookbook_tip2_desc">La mano proyectiva. Úsala aquí para irradiar confianza en negociaciones, liderazgo y atracción de abundancia.</p>
         </div>
         <div class="tip-divider"></div>
         <div class="tip-col">
-          <span class="tip-num">03</span>
-          <h5>Regla de Oro: Máximo 3 Gemas</h5>
-          <p>Permite que las vibraciones no compitan entre sí combinando un anclaje (ónix/turmalina) con un cuarzo de luz (lapislázuli/jade).</p>
+          <span class="tip-num" data-i18n="lookbook_tip3_num">03</span>
+          <h5 data-i18n="lookbook_tip3_title">Regla de Oro: Máximo 3 Gemas</h5>
+          <p data-i18n="lookbook_tip3_desc">Permite que las vibraciones no compitan entre sí combinando un anclaje (ónix/turmalina) con un cuarzo de luz (lapislázuli/jade).</p>
         </div>
+      </div>
+
+      <div class="lookbook-concierge-cta">
+        <div class="lookbook-cta-text">
+          <span class="gold-overline" data-i18n="lookbook_cta_overline">ASESORÍA ALQUÍMICA EN VIVO</span>
+          <h4 data-i18n="lookbook_cta_title">¿Deseas combinar 2 o 3 gemas según tu carta astral?</h4>
+          <p data-i18n="lookbook_cta_desc">Nuestra joyera concierge analiza tu sinergia mineral y te envía una propuesta exclusiva con disponibilidad inmediata.</p>
+        </div>
+        <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20para%20combinar%20mi%20Stacking%20de%20gemas." target="_blank" class="btn btn-whatsapp-subtle">
+          <span data-i18n="lookbook_cta_btn"><span>❦</span> Asesoría Stacking por WhatsApp (+52 1 81 1031 6819)</span>
+        </a>
       </div>
     </div>
   </section>
@@ -645,6 +713,13 @@
           </div>
         </div>
       </div>
+
+      <div class="faq-concierge-callout">
+        <p>¿Tienes dudas sobre autenticidad mineral, tallas personalizadas o envíos internacionales?</p>
+        <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20tengo%20una%20pregunta%20espec%C3%ADfica%20antes%20de%20adquirir%20mi%20pieza." target="_blank" class="btn btn-whatsapp-subtle">
+          <span>❦</span> Conversar con Joyera Concierge por WhatsApp (+52 1 81 1031 6819)
+        </a>
+      </div>
     </div>
   </section>
 
@@ -691,7 +766,7 @@
     <div class="cart-top">
       <div class="cart-top-title">
         <span class="gold-sparkle">✦</span>
-        <h3>Bolsa de Joyas</h3>
+        <h3 data-i18n="cart_title">Bolsa de Joyas</h3>
       </div>
       <button class="cart-close" id="closeCart" aria-label="Cerrar Bolsa">&times;</button>
     </div>
@@ -702,13 +777,18 @@
 
     <div class="cart-bottom">
       <div class="cart-summary-line">
-        <span>Inversión Total Certificada</span>
+        <span data-i18n="cart_investment_label">Inversión Total Certificada</span>
         <span class="cart-total-amount" id="cartTotalVal">$0.00 USD</span>
       </div>
-      <p class="cart-benefit-text">✓ Envío Priority Courier Asegurado mundial sin cargo adicional</p>
-      <button class="btn btn-gold btn-checkout" id="checkoutBtn" disabled>
-        Proceder a la Adquisición Privada
-      </button>
+      <p class="cart-benefit-text" data-i18n="cart_benefit">✓ Envío Priority Courier Asegurado mundial sin cargo adicional</p>
+      <div class="cart-checkout-actions">
+        <button class="btn btn-whatsapp-direct" id="directWhatsAppCheckoutBtn" onclick="checkoutDirectViaWhatsApp()" disabled>
+          <span class="wa-icon">❦</span> <span data-i18n="cart_btn_wa">Pedir Directo por WhatsApp (+52 1 81 1031 6819)</span>
+        </button>
+        <button class="btn btn-gold btn-checkout" id="checkoutBtn" disabled data-i18n="cart_btn_checkout">
+          Adquisición Privada con Certificado Nominativo
+        </button>
+      </div>
     </div>
   </aside>
 
@@ -719,58 +799,58 @@
     <div class="checkout-dialog">
       <button class="modal-close-btn" id="modalClose" aria-label="Cerrar Orden">&times;</button>
       <div class="checkout-header">
-        <span class="gold-overline">ORDEN DE ALTA ORFEBRERÍA</span>
-        <h3>Adquisición Privada Mágica</h3>
-        <p>Completa tus datos para emitir tu certificado nominativo con folio reservado y preparar tu entrega asegurada.</p>
+        <span class="gold-overline" data-i18n="modal_overline">ORDEN DE ALTA ORFEBRERÍA</span>
+        <h3 data-i18n="modal_title">Adquisición Privada Mágica</h3>
+        <p data-i18n="modal_desc">Completa tus datos para emitir tu certificado nominativo con folio reservado y preparar tu entrega asegurada.</p>
       </div>
 
       <form id="orderForm" class="luxury-form">
         <div class="form-row">
           <div class="form-group">
-            <label>Nombre y Apellidos de la/del Guardián</label>
-            <input type="text" placeholder="Ej. Valentina Morales" required id="custName">
+            <label data-i18n="modal_name_label">Nombre y Apellidos de la/del Guardián</label>
+            <input type="text" placeholder="Ej. Valentina Morales" data-i18n-placeholder="modal_name_placeholder" required id="custName">
           </div>
           <div class="form-group">
-            <label>Teléfono WhatsApp (Para coordinación directa)</label>
-            <input type="tel" placeholder="+52 / +1 / Teléfono" required id="custPhone">
+            <label data-i18n="modal_phone_label">Teléfono WhatsApp (Para coordinación directa)</label>
+            <input type="tel" placeholder="+52 / +1 / Teléfono" data-i18n-placeholder="modal_phone_placeholder" required id="custPhone">
           </div>
         </div>
 
         <div class="form-group">
-          <label>Correo Electrónico (Para envío de guía satelital y certificado)</label>
-          <input type="email" placeholder="valentina@lujo.com" required id="custEmail">
+          <label data-i18n="modal_email_label">Correo Electrónico (Para envío de guía satelital y certificado)</label>
+          <input type="email" placeholder="valentina@lujo.com" data-i18n-placeholder="modal_email_placeholder" required id="custEmail">
         </div>
 
         <div class="form-group">
-          <label>Dirección de Envío Privada</label>
-          <input type="text" placeholder="Calle, Número, Colonia, Ciudad, Código Postal, País" required id="custAddress">
+          <label data-i18n="modal_address_label">Dirección de Envío Privada</label>
+          <input type="text" placeholder="Calle, Número, Colonia, Ciudad, Código Postal, País" data-i18n-placeholder="modal_address_placeholder" required id="custAddress">
         </div>
 
         <div class="form-group">
-          <label>Talla de Muñeca Deseada</label>
+          <label data-i18n="modal_size_label">Talla de Muñeca Deseada</label>
           <select id="custSize">
-            <option value="16.5cm Estándar">Estándar Mujer (16 cm - 16.5 cm) — Más Recomendada</option>
-            <option value="15cm Petite">Petite (15 cm - 15.5 cm)</option>
-            <option value="18cm Comfort">Comfort / Hombre (17.5 cm - 18.5 cm)</option>
-            <option value="Medida Personalizada">Medida especial a coordinar con concierge por WhatsApp</option>
+            <option value="16.5cm Estándar" data-i18n="modal_size_opt1">Estándar Mujer (16 cm - 16.5 cm) — Más Recomendada</option>
+            <option value="15cm Petite" data-i18n="modal_size_opt2">Petite (15 cm - 15.5 cm)</option>
+            <option value="18cm Comfort" data-i18n="modal_size_opt3">Comfort / Hombre (17.5 cm - 18.5 cm)</option>
+            <option value="Medida Personalizada" data-i18n="modal_size_opt4">Medida especial a coordinar con concierge por WhatsApp</option>
           </select>
         </div>
 
         <div class="checkout-review" id="modalOrderSummary"></div>
 
-        <button type="submit" class="btn btn-gold btn-full">
+        <button type="submit" class="btn btn-gold btn-full" data-i18n="modal_submit_btn">
           Confirmar y Reservar Piezas ($89 USD c/u)
         </button>
-        <p class="secure-legend">🔒 Transacción cifrada y atención personalizada de concierge vía WhatsApp.</p>
+        <p class="secure-legend" data-i18n="modal_secure_legend">🔒 Transacción cifrada y atención personalizada de concierge vía WhatsApp.</p>
       </form>
     </div>
   </div>
 
   <!-- Botón Flotante de Concierge WhatsApp -->
-  <a href="https://wa.me/?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Joyera Concierge por WhatsApp">
+  <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Joyera Concierge por WhatsApp (+52 1 81 1031 6819)">
     <div class="concierge-bubble">
       <span class="concierge-pulse"></span>
-      <span class="concierge-text">Concierge En Línea</span>
+      <span class="concierge-text" data-i18n="concierge_online">Concierge En Línea</span>
     </div>
     <div class="concierge-icon-circle">
       <span>❦</span>
@@ -783,44 +863,51 @@
       <div class="footer-brand-side">
         <div class="footer-logo-row">
           <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica" class="footer-mini-logo">
-          <span class="footer-brand-name">MÁGICA</span>
+          <span class="footer-brand-name" data-i18n="brand_title">MÁGICA</span>
         </div>
-        <p class="footer-tagline">Conexión · Intención · Equilibrio · Energía</p>
-        <p class="footer-bio">
+        <p class="footer-tagline" data-i18n="footer_tagline">Conexión · Intención · Equilibrio · Energía</p>
+        <p class="footer-bio" data-i18n="footer_bio">
           Joyería de intención superior inspirada en la sabiduría ancestral de las gemas sagradas y el arte de la orfebrería de taller de lujo.
         </p>
       </div>
 
       <div class="footer-links-col">
-        <h5>Navegación</h5>
+        <h5 data-i18n="footer_nav_title">Navegación</h5>
         <ul>
-          <li><a href="#catalogo">Catálogo Completo</a></li>
-          <li><a href="#oraculo">Oráculo Alquímico</a></li>
-          <li><a href="#lookbook">Lookbook Stacking</a></li>
-          <li><a href="#ritual">El Ritual 432 Hz</a></li>
-          <li><a href="#tallas">Guía de Tallas</a></li>
-          <li><a href="#faq">Preguntas Frecuentes</a></li>
+          <li><a href="#catalogo" data-i18n="nav_collection">Catálogo Completo</a></li>
+          <li><a href="#oraculo" data-i18n="nav_oracle">Oráculo Alquímico</a></li>
+          <li><a href="#lookbook" data-i18n="nav_lookbook">Lookbook Stacking</a></li>
+          <li><a href="#ritual" data-i18n="nav_ritual">El Ritual 432 Hz</a></li>
+          <li><a href="#tallas" data-i18n="nav_sizes">Guía de Tallas</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
         </ul>
       </div>
 
       <div class="footer-concierge-col">
-        <h5>Concierge & Redes</h5>
-        <p>¿Buscas una gema afín a tu carta astral o deseas una asesoría personalizada?</p>
-        <a href="https://www.instagram.com/magica.444/" target="_blank" class="instagram-btn">
-          <span>Visitar Instagram Oficial</span>
-          <strong>@magica.444 ↗</strong>
-        </a>
+        <h5 data-i18n="footer_concierge_title">Concierge & Redes</h5>
+        <p data-i18n="footer_concierge_p">¿Buscas una gema afín a tu carta astral o deseas una asesoría personalizada?</p>
+        <div class="footer-contact-actions">
+          <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="concierge-link-btn" aria-label="WhatsApp Concierge Privado">
+            <span data-i18n="footer_wa_title">WhatsApp Concierge Privado</span>
+            <strong>+52 1 81 1031 6819 ↗</strong>
+          </a>
+          <a href="https://www.instagram.com/magica.444/" target="_blank" class="instagram-btn">
+            <span data-i18n="footer_insta_title">Visitar Instagram Oficial</span>
+            <strong>@magica.444 ↗</strong>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="footer-copyright">
       <div class="container copyright-flex">
-        <span>© 2026 MÁGICA. Todos los derechos reservados. Joyería holística de autor.</span>
-        <span>Autenticidad Mineral Garantizada · Inversión Fija $89 USD</span>
+        <span data-i18n="footer_rights">© 2026 MÁGICA. Todos los derechos reservados. Joyería holística de autor.</span>
+        <span data-i18n="footer_subline">Autenticidad Mineral Garantizada · Inversión Fija $89 USD</span>
       </div>
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
