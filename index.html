@@ -27,9 +27,18 @@
   <link rel="icon" type="image/jpeg" href="assets/Media/og-share-whatsapp.jpg">
   <link rel="apple-touch-icon" href="assets/Media/og-share-whatsapp.jpg">
 
+  <!-- Precarga Prioritaria del Elemento LCP (Hero Background) -->
+  <link rel="preload" as="image" href="assets/Media/epic_luxury_bg.jpg" fetchpriority="high">
+
+  <!-- Carga Asíncrona y No Bloqueante de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap">
+  </noscript>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -63,7 +72,7 @@
       </nav>
       
       <a href="#" class="brand-container">
-        <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Logo Mágica" class="brand-crest">
+        <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Logo Mágica" class="brand-crest" width="48" height="48" fetchpriority="high">
         <div class="brand-text-block">
           <span class="brand-title" data-i18n="brand_title">MÁGICA</span>
           <span class="brand-slogan" data-i18n="brand_slogan">CONEXIÓN · INTENCIÓN · EQUILIBRIO · ENERGÍA</span>
@@ -382,7 +391,7 @@
         <div class="ritual-visual">
           <div class="vault-showcase">
             <div class="vault-inner">
-              <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica Crest" class="vault-logo-img">
+              <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica Crest" class="vault-logo-img" width="60" height="60" loading="lazy" decoding="async">
               <div class="vault-tag">EMPAQUE SIGNATURE INCLUIDO</div>
               <h3 data-i18n="vault_title">Cofre The Rose Vault (De Cortesía)</h3>
               <p data-i18n="vault_desc">Cada adquisición se despacha en nuestro packaging insignia: cofre rígido forrado en lino crudo y terciopelo, lazo de seda, gamuza de limpieza y certificado de autenticidad.</p>
@@ -414,7 +423,7 @@
       <div class="lookbook-grid">
         <div class="lookbook-card lookbook-large">
           <div class="lookbook-img-box">
-            <img src="assets/Catalogo/774508968_18081052451421186_3480494639016074095_n.jpg" alt="Stacking Alquímico de Amatista y Oro" loading="lazy">
+            <img src="assets/Catalogo/774508968_18081052451421186_3480494639016074095_n.jpg" alt="Stacking Alquímico de Amatista y Oro" loading="lazy" decoding="async" width="600" height="400">
             <span class="lookbook-tag">El Trío de la Sabiduría</span>
           </div>
           <div class="lookbook-content">
@@ -428,7 +437,7 @@
 
         <div class="lookbook-card">
           <div class="lookbook-img-box">
-            <img src="assets/Catalogo/770457909_18080342243421186_667753910894273541_n.jpg" alt="Lapislázuli Cabujón Soberana en muñeca" loading="lazy">
+            <img src="assets/Catalogo/770457909_18080342243421186_667753910894273541_n.jpg" alt="Lapislázuli Cabujón Soberana en muñeca" loading="lazy" decoding="async" width="600" height="400">
             <span class="lookbook-tag">Pieza Solitaria de Autor</span>
           </div>
           <div class="lookbook-content">
@@ -439,7 +448,7 @@
 
         <div class="lookbook-card">
           <div class="lookbook-img-box">
-            <img src="assets/Catalogo/772889456_18080358014421186_4636135969191559439_n.jpg" alt="Cuarzo Rosa & Flor de Nácar en muñeca" loading="lazy">
+            <img src="assets/Catalogo/772889456_18080358014421186_4636135969191559439_n.jpg" alt="Cuarzo Rosa & Flor de Nácar en muñeca" loading="lazy" decoding="async" width="600" height="400">
             <span class="lookbook-tag">Delicadeza Sublime</span>
           </div>
           <div class="lookbook-content">
@@ -862,7 +871,7 @@
     <div class="container footer-grid">
       <div class="footer-brand-side">
         <div class="footer-logo-row">
-          <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica" class="footer-mini-logo">
+          <img src="assets/Catalogo/769804552_18079541486421186_7296507551382769710_n.jpg" alt="Mágica" class="footer-mini-logo" width="40" height="40" loading="lazy" decoding="async">
           <span class="footer-brand-name" data-i18n="brand_title">MÁGICA</span>
         </div>
         <p class="footer-tagline" data-i18n="footer_tagline">Conexión · Intención · Equilibrio · Energía</p>
@@ -907,7 +916,7 @@
     </div>
   </footer>
 
-  <script src="translations.js"></script>
-  <script src="app.js"></script>
+  <script src="translations.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>

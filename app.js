@@ -325,7 +325,7 @@ function renderCatalog() {
       <article class="luxury-card" data-category="${rawProd.category}">
         <div class="card-image-box">
           <span class="card-badge">${prod.tag}</span>
-          <img src="${prod.image}" alt="${prod.name}" loading="lazy">
+          <img src="${prod.image}" alt="${prod.name}" loading="lazy" decoding="async" width="400" height="400">
           <div class="card-action-overlay">
             <button class="btn-inspect" onclick="openQuickView('${prod.id}')">
               <span>${btnInspect}</span> ↗
