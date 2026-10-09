@@ -46,7 +46,7 @@ const PRODUCTS = [
     chakra: 'Corona (Sahasrara) & Corazón (Anahata)',
     element: 'Tierra / Aire',
     zodiac: 'Tauro, Virgo, Cáncer',
-    metal: 'Separadores facetados en baño de oro de 18K'
+    metal: 'Separadores facetados en baño de oro de 14K y acero inoxidable'
   },
   {
     id: 'jade-pez-dorado',
@@ -61,7 +61,7 @@ const PRODUCTS = [
     chakra: 'Plexo Solar (Manipura)',
     element: 'Fuego / Tierra',
     zodiac: 'Leo, Géminis, Aries',
-    metal: 'Charm de Orfebrería bañado en Oro de 18K'
+    metal: 'Charm de Orfebrería bañado en Oro de 14K y acero inoxidable'
   },
   {
     id: 'lapislazuli-cabujon-oval',
@@ -91,7 +91,7 @@ const PRODUCTS = [
     chakra: 'Raíz (Muladhara)',
     element: 'Tierra / Fuego',
     zodiac: 'Escorpio, Capricornio, Aries',
-    metal: 'Pez tallado con chapa de oro de 18K y rondelas satinadas'
+    metal: 'Pez tallado con chapa de oro de 14K y rondelas en acero inoxidable'
   },
   {
     id: 'lapislazuli-placas',
@@ -106,7 +106,7 @@ const PRODUCTS = [
     chakra: 'Tercer Ojo (Ajna)',
     element: 'Agua / Aire',
     zodiac: 'Sagitario, Libra, Acuario',
-    metal: 'Esferas separadoras facetadas en oro de 18K'
+    metal: 'Esferas separadoras facetadas en oro de 14K y acero inoxidable'
   },
   {
     id: 'cuarzo-rosa-nacar',
@@ -136,7 +136,7 @@ const PRODUCTS = [
     chakra: 'Plexo Solar & Corazón',
     element: 'Tierra',
     zodiac: 'Tauro, Virgo, Géminis, Leo',
-    metal: 'Cuentas cúbicas facetadas en oro de 18K'
+    metal: 'Cuentas cúbicas facetadas en oro de 14K y acero inoxidable'
   },
   {
     id: 'stacking-amatista-oro',
@@ -151,7 +151,7 @@ const PRODUCTS = [
     chakra: 'Corona & Tercer Ojo',
     element: 'Aire / Éter',
     zodiac: 'Piscis, Acuario, Sagitario, Virgo',
-    metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 18K'
+    metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 14K en acero inoxidable'
   }
 ];
 

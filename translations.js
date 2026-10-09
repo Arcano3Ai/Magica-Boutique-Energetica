@@ -46,13 +46,13 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Frecuencia de Consagración',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Inversión Fija por Joya',
-    hero_stat_metal: '18K',
-    hero_stat_metal_desc: 'Acabados en Oro y Plata 925',
+    hero_stat_metal: '14K',
+    hero_stat_metal_desc: 'Acabados en Oro 14K & Acero Inoxidable',
 
     // Prestige Pillars
     pillar_1_title: 'Gemas Naturales Grado AAA+',
     pillar_1_desc: 'Extracción ética sin tratamientos térmicos invasivos ni imitaciones sintéticas.',
-    pillar_2_title: 'Orfebrería en Oro 18K & Plata',
+    pillar_2_title: 'Orfebrería en Oro 14K & Acero Inoxidable',
     pillar_2_desc: 'Herrajes nobles forjados a mano con sellado hidrófugo y durabilidad eterna.',
     pillar_3_title: 'Sintonización Sagrada 432 Hz',
     pillar_3_desc: 'Cada lote es consagrado bajo campanas tibetanas y cuencos de cuarzo cristalino.',
@@ -115,7 +115,7 @@ const TRANSLATIONS = {
     ritual_overline: 'DEVOCIÓN POR EL ORIGEN Y EL OFICIO',
     ritual_title: 'El Ritual de Consagración',
     ritual_p1: 'En Mágica, una pulsera no es un accesorio decorativo: es un vórtice energético que se fusiona con tu pulso arterial. Antes de ingresar a su estuche, cada espécimen reposa sobre una cama de selenita marroquí y es expuesto a secuencias armónicas de 432 Hz.',
-    ritual_p2: 'Nuestros maestros orfebres entrelazan cada cuenta sobre hilos de silicona náutica de memoria indeformable y engarzan herrajes con baños gruesos en oro de 18K y plata 925, asegurando que tu amuleto resista el paso de los años con inalterable esplendor.',
+    ritual_p2: 'Nuestros maestros orfebres entrelazan cada cuenta sobre hilos de silicona náutica de memoria indeformable y engarzan herrajes con baños en oro de 14K y acero inoxidable quirúrgico, asegurando que tu amuleto resista el paso de los años con inalterable esplendor.',
     vault_title: 'Cofre The Rose Vault (De Cortesía)',
     vault_desc: 'Cada adquisición se despacha en nuestro packaging insignia: cofre rígido forrado en lino crudo y terciopelo, lazo de seda, gamuza de limpieza y certificado de autenticidad.',
     vault_perk1: 'Estuche rígido de preservación mineral',
@@ -306,13 +306,13 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Consecration Frequency',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Fixed Investment per Jewel',
-    hero_stat_metal: '18K',
-    hero_stat_metal_desc: 'Finished in 18K Gold & 925 Silver',
+    hero_stat_metal: '14K',
+    hero_stat_metal_desc: 'Finished in 14K Gold & Stainless Steel',
 
     // Prestige Pillars
     pillar_1_title: 'Grade AAA+ Natural Gemstones',
     pillar_1_desc: 'Ethically sourced without invasive thermal treatments or synthetic imitations.',
-    pillar_2_title: '18K Gold & Sterling Silver',
+    pillar_2_title: '14K Gold & Stainless Steel',
     pillar_2_desc: 'Noble hardware handcrafted with hydrophobic sealing and everlasting endurance.',
     pillar_3_title: 'Sacred 432 Hz Attunement',
     pillar_3_desc: 'Each master batch is attuned under Himalayan singing bowls and crystal sound vibrations.',
@@ -375,7 +375,7 @@ const TRANSLATIONS = {
     ritual_overline: 'DEVOTION TO THE SOURCE & SACRED CRAFT',
     ritual_title: 'The Consecration Ritual',
     ritual_p1: 'At Mágica, a bracelet is not merely an ornament: it is an energetic vortex that aligns with your arterial pulse. Before leaving our sanctuary, each piece rests on Moroccan selenite and absorbs pure harmonic 432 Hz frequencies.',
-    ritual_p2: 'Our master artisans knot every bead upon indeformable nautical memory silicone cords, framing them in 18K heavy gold and sterling silver accents, engineered to endure the passage of time with immutable splendor.',
+    ritual_p2: 'Our master artisans knot every bead upon indeformable nautical memory silicone cords, framing them in 14K gold and surgical-grade stainless steel accents, engineered to endure the passage of time with immutable splendor.',
     vault_title: 'The Rose Vault Casket (Complimentary)',
     vault_desc: 'Every acquisition is dispatched in our signature packaging: ivory linen rigid casket, velvet interior, silk ribbon, polishing cloth and certificate of authenticity.',
     vault_perk1: 'Rigid mineral preservation jewelry casket',
@@ -566,13 +566,13 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Minicíocht Coisricthe',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Infheistíocht Fhosaithe in aghaidh an tSeoid',
-    hero_stat_metal: '18K',
-    hero_stat_metal_desc: 'Ceardaíocht in Ór 18K & Airgead 925',
+    hero_stat_metal: '14K',
+    hero_stat_metal_desc: 'Ceardaíocht in Ór 14K & Cruach Dhosmálta',
 
     // Prestige Pillars
     pillar_1_title: 'GEMS Nádúrtha Grád AAA+',
     pillar_1_desc: 'Bainte go heiticiúil gan próisis theasa millteacha ná aithrisí sintéiseacha.',
-    pillar_2_title: 'Ór 18K & Fíor-Airgead 925',
+    pillar_2_title: 'Ór 14K & Cruach Dhosmálta',
     pillar_2_desc: 'Feistis uaisle ceaptha de láimh le séalú hidreafóbach agus buanseasmhacht shíoraí.',
     pillar_3_title: 'Tiúnadh Naofa 432 Hz',
     pillar_3_desc: 'Gach eagrann coisricthe faoi chloig Thiobéiteacha agus bhabhlaí grianchloiche.',
@@ -635,7 +635,7 @@ const TRANSLATIONS = {
     ritual_overline: 'DÚTHRACHT DON CHRUTHÚ AGUS DON CHEIRD',
     ritual_title: 'Deasghnáth an Choisricthe',
     ritual_p1: 'I Mágica, ní maisiú simplí é an cúngrach: is guairneán fuinnimh é a cheanglaíonn le do chuisle. Sula gcuirtear ina chiste é, luíonn gach seoid ar shailenít Mharacach agus ionsúnn sé minicíochtaí armónacha 432 Hz.',
-    ritual_p2: 'Fíonn ár máistir-cheardaithe gach coirnín ar shnáitheanna mara dochumtha sileacóin le feistis tromchúiseacha óir 18K agus airgid 925, ag cinntiú go mairfidh do gheasa thar na glúnta gan smál.',
+    ritual_p2: 'Fíonn ár máistir-cheardaithe gach coirnín ar shnáitheanna mara dochumtha sileacóin le feistis óir 14K agus cruach dhosmálta, ag cinntiú go mairfidh do gheasa thar na glúnta gan smál.',
     vault_title: 'Ciste The Rose Vault (Saor in Aisce)',
     vault_desc: 'Seoltar gach ordú inár gciste sainiúil: bosca daingean línéadaigh agus veilbhite eabhair, ribín síoda, éadach glanta agus teastas bharántúlachta.',
     vault_perk1: 'Ciste daingean cosanta do mhianraí luachmhara',
@@ -870,7 +870,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Corona (Sahasrara) & Corazón (Anahata)',
       element: 'Tierra / Aire',
       zodiac: 'Tauro, Virgo, Cáncer',
-      metal: 'Separadores facetados en baño de oro de 18K'
+      metal: 'Separadores facetados en baño de oro de 14K y acero inoxidable'
     },
     en: {
       name: 'White Quartz & Sculpted Jade',
@@ -881,7 +881,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Crown (Sahasrara) & Heart (Anahata)',
       element: 'Earth / Air',
       zodiac: 'Taurus, Virgo, Cancer',
-      metal: 'Faceted spacers layered in 18K gold'
+      metal: 'Faceted spacers layered in 14K gold & stainless steel'
     },
     ga: {
       name: 'Grianchloch Bhán & Sead Dealbhaithe',
@@ -892,7 +892,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Coróin (Sahasrara) & Croí (Anahata)',
       element: 'Talamh / Aer',
       zodiac: 'Tarbh, Maighdean, Portán',
-      metal: 'Idir-roinnteoirí snasta le leictreaphlátáil óir 18K'
+      metal: 'Idir-roinnteoirí snasta le leictreaphlátáil óir 14K & cruach dhosmálta'
     }
   },
   'jade-pez-dorado': {
@@ -905,7 +905,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Plexo Solar (Manipura)',
       element: 'Fuego / Tierra',
       zodiac: 'Leo, Géminis, Aries',
-      metal: 'Charm de Orfebrería bañado en Oro de 18K'
+      metal: 'Charm de Orfebrería bañado en Oro de 14K y acero inoxidable'
     },
     en: {
       name: 'Golden Jade & Fortune Fish',
@@ -916,7 +916,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Solar Plexus (Manipura)',
       element: 'Fire / Earth',
       zodiac: 'Leo, Gemini, Aries',
-      metal: 'Handcrafted charm plated in 18K gold'
+      metal: 'Handcrafted charm plated in 14K gold & stainless steel'
     },
     ga: {
       name: 'Sead Órga & Iasc an Ádh',
@@ -927,7 +927,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Pléacs Gréine (Manipura)',
       element: 'Tine / Talamh',
       zodiac: 'Leon, Cúpla, Reithe',
-      metal: 'Seoid thaisce óir 18K dealbhaithe de láimh'
+      metal: 'Seoid thaisce óir 14K dealbhaithe de láimh'
     }
   },
   'lapislazuli-cabujon-oval': {
@@ -975,7 +975,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Raíz (Muladhara)',
       element: 'Tierra / Fuego',
       zodiac: 'Escorpio, Capricornio, Aries',
-      metal: 'Pez tallado con chapa de oro de 18K y rondelas satinadas'
+      metal: 'Pez tallado con chapa de oro de 14K y rondelas en acero inoxidable'
     },
     en: {
       name: 'Black Tourmaline & Gold Fish',
@@ -986,7 +986,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Root (Muladhara)',
       element: 'Earth / Fire',
       zodiac: 'Scorpio, Capricorn, Aries',
-      metal: 'Carved fish talisman in 18K gold finish'
+      metal: 'Carved fish talisman in 14K gold and stainless steel'
     },
     ga: {
       name: 'Túrmailín Dubh & Iasc Óir',
@@ -997,7 +997,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Fréamh (Muladhara)',
       element: 'Talamh / Tine',
       zodiac: 'Scairp, Gabhar, Reithe',
-      metal: 'Iasc snoite críochnaithe in ór 18K'
+      metal: 'Iasc snoite críochnaithe in ór 14K'
     }
   },
   'lapislazuli-placas': {
@@ -1010,7 +1010,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Tercer Ojo (Ajna)',
       element: 'Agua / Aire',
       zodiac: 'Sagitario, Libra, Acuario',
-      metal: 'Esferas separadoras facetadas en oro de 18K'
+      metal: 'Esferas separadoras facetadas en oro de 14K y acero inoxidable'
     },
     en: {
       name: 'Geometric Lapis Lazuli Plaques',
@@ -1021,7 +1021,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Third Eye (Ajna)',
       element: 'Water / Air',
       zodiac: 'Sagittarius, Libra, Aquarius',
-      metal: 'Faceted spacer beads in 18K gold finish'
+      metal: 'Faceted spacer beads in 14K gold and stainless steel'
     },
     ga: {
       name: 'Lé Pleaca Geoiméadracha Lapis',
@@ -1032,7 +1032,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'An Tríú Súil (Ajna)',
       element: 'Uisce / Aer',
       zodiac: 'Saighdeoir, Meá, Uisceadóir',
-      metal: 'Coirníní deighilteora in ór 18K'
+      metal: 'Coirníní deighilteora in ór 14K'
     }
   },
   'cuarzo-rosa-nacar': {
@@ -1080,7 +1080,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Plexo Solar & Corazón',
       element: 'Tierra',
       zodiac: 'Tauro, Virgo, Géminis, Leo',
-      metal: 'Cuentas cúbicas facetadas en oro de 18K'
+      metal: 'Cuentas cúbicas facetadas en oro de 14K y acero inoxidable'
     },
     en: {
       name: 'Imperial Cream Jade & Totem Fish',
@@ -1091,7 +1091,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Solar Plexus & Heart',
       element: 'Earth',
       zodiac: 'Taurus, Virgo, Gemini, Leo',
-      metal: 'Cubic faceted beads in 18K gold'
+      metal: 'Cubic faceted beads in 14K gold and stainless steel'
     },
     ga: {
       name: 'Sead Uachtair Impireachta & Iasc Tótem',
@@ -1102,7 +1102,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Pléacs Gréine & Croí',
       element: 'Talamh',
       zodiac: 'Tarbh, Maighdean, Cúpla, Leon',
-      metal: 'Coirníní ciúbacha snasta in ór 18K'
+      metal: 'Coirníní ciúbacha snasta in ór 14K'
     }
   },
   'stacking-amatista-oro': {
@@ -1115,7 +1115,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Corona & Tercer Ojo',
       element: 'Aire / Éter',
       zodiac: 'Piscis, Acuario, Sagitario, Virgo',
-      metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 18K'
+      metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 14K en acero inoxidable'
     },
     en: {
       name: 'Alchemical Amethyst & Gold Stacking',
@@ -1126,7 +1126,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Crown & Third Eye',
       element: 'Air / Ether',
       zodiac: 'Pisces, Aquarius, Sagittarius, Virgo',
-      metal: 'Enameled ivory charms dipped in 18K gold'
+      metal: 'Enameled ivory charms dipped in 14K gold and stainless steel'
     },
     ga: {
       name: 'Stacking Ailceamach Aimitis & Ór',
@@ -1137,7 +1137,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Coróin & An Tríú Súil',
       element: 'Aer / Éitear',
       zodiac: 'Iasc, Uisceadóir, Saighdeoir, Maighdean',
-      metal: 'Seoda ceardaíochta le heabhair agus ór 18K'
+      metal: 'Seoda ceardaíochta le heabhair agus ór 14K'
     }
   }
 };

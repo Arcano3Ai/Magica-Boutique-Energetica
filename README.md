@@ -6,14 +6,14 @@
 ---
 
 ## 💎 Sobre la Marca
-**Mágica** es una firma de joyería energética orientada al segmento de ultra-lujo holístico (*high-ticket holistic jewelry*), donde cada diseño actúa como un ancla consciente y amuleto de poder personal. Cada pieza cuenta con una inversión fija de **$89.00 USD**, elaborada con minerales naturales grado AAA+ no tratados sintéticamente y orfebrería fina con acabados en oro de 18K y plata ley 925.
+**Mágica** es una firma de joyería energética orientada al segmento de ultra-lujo holístico (*high-ticket holistic jewelry*), donde cada diseño actúa como un ancla consciente y amuleto de poder personal. Cada pieza cuenta con una inversión fija de **$89.00 USD**, elaborada con minerales naturales grado AAA+ no tratados sintéticamente y orfebrería fina con acabados en oro de 14K y acero inoxidable de grado quirúrgico.
 
 ---
 
 ## ✦ Catálogo de Joyas Exclusivas (Fotografía Real de Taller)
 1. **Lapislázuli Imperial & Plata Facetada** (`$89.00 USD`) — Gema sagrada de clarividencia, sabiduría e intuición.
 2. **Ónix Nocturno & Centinela Azul** (`$89.00 USD`) — Blindaje magnético de protección y anclaje con esfera centinela de Lapislázuli.
-3. **Cuarzo Blanco & Jade Esculpido** (`$89.00 USD`) — Pureza mental y armonía próspera con separadores bañados en oro de 18K.
+3. **Cuarzo Blanco & Jade Esculpido** (`$89.00 USD`) — Pureza mental y armonía próspera con separadores bañados en oro de 14K.
 4. **Jade Dorado & Pez de Fortuna** (`$89.00 USD`) — Amuleto de orfebrería para el flujo perpetuo de riqueza y bienestar.
 5. **Lapislázuli Cabujón Soberana** (`$89.00 USD`) — Pieza de autor con gran gema ovalada pulida en el pulso.
 6. **Turmalina Negra & Pez de Oro** (`$89.00 USD`) — Escudo bioenergético supremo contra vibraciones densas y campos electromagnéticos.
