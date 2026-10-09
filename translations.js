@@ -231,11 +231,11 @@ const TRANSLATIONS = {
     footer_tagline: 'Conexión · Intención · Equilibrio · Energía',
     footer_bio: 'Joyería de intención superior inspirada en la sabiduría ancestral de las gemas sagradas y el arte de la orfebrería de taller de lujo.',
     footer_nav_title: 'Navegación',
-    footer_concierge_title: 'Concierge & Redes',
+    footer_concierge_title: 'Concierge & Canales Oficiales',
     footer_concierge_p: '¿Buscas una gema afín a tu carta astral o deseas una asesoría personalizada?',
-    footer_wa_title: 'WhatsApp Concierge Privado',
+    footer_wa_title: 'WhatsApp Business Concierge',
     footer_insta_title: 'Visitar Instagram Oficial',
-    footer_rights: '© 2026 MÁGICA. Todos los derechos reservados. Joyería holística de autor.',
+    footer_rights: '© 2026 MÁGICA INTENCIÓN (magicaintencion.com). Todos los derechos reservados. Joyería holística de autor.',
     footer_subline: 'Autenticidad Mineral Garantizada · Inversión Fija $89 USD',
 
     // WhatsApp Message Templates
@@ -491,11 +491,11 @@ const TRANSLATIONS = {
     footer_tagline: 'Connection · Intention · Balance · Energy',
     footer_bio: 'High-intention jewelry rooted in the ancestral wisdom of sacred gems and master artisanal goldsmithing.',
     footer_nav_title: 'Navigation',
-    footer_concierge_title: 'Concierge & Social',
+    footer_concierge_title: 'Concierge & Official Channels',
     footer_concierge_p: 'Seeking a crystal resonant with your astrological chart or desire bespoke concierge advice?',
-    footer_wa_title: 'Private WhatsApp Concierge',
+    footer_wa_title: 'WhatsApp Business Concierge',
     footer_insta_title: 'Visit Official Instagram',
-    footer_rights: '© 2026 MÁGICA. All rights reserved. Artisan holistic jewelry.',
+    footer_rights: '© 2026 MÁGICA INTENCIÓN (magicaintencion.com). All rights reserved. Artisan holistic jewelry.',
     footer_subline: 'Mineral Authenticity Guaranteed · Fixed Investment $89 USD',
 
     // WhatsApp Message Templates
@@ -751,11 +751,11 @@ const TRANSLATIONS = {
     footer_tagline: 'Nascadh · Rún · Cothromaíocht · Fuinneamh',
     footer_bio: 'Seodra ard-intinne bunaithe ar eagna naofa na ngemanna agus ar cheardaíocht ealaíne an óir.',
     footer_nav_title: 'Nascleanúint',
-    footer_concierge_title: 'Concierge & Meáin',
+    footer_concierge_title: 'Concierge & Bealaí Oifigiúla',
     footer_concierge_p: 'An bhfuil seoid á lorg agat a oireann do do chairt réaltach nó an dteastaíonn comhairle uait?',
-    footer_wa_title: 'WhatsApp Concierge Príobháideach',
+    footer_wa_title: 'WhatsApp Business Concierge',
     footer_insta_title: 'Tabhair Cuairt ar Instagram Oifigiúil',
-    footer_rights: '© 2026 MÁGICA. Gach ceart ar cosaint. Seodra iomlánaíoch ceirde.',
+    footer_rights: '© 2026 MÁGICA INTENCIÓN (magicaintencion.com). Gach ceart ar cosaint. Seodra iomlánaíoch ceirde.',
     footer_subline: 'Barántas Mianra Deimhnithe · Infheistíocht Fhosaithe $89 USD',
 
     // WhatsApp Message Templates
