@@ -155,6 +155,59 @@ const PRODUCTS = [
   }
 ];
 
+// Estado global del tema (light / dark)
+let currentTheme = 'light';
+try {
+  const savedTheme = localStorage.getItem('magica_theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    currentTheme = savedTheme;
+  }
+} catch (e) {
+  currentTheme = 'light';
+}
+
+function applyTheme(theme = currentTheme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const isDark = theme === 'dark';
+
+  const t = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? TRANSLATIONS[currentLang] : null;
+
+  const desktopIcon = document.getElementById('themeToggleIcon');
+  const desktopLabel = document.getElementById('themeLabelText');
+  const mobileIcon = document.getElementById('mobileThemeIcon');
+  const mobileText = document.getElementById('mobileThemeText');
+
+  const labelLight = t?.theme_light || 'Luz';
+  const labelDark = t?.theme_dark || 'Noche';
+  const modeLight = t?.theme_mode_light || 'Modo Luz';
+  const modeDark = t?.theme_mode_dark || 'Modo Noche';
+
+  if (desktopIcon) desktopIcon.textContent = isDark ? '☼' : '☾';
+  if (desktopLabel) desktopLabel.textContent = isDark ? labelLight : labelDark;
+  if (mobileIcon) mobileIcon.textContent = isDark ? '☼' : '☾';
+  if (mobileText) mobileText.textContent = isDark ? modeLight : modeDark;
+}
+
+// Aplicar tema inmediatamente en tiempo de carga
+applyTheme(currentTheme);
+
+window.toggleTheme = function() {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  try {
+    localStorage.setItem('magica_theme', currentTheme);
+  } catch (e) {}
+
+  applyTheme(currentTheme);
+
+  const t = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? TRANSLATIONS[currentLang] : null;
+  const tMsg = currentTheme === 'dark'
+    ? (t?.theme_toast_dark || '✦ Modo Noche Mística activado')
+    : (t?.theme_toast_light || '✦ Modo Luz Alquímica activado');
+  if (typeof showToast === 'function') {
+    showToast(tMsg, 'gold');
+  }
+};
+
 // Estado global de la tienda y Multilenguaje (ES / EN / GA)
 let currentLang = 'es';
 try {
@@ -232,6 +285,7 @@ window.switchLanguage = function(lang) {
 };
 
 function applyLanguage() {
+  applyTheme();
   const t = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang])
     ? TRANSLATIONS[currentLang]
     : null;
@@ -1157,10 +1211,13 @@ function initStardust() {
       this.size = Math.random() * 2.2 + 0.6;
       this.speedY = Math.random() * 0.45 + 0.15;
       this.speedX = (Math.random() - 0.5) * 0.3;
-      this.opacity = Math.random() * 0.35 + 0.15;
+      this.opacity = currentTheme === 'dark' ? (Math.random() * 0.6 + 0.2) : (Math.random() * 0.35 + 0.15);
       this.pulseSpeed = Math.random() * 0.02 + 0.008;
       this.pulse = Math.random() * Math.PI;
-      this.color = Math.random() > 0.35 ? '180, 130, 85' : '150, 107, 67';
+      const isDark = currentTheme === 'dark';
+      this.color = isDark
+        ? (Math.random() > 0.35 ? '230, 194, 168' : '244, 222, 208')
+        : (Math.random() > 0.35 ? '180, 130, 85' : '150, 107, 67');
     }
 
     update() {
@@ -1200,12 +1257,26 @@ function initStardust() {
   animate();
 }
 
+// Inicialización de botones de cambio de tema
+function initThemeToggle() {
+  const btnDesktop = document.getElementById('themeToggleBtn');
+  const btnMobile = document.getElementById('mobileThemeToggleBtn');
+  if (btnDesktop) {
+    btnDesktop.addEventListener('click', () => window.toggleTheme());
+  }
+  if (btnMobile) {
+    btnMobile.addEventListener('click', () => window.toggleTheme());
+  }
+}
+
 // ==========================================================================
 // INICIALIZACIÓN GLOBAL AL CARGAR
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  applyTheme();
   applyLanguage();
+  initThemeToggle();
   initStardust();
   initFaqAccordion();
   initMobileMenu();

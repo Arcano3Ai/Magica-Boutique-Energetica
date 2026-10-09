@@ -25,6 +25,12 @@ const TRANSLATIONS = {
     nav_faq: 'FAQ',
     nav_club: 'Círculo Íntimo VIP',
     nav_bag: 'Bolsa',
+    theme_light: 'Luz',
+    theme_dark: 'Noche',
+    theme_mode_light: 'Modo Luz Alquímica',
+    theme_mode_dark: 'Modo Noche Mística',
+    theme_toast_light: '✦ Modo Luz Alquímica activado',
+    theme_toast_dark: '✦ Modo Noche Mística activado',
 
     // Hero Section
     hero_badge: 'BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA HOLÍSTICA',
@@ -279,6 +285,12 @@ const TRANSLATIONS = {
     nav_faq: 'FAQ',
     nav_club: 'VIP Inner Circle',
     nav_bag: 'Jewelry Bag',
+    theme_light: 'Light',
+    theme_dark: 'Dark',
+    theme_mode_light: 'Alchemical Light Mode',
+    theme_mode_dark: 'Mystical Night Mode',
+    theme_toast_light: '✦ Alchemical Light Mode activated',
+    theme_toast_dark: '✦ Mystical Night Mode activated',
 
     // Hero Section
     hero_badge: 'EXCLUSIVE ATELIER OF FINE HOLISTIC GOLDSMITHING',
@@ -533,6 +545,12 @@ const TRANSLATIONS = {
     nav_faq: 'Ceisteanna Coitianta',
     nav_club: 'Ciorcal Príobháideach VIP',
     nav_bag: 'Mála Seodra',
+    theme_light: 'Solas',
+    theme_dark: 'Oíche',
+    theme_mode_light: 'Mód Solas Ailceimiceach',
+    theme_mode_dark: 'Mód Oíche Mistéireach',
+    theme_toast_light: '✦ Mód Solas Ailceimiceach gníomhachtaithe',
+    theme_toast_dark: '✦ Mód Oíche Mistéireach gníomhachtaithe',
 
     // Hero Section
     hero_badge: 'SEODLANN PHRÍOBHÁIDEACH D’ARD-CHEIRDE DRÚIDIACH',
