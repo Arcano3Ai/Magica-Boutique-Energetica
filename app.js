@@ -1157,10 +1157,10 @@ function initStardust() {
       this.size = Math.random() * 2.2 + 0.6;
       this.speedY = Math.random() * 0.45 + 0.15;
       this.speedX = (Math.random() - 0.5) * 0.3;
-      this.opacity = Math.random() * 0.6 + 0.2;
+      this.opacity = Math.random() * 0.35 + 0.15;
       this.pulseSpeed = Math.random() * 0.02 + 0.008;
       this.pulse = Math.random() * Math.PI;
-      this.color = Math.random() > 0.35 ? '230, 194, 168' : '244, 222, 208';
+      this.color = Math.random() > 0.35 ? '180, 130, 85' : '150, 107, 67';
     }
 
     update() {
