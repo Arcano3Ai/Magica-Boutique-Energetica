@@ -1430,6 +1430,258 @@ window.toggleMagicaMusic = function() {
 };
 
 // ==========================================================================
+// CONCIERGE BOT ALQUÍMICO INTERACTIVO (INFORMES EN VIVO ANTES DE WHATSAPP)
+// ==========================================================================
+
+let isConciergeChatInitialized = false;
+
+window.toggleConciergeChat = function() {
+  const widget = document.getElementById('conciergeChatWidget');
+  if (!widget) return;
+
+  const isActive = widget.classList.contains('active');
+  if (isActive) {
+    window.closeConciergeChat();
+  } else {
+    window.openConciergeChat();
+  }
+};
+
+window.openConciergeChat = function() {
+  const widget = document.getElementById('conciergeChatWidget');
+  const overlay = document.getElementById('conciergeChatOverlay');
+  if (!widget) return;
+
+  widget.classList.add('active');
+  if (overlay) overlay.classList.add('active');
+
+  if (!isConciergeChatInitialized) {
+    initConciergeChat();
+    isConciergeChatInitialized = true;
+  }
+
+  setTimeout(() => {
+    const msgContainer = document.getElementById('chatMessages');
+    if (msgContainer) msgContainer.scrollTop = msgContainer.scrollHeight;
+    const input = document.getElementById('chatTextInput');
+    if (input && window.innerWidth > 768) input.focus();
+  }, 100);
+};
+
+window.closeConciergeChat = function() {
+  const widget = document.getElementById('conciergeChatWidget');
+  const overlay = document.getElementById('conciergeChatOverlay');
+  if (widget) widget.classList.remove('active');
+  if (overlay) overlay.classList.remove('active');
+};
+
+function initConciergeChat() {
+  const msgContainer = document.getElementById('chatMessages');
+  if (!msgContainer) return;
+
+  const welcomeHtml = `
+    <div class="chat-msg bot">
+      <p>✦ <strong>¡Hola y bienvenida/o a Mágica!</strong> Soy tu Concierge Alquímica virtual.</p>
+      <p>Estoy aquí para darte <strong>todos los informes de nuestras joyas</strong> antes de comprar: propiedades de los cuarzos, sintonía con tu carta astral, guía de tallas y autenticidad mineral.</p>
+      <p><em>¿Qué intención o gema te gustaría explorar hoy?</em></p>
+    </div>
+  `;
+  msgContainer.innerHTML = welcomeHtml;
+}
+
+window.handleChatChip = function(queryText) {
+  const input = document.getElementById('chatTextInput');
+  if (input) input.value = queryText;
+  processChatQuery(queryText);
+};
+
+window.handleChatSubmit = function(e) {
+  if (e) e.preventDefault();
+  const input = document.getElementById('chatTextInput');
+  if (!input) return;
+  const q = input.value.trim();
+  if (!q) return;
+  input.value = '';
+  processChatQuery(q);
+};
+
+function appendChatMessage(sender, htmlContent) {
+  const msgContainer = document.getElementById('chatMessages');
+  if (!msgContainer) return;
+
+  const msgDiv = document.createElement('div');
+  msgDiv.className = `chat-msg ${sender}`;
+  msgDiv.innerHTML = htmlContent;
+  msgContainer.appendChild(msgDiv);
+
+  msgContainer.scrollTop = msgContainer.scrollHeight;
+}
+
+function processChatQuery(rawQuery) {
+  appendChatMessage('user', rawQuery);
+  const q = rawQuery.toLowerCase();
+
+  setTimeout(() => {
+    let reply = '';
+
+    // 1. CONFIRMACIÓN EN WHATSAPP / COMPRA
+    if (q.includes('confirmar') || q.includes('whatsapp') || q.includes('comprar') || q.includes('pedido') || q.includes('orden')) {
+      const totalCartCount = cart.reduce((sum, i) => sum + i.quantity, 0);
+      const totalAmount = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
+
+      if (totalCartCount > 0) {
+        const itemNames = cart.map(i => `• ${i.name} ($${i.price} USD)`).join('<br>');
+        const waMsg = encodeURIComponent(`Hola Concierge de Mágica, deseo confirmar mi pedido con las siguientes piezas:\n${cart.map(i => `• ${i.name}`).join('\n')}\nTotal: $${totalAmount.toFixed(0)} USD.`);
+        reply = `
+          <p>✦ <strong>¡Excelente elección!</strong> Tienes <strong>${totalCartCount} pieza(s)</strong> en tu bolsa de joyas:</p>
+          <p style="margin: 6px 0; color: #555;">${itemNames}</p>
+          <p><strong>Total: $${totalAmount.toFixed(0)} USD</strong> (Envío asegurado y estuche The Rose Vault de cortesía incluidos).</p>
+          <p>Pulsa el botón de abajo para pasar a nuestro <strong>WhatsApp Concierge Oficial (+52 1 81 1031 6819)</strong> donde una joyera humana confirmará tu folio y emitirá tu certificado:</p>
+          <a href="https://wa.me/5218110316819?text=${waMsg}" target="_blank" class="chat-btn-wa-confirm">
+            <span>❦</span> Confirmar Orden en WhatsApp (+52 1 81 1031 6819) ↗
+          </a>
+        `;
+      } else {
+        reply = `
+          <p>Aún no has agregado piezas a tu bolsa. Puedes elegir tu talismán favorito en nuestro catálogo por una inversión fija de <strong>$89.00 USD</strong>.</p>
+          <p>Si deseas coordinar una orden especial directamente con un concierge humano, puedes enlazar ahora mismo:</p>
+          <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20confirmar%20un%20pedido%20con%20una%20joyera%20concierge." target="_blank" class="chat-btn-wa-confirm">
+            <span>❦</span> Hablar con Joyera en WhatsApp (+52 1 81 1031 6819) ↗
+          </a>
+        `;
+      }
+    }
+    // 2. PROTECCIÓN
+    else if (q.includes('protec') || q.includes('envidia') || q.includes('negativ') || q.includes('escudo') || q.includes('ónix') || q.includes('onix') || q.includes('turmalina')) {
+      reply = `
+        <p>🛡️ <strong>Para Protección y Blindaje Energético</strong> recomendamos nuestros dos talismanes supremos:</p>
+        <div class="chat-card-suggestion">
+          <div class="chat-card-top">
+            <img src="assets/Catalogo/pulsera-onix-centinela-azul.jpg" class="chat-card-thumb" alt="Ónix Centinela">
+            <div class="chat-card-info">
+              <h5>Ónix Nocturno & Centinela Azul</h5>
+              <span>Ónix Negro Pulido & Lapislázuli · $89 USD</span>
+            </div>
+          </div>
+          <button class="chat-card-btn" onclick="addToCart('onix-centinela-azul'); showToast('Añadido a la bolsa', 'gold');">+ Agregar a la Bolsa</button>
+        </div>
+        <div class="chat-card-suggestion">
+          <div class="chat-card-top">
+            <img src="assets/Catalogo/770701607_18079976153421186_6230702332285530384_n.jpg" class="chat-card-thumb" alt="Turmalina Negra">
+            <div class="chat-card-info">
+              <h5>Turmalina Negra & Pez de Oro</h5>
+              <span>Transmutación de Radiación · $89 USD</span>
+            </div>
+          </div>
+          <button class="chat-card-btn" onclick="addToCart('turmalina-negra-pez'); showToast('Añadido a la bolsa', 'gold');">+ Agregar a la Bolsa</button>
+        </div>
+        <p style="margin-top: 8px;">Ambas piezas transmutan vibraciones densas y anclan el chakra raíz.</p>
+      `;
+    }
+    // 3. ABUNDANCIA Y DINERO
+    else if (q.includes('abundan') || q.includes('dinero') || q.includes('prosper') || q.includes('riquez') || q.includes('exito') || q.includes('éxito') || q.includes('jade') || q.includes('fortuna')) {
+      reply = `
+        <p>💰 <strong>Para Atracción de Abundancia y Flujo Financiero</strong>:</p>
+        <div class="chat-card-suggestion">
+          <div class="chat-card-top">
+            <img src="assets/Catalogo/pulsera-jade-pez-dorado.jpg" class="chat-card-thumb" alt="Jade Dorado">
+            <div class="chat-card-info">
+              <h5>Jade Dorado & Pez de Fortuna</h5>
+              <span>Jade Amarillo Crema & Oro 14K · $89 USD</span>
+            </div>
+          </div>
+          <button class="chat-card-btn" onclick="addToCart('jade-pez-dorado'); showToast('Añadido a la bolsa', 'gold');">+ Agregar a la Bolsa</button>
+        </div>
+        <p style="margin-top: 8px;">El Jade Amarillo actúa sobre el Plexo Solar, disolviendo bloqueos de merecimiento e impulsando proyectos comerciales.</p>
+      `;
+    }
+    // 4. SABIDURÍA, ENFOQUE, LAPISLÁZULI
+    else if (q.includes('sabidur') || q.includes('mente') || q.includes('lapis') || q.includes('clarividencia') || q.includes('estudio') || q.includes('decision') || q.includes('liderazgo')) {
+      reply = `
+        <p>✦ <strong>Para Claridad Mental, Intuición y Liderazgo</strong> el rey indiscutible es el <strong>Lapislázuli Grado AAA+</strong>:</p>
+        <div class="chat-card-suggestion">
+          <div class="chat-card-top">
+            <img src="assets/Catalogo/pulsera-lapislazuli-esferas.jpg" class="chat-card-thumb" alt="Lapislázuli Imperial">
+            <div class="chat-card-info">
+              <h5>Lapislázuli Imperial & Plata</h5>
+              <span>Gema de Faraones & Reyes · $89 USD</span>
+            </div>
+          </div>
+          <button class="chat-card-btn" onclick="addToCart('lapislazuli-esferas'); showToast('Añadido a la bolsa', 'gold');">+ Agregar a la Bolsa</button>
+        </div>
+        <p style="margin-top: 8px;">Estimula el Tercer Ojo y la autoexpresión lúcida en juntas de negocios y momentos decisivos.</p>
+      `;
+    }
+    // 5. AMOR, SERENIDAD, CUARZO ROSA
+    else if (q.includes('amor') || q.includes('paz') || q.includes('calma') || q.includes('serenidad') || q.includes('pareja') || q.includes('rosa')) {
+      reply = `
+        <p>🌸 <strong>Para Amor Propio, Armonía y Sanación Emocional</strong>:</p>
+        <div class="chat-card-suggestion">
+          <div class="chat-card-top">
+            <img src="assets/Catalogo/774846059_18081190472421186_1130630737402685250_n.jpg" class="chat-card-thumb" alt="Cuarzo Rosa">
+            <div class="chat-card-info">
+              <h5>Cuarzo Rosa & Nácar de Luna</h5>
+              <span>Gema de Corazón & Ternura · $89 USD</span>
+            </div>
+          </div>
+          <button class="chat-card-btn" onclick="addToCart('cuarzo-rosa-nacar'); showToast('Añadido a la bolsa', 'gold');">+ Agregar a la Bolsa</button>
+        </div>
+        <p style="margin-top: 8px;">Abre el Chakra Anahata, atrayendo vínculos sanos y paz interior.</p>
+      `;
+    }
+    // 6. TALLAS Y MEDIDAS
+    else if (q.includes('talla') || q.includes('medida') || q.includes('muñeca') || q.includes('centimetro') || q.includes('ajuste') || q.includes('cm')) {
+      reply = `
+        <p>📏 <strong>Guía de Medidas Ergonómicas:</strong></p>
+        <p>• <strong>15.0 cm (Petite):</strong> Para muñecas muy esbeltas o calce ceñido.<br>
+        • <strong>16.5 cm (Estándar Mujer):</strong> Nuestra medida más vendida (90% de compras). Fluye con elegancia natural.<br>
+        • <strong>18.0 cm (Comfort / Caballero):</strong> Para muñecas más anchas o porte holgado.<br>
+        • <strong>Personalizada:</strong> Al confirmar en WhatsApp, tu concierge verifica tus centímetros exactos sin costo adicional.</p>
+        <p><em>✓ Confeccionadas con silicona náutica con memoria indeformable y garantía de ajuste perpetuo.</em></p>
+      `;
+    }
+    // 7. AUTENTICIDAD Y MINERALES
+    else if (q.includes('autentic') || q.includes('natural') || q.includes('sintet') || q.includes('fals') || q.includes('plastico') || q.includes('certificado')) {
+      reply = `
+        <p>💎 <strong>Garantía Gemológica de Origen:</strong></p>
+        <p>Todos los minerales de MÁGICA son <strong>100% naturales geológicos Grado AAA+</strong> extraídos éticamente. No usamos resinas, tintes químicos ni imitaciones plásticas.</p>
+        <p>Cada pieza se entrega con su <strong>Certificado Nominativo de Autenticidad</strong> numerado y ha sido consagrada a <strong>432 Hz</strong> con cuencos de cuarzo antes de ser sellada.</p>
+      `;
+    }
+    // 8. PRECIO, ENVIOS, COFRE THE ROSE VAULT
+    else if (q.includes('precio') || q.includes('costo') || q.includes('envio') || q.includes('envío') || q.includes('estuche') || q.includes('vault') || q.includes('cuanto') || q.includes('cuánto')) {
+      reply = `
+        <p>🎁 <strong>Inversión Fija Transparente:</strong></p>
+        <p>Cada pulsera tiene una inversión fija de <strong>$89.00 USD</strong> y te incluye sin cargo adicional:</p>
+        <p>• Cofre rígido de lujo <em>The Rose Vault</em> (valorado en $35 USD).<br>
+        • Bolsa de gamuza y paño abrillantador de orfebrería.<br>
+        • Certificado Nominativo de Autenticidad.<br>
+        • <strong>Envío Priority Courier Asegurado mundial de cortesía</strong> (2-4 días México, 4-7 días internacional).</p>
+      `;
+    }
+    // 9. SIGNOS ZODIACALES ESPECÍFICOS
+    else if (q.includes('aries') || q.includes('tauro') || q.includes('geminis') || q.includes('géminis') || q.includes('cancer') || q.includes('cáncer') || q.includes('leo') || q.includes('virgo') || q.includes('libra') || q.includes('escorpio') || q.includes('sagitario') || q.includes('capricornio') || q.includes('acuario') || q.includes('piscis')) {
+      reply = `
+        <p>⭐ <strong>Sintonía Astrológica:</strong></p>
+        <p>Puedes probar nuestro <strong>Oráculo Astral</strong> en la sección superior para calcular la gema que equilibra tu elemento rector (Fuego, Tierra, Aire o Agua).</p>
+        <p>Las piezas más versátiles con compatibilidad universal son el <strong>Lapislázuli Imperial</strong> (aire y agua), el <strong>Ónix Centinela</strong> (tierra) y el <strong>Jade Dorado</strong> (fuego y abundancia).</p>
+      `;
+    }
+    // RESPUESTA GENERAL
+    else {
+      reply = `
+        <p>✦ Entiendo tu consulta sobre <em>"${rawQuery}"</em>.</p>
+        <p>En Mágica diseñamos alta joyería con intención energética. Cada pieza tiene una inversión fija de <strong>$89 USD</strong> e incluye el cofre <em>The Rose Vault</em> y envío express asegurado.</p>
+        <p>¿Te gustaría que te recomiende gemas para <strong>Protección</strong>, <strong>Abundancia</strong>, <strong>Sabiduría</strong> o conocer tu <strong>Talla recomendada</strong>?</p>
+        <p><small>Si ya tienes claro tu pedido, podemos pasar a WhatsApp (+52 1 81 1031 6819) solo para confirmar tu entrega y folio.</small></p>
+      `;
+    }
+
+    appendChatMessage('bot', reply);
+  }, 400);
+}
+
+// ==========================================================================
 // INICIALIZACIÓN GLOBAL AL CARGAR
 // ==========================================================================
 

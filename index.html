@@ -553,9 +553,14 @@
           <h4 data-i18n="lookbook_cta_title">¿Deseas combinar 2 o 3 gemas según tu carta astral?</h4>
           <p data-i18n="lookbook_cta_desc">Nuestra joyera concierge analiza tu sinergia mineral y te envía una propuesta exclusiva con disponibilidad inmediata.</p>
         </div>
-        <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20para%20combinar%20mi%20Stacking%20de%20gemas." target="_blank" class="btn btn-whatsapp-subtle">
-          <span data-i18n="lookbook_cta_btn"><span>❦</span> Asesoría Stacking por WhatsApp (+52 1 81 1031 6819)</span>
-        </a>
+        <div class="lookbook-cta-buttons" style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="btn btn-gold" onclick="openConciergeChat()">
+            <span>🪄</span> Pedir Informes al Bot
+          </button>
+          <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20confirmar%20mi%20Stacking%20de%20gemas." target="_blank" class="btn btn-whatsapp-subtle">
+            <span>❦</span> Confirmar en WhatsApp (+52 1 81 1031 6819)
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -936,13 +941,16 @@
   <!-- ===================================================================== -->
   <!-- BOTÓN FLOTANTE ÉPICO: CONCIERGE BOT & WHATSAPP CON VARITA MÁGICA -->
   <!-- ===================================================================== -->
+  <!-- ===================================================================== -->
+  <!-- BOTÓN FLOTANTE ÉPICO: CONCIERGE BOT DE INFORMES (CON VARITA MÁGICA) -->
+  <!-- ===================================================================== -->
   <div class="floating-concierge-wrapper" id="floatingConciergeWrap">
-    <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20activar%20el%20Concierge%20Bot%20para%20crear%20mi%20pedido%20o%20recibir%20asesor%C3%ADa." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Concierge Bot por WhatsApp (+52 1 81 1031 6819)">
+    <button class="floating-concierge-btn" id="floatingConciergeTrigger" onclick="toggleConciergeChat()" aria-label="Abrir Asistente Concierge para informes de joyas">
       <div class="concierge-bubble">
         <span class="concierge-pulse-dot"></span>
         <div class="concierge-bubble-text">
           <strong class="concierge-title-pill" data-i18n="concierge_online">✦ Concierge Bot 24/7</strong>
-          <small class="concierge-sub-pill" data-i18n="concierge_subline">Asesoría & Pedidos al Instante</small>
+          <small class="concierge-sub-pill" data-i18n="concierge_subline">Informes de Joyas & Asesoría</small>
         </div>
       </div>
       <div class="concierge-orb">
@@ -958,15 +966,73 @@
             <path d="M3 21L5 19" stroke="#966B43" stroke-width="3.2" stroke-linecap="round"/>
           </svg>
         </div>
-        <!-- Badge oficial de WhatsApp acoplado al orbe -->
-        <span class="wa-badge-corner" title="WhatsApp Oficial (+52 1 81 1031 6819)">
+        <!-- Badge oficial de WhatsApp en la esquina (para confirmar orden) -->
+        <span class="wa-badge-corner" title="WhatsApp Oficial para Confirmación (+52 1 81 1031 6819)">
           <svg viewBox="0 0 24 24" fill="#FFFFFF" width="12" height="12">
             <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.3C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.68 12.04 3.68C16.58 3.68 20.27 7.37 20.27 11.91C20.27 16.46 16.58 20.15 12.04 20.15Z"/>
           </svg>
         </span>
       </div>
-    </a>
+    </button>
   </div>
+
+  <!-- ===================================================================== -->
+  <!-- WIDGET DE CHAT CONCIERGE BOT (INFORMES EN VIVO ANTES DE WHATSAPP) -->
+  <!-- ===================================================================== -->
+  <div class="concierge-chat-backdrop" id="conciergeChatOverlay" onclick="closeConciergeChat()"></div>
+  <aside class="concierge-chat-widget" id="conciergeChatWidget" aria-label="Ventana de Asesoría de Concierge Bot">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar-ring">
+          <span class="chat-avatar-icon">🪄</span>
+          <span class="chat-live-badge"></span>
+        </div>
+        <div>
+          <h4 class="chat-bot-title">Mágica Concierge Bot</h4>
+          <span class="chat-bot-status">Informes de Joyería & Guía Alquímica 24/7</span>
+        </div>
+      </div>
+      <button class="chat-close-btn" onclick="closeConciergeChat()" aria-label="Cerrar Chat">&times;</button>
+    </div>
+
+    <!-- Banner informativo sobre el rol de WhatsApp -->
+    <div class="chat-wa-notice">
+      <span>✦ <strong>Te informo aquí en la web:</strong> Pregúntame sobre cuarzos, chakras o medidas. Cuando decidas tus piezas, te enlazaré a WhatsApp (+52 1 81 1031 6819) solo para confirmar y preparar tu entrega.</span>
+    </div>
+
+    <!-- Área de mensajes -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Los mensajes se renderizan dinámicamente -->
+    </div>
+
+    <!-- Chips de sugerencias interactivas -->
+    <div class="chat-quick-chips" id="chatQuickChips">
+      <button class="chat-chip" onclick="handleChatChip('¿Qué joya es mejor para protección energética?')">🛡️ Protección</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Cuál es la gema para atraer abundancia y éxito?')">💰 Abundancia</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Cómo sé cuál es mi medida de muñeca?')">📏 Guía de Tallas</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Qué incluye el estuche The Rose Vault?')">🎁 Estuche de Regalo</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Son piedras 100% naturales auténticas?')">💎 Autenticidad</button>
+      <button class="chat-chip chip-wa" onclick="handleChatChip('Quiero confirmar mi pedido por WhatsApp')">❦ Confirmar en WhatsApp</button>
+    </div>
+
+    <!-- Formulario de input -->
+    <form class="chat-input-form" id="chatInputForm" onsubmit="handleChatSubmit(event)">
+      <input 
+        type="text" 
+        id="chatTextInput" 
+        class="chat-input" 
+        placeholder="Pregúntame sobre cuarzos, chakras, signos o tallas..." 
+        autocomplete="off"
+        aria-label="Escribe tu consulta"
+      >
+      <button type="submit" class="chat-send-btn" aria-label="Enviar pregunta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </form>
+  </aside>
 
   <!-- Footer de Prestigio -->
   <footer class="footer">
