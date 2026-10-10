@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@500;600;700&display=swap">
   </noscript>
 
-  <link rel="stylesheet" href="styles.css?v=20261010-v3">
+  <link rel="stylesheet" href="styles.css?v=20261010-v4">
 </head>
 <body>
   <!-- Top Luxury Announcement -->
@@ -977,42 +977,49 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- WIDGET DE CHAT CONCIERGE BOT (INFORMES EN VIVO ANTES DE WHATSAPP) -->
+  <!-- WIDGET DE CHAT: AURA · GUARDIANA ALQUÍMICA (INFORMES CON ESENCIA EN VIVO) -->
   <!-- ===================================================================== -->
   <div class="concierge-chat-backdrop" id="conciergeChatOverlay" onclick="closeConciergeChat()"></div>
-  <aside class="concierge-chat-widget" id="conciergeChatWidget" aria-label="Ventana de Asesoría de Concierge Bot">
+  <aside class="concierge-chat-widget" id="conciergeChatWidget" aria-label="Ventana de Asesoría de Aura · Guardiana Alquímica">
     <div class="chat-header">
       <div class="chat-header-info">
         <div class="chat-avatar-ring">
-          <span class="chat-avatar-icon">🪄</span>
+          <span class="chat-avatar-icon">✦</span>
           <span class="chat-live-badge"></span>
         </div>
         <div>
-          <h4 class="chat-bot-title">Mágica Concierge Bot</h4>
-          <span class="chat-bot-status">Informes de Joyería & Guía Alquímica 24/7</span>
+          <h4 class="chat-bot-title">Aura · Guardiana Alquímica</h4>
+          <span class="chat-bot-status">Oráculo & Concierge de Gemas Sagradas 24/7</span>
         </div>
       </div>
-      <button class="chat-close-btn" onclick="closeConciergeChat()" aria-label="Cerrar Chat">&times;</button>
+      <div class="chat-header-actions" style="display: flex; align-items: center; gap: 8px;">
+        <button class="chat-music-btn" onclick="toggleMagicaMusic()" title="Sintonizar Melodía Sagrada 432 Hz" aria-label="Música 432 Hz">
+          <span>♫ 432 Hz</span>
+        </button>
+        <button class="chat-close-btn" onclick="closeConciergeChat()" aria-label="Cerrar Santuario">&times;</button>
+      </div>
     </div>
 
-    <!-- Banner informativo sobre el rol de WhatsApp -->
+    <!-- Banner con esencia mística sobre el rol de WhatsApp -->
     <div class="chat-wa-notice">
-      <span>✦ <strong>Te informo aquí en la web:</strong> Pregúntame sobre cuarzos, chakras o medidas. Cuando decidas tus piezas, te enlazaré a WhatsApp (+52 1 81 1031 6819) solo para confirmar y preparar tu entrega.</span>
+      <span>✦ <strong>Santuario en Vivo:</strong> Pregúntame sobre el poder sagrado de las gemas, tu carta astral o en qué mano llevar tu talismán. Cuando tu corazón elija, te acompaño a WhatsApp (+52 1 81 1031 6819) únicamente para consagrar y confirmar tu orden.</span>
     </div>
 
     <!-- Área de mensajes -->
     <div class="chat-messages" id="chatMessages">
-      <!-- Los mensajes se renderizan dinámicamente -->
+      <!-- Los mensajes se renderizan dinámicamente con alma -->
     </div>
 
-    <!-- Chips de sugerencias interactivas -->
+    <!-- Chips de sugerencias interactivas con esencia -->
     <div class="chat-quick-chips" id="chatQuickChips">
-      <button class="chat-chip" onclick="handleChatChip('¿Qué joya es mejor para protección energética?')">🛡️ Protección</button>
-      <button class="chat-chip" onclick="handleChatChip('¿Cuál es la gema para atraer abundancia y éxito?')">💰 Abundancia</button>
-      <button class="chat-chip" onclick="handleChatChip('¿Cómo sé cuál es mi medida de muñeca?')">📏 Guía de Tallas</button>
-      <button class="chat-chip" onclick="handleChatChip('¿Qué incluye el estuche The Rose Vault?')">🎁 Estuche de Regalo</button>
-      <button class="chat-chip" onclick="handleChatChip('¿Son piedras 100% naturales auténticas?')">💎 Autenticidad</button>
-      <button class="chat-chip chip-wa" onclick="handleChatChip('Quiero confirmar mi pedido por WhatsApp')">❦ Confirmar en WhatsApp</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Qué joya es mejor para blindaje y protección energética?')">🛡️ Blindaje & Escudo</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Cuál es la gema para atraer abundancia y merecimiento?')">🪙 Abundancia & Fortuna</button>
+      <button class="chat-chip" onclick="handleChatChip('¿En qué mano debo usar mi pulsera?')">🔮 ¿Mano Izquierda o Derecha?</button>
+      <button class="chat-chip" onclick="handleChatChip('Háblame sobre el Lapislázuli Imperial y la intuición')">👁️ Intuición & Lapislázuli</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Qué piedra sana el corazón y el amor propio?')">🌸 Amor Propio & Paz</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Cómo se limpian y consagran las piedras?')">🌙 Limpieza & Ritual 432 Hz</button>
+      <button class="chat-chip" onclick="handleChatChip('¿Cómo elijo mi medida exacta de muñeca?')">📏 Mi Talla Sagrada</button>
+      <button class="chat-chip chip-wa" onclick="handleChatChip('Deseo confirmar mi pedido y apartar folio por WhatsApp')">❦ Confirmar en WhatsApp</button>
     </div>
 
     <!-- Formulario de input -->
@@ -1021,11 +1028,11 @@
         type="text" 
         id="chatTextInput" 
         class="chat-input" 
-        placeholder="Pregúntame sobre cuarzos, chakras, signos o tallas..." 
+        placeholder="Pregúntale a Aura sobre cuarzos, chakras, rituales o tallas..." 
         autocomplete="off"
         aria-label="Escribe tu consulta"
       >
-      <button type="submit" class="chat-send-btn" aria-label="Enviar pregunta">
+      <button type="submit" class="chat-send-btn" aria-label="Consultar al Oráculo">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="22" y1="2" x2="11" y2="13"></line>
           <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -1117,7 +1124,7 @@
     <source src="assets/Audio/magica-cancion.wav" type="audio/wav">
   </audio>
 
-  <script src="translations.js?v=20261010-v3" defer></script>
-  <script src="app.js?v=20261010-v3" defer></script>
+  <script src="translations.js?v=20261010-v4" defer></script>
+  <script src="app.js?v=20261010-v4" defer></script>
 </body>
 </html>
