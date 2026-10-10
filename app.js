@@ -408,8 +408,8 @@ function renderCatalog() {
           <div class="lorenza-swatches">
             ${swatchesHtml}
           </div>
-          <button class="lorenza-btn-bag" onclick="addToCart('${prod.id}')">
-            <span>AGREGAR A LA BOLSA</span>
+          <button class="lorenza-btn-bag" onclick="addToCart('${prod.id}')" aria-label="${btnAdd}">
+            <span>${btnAdd.toUpperCase()}</span>
           </button>
         </div>
       </article>
@@ -1278,6 +1278,156 @@ function initThemeToggle() {
     btnMobile.addEventListener('click', () => window.toggleTheme());
   }
 }
+
+// ==========================================================================
+// SISTEMA LEGAL & COMPLIANCE PARA PRODUCCIÓN (AVISO, TÉRMINOS, ENVÍOS)
+// ==========================================================================
+
+const LEGAL_DOCS = {
+  privacidad: {
+    title: 'Aviso de Privacidad Integral',
+    updated: 'Última actualización: Enero 2026 · Conforme a LFPDPPP & GDPR',
+    content: `
+      <p>En <strong>MÁGICA INTENCIÓN</strong> (<em>magicaintencion.com</em>), con domicilio fiscal y de taller en San Pedro Garza García / Monterrey, N.L., México, y canales oficiales <strong>contacto@magicaintencion.com</strong> y WhatsApp Concierge <strong>+52 1 81 1031 6819</strong>, nos comprometemos a resguardar la privacidad de cada uno de nuestros guardianes y coleccionistas.</p>
+      
+      <h4>1. Datos Personales Recabados</h4>
+      <p>Los datos que recopilamos a través de nuestro sitio web y enlace directo con WhatsApp Business incluyen: nombre completo del titular o destinatario del certificado gemológico, número telefónico de WhatsApp, dirección completa de entrega con código postal, correo electrónico y medida de muñeca.</p>
+
+      <h4>2. Finalidades Primarias</h4>
+      <p>Sus datos son empleados estrictamente para: confeccionar a medida su talismán, emitir el Certificado Nominativo de Autenticidad Mineral con folio reservado, generar la guía de mensajería courier satelital asegurada y coordinar la entrega personalizada vía Concierge.</p>
+
+      <h4>3. No Transferencia a Terceros</h4>
+      <p>MÁGICA no vende, alquila ni comparte sus datos con redes publicitarias de terceros ni intermediarios ajenos al servicio logístico directo de entrega (DHL Express, FedEx o Estafeta).</p>
+
+      <h4>4. Derechos ARCO</h4>
+      <p>En todo momento usted podrá ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición enviando una solicitud formal a <strong>contacto@magicaintencion.com</strong> con el asunto "Derechos ARCO".</p>
+    `
+  },
+  terminos: {
+    title: 'Términos y Condiciones del Servicio',
+    updated: 'Vigencia 2026 · Venta en Línea de Alta Joyería Holística',
+    content: `
+      <p>Al acceder y realizar un pedido en <strong>magicaintencion.com</strong> o a través de nuestros canales oficiales de WhatsApp Concierge, usted acepta los siguientes términos:</p>
+
+      <h4>1. Precios y Divisas</h4>
+      <p>Nuestra colección se comercializa a una inversión transparente fija de <strong>$89.00 USD</strong> por pieza (o su equivalente en Pesos Mexicanos al tipo de cambio oficial vigente al momento de emitir la orden). Todos los precios incluyen estuche rígido de lujo <em>The Rose Vault</em>, paño de gamuza, certificado gemológico y envío prioritario asegurado de cortesía.</p>
+
+      <h4>2. Autenticidad Mineral Garantizada</h4>
+      <p>Garantizamos al 100% que los cuarzos y piedras empleadas son minerales naturales legítimos extraídos de vetas geológicas reales (Grado AAA+), libres de resinas o imitaciones plásticas. Cada gema puede presentar variaciones cromáticas naturales irrepetibles inherentes a su formación geológica.</p>
+
+      <h4>3. Proceso de Pedido y Concierge</h4>
+      <p>Al pulsar "Crear Pedido en WhatsApp", su carrito genera una orden reservada comunicada directamente a nuestro número verificado <strong>+52 1 81 1031 6819</strong>, donde se confirman medidas, detalles de empaque y enlaces seguros de pago (SPEI, Tarjeta de Crédito vía Stripe o Mercado Pago).</p>
+    `
+  },
+  envios: {
+    title: 'Políticas de Envío & Garantía de Ajuste',
+    updated: 'Cobertura Nacional (México) e Internacional Asegurada',
+    content: `
+      <p>En MÁGICA cada pieza es tratada como un objeto de arte sagrado. Todos nuestros envíos viajan con cobertura de seguro contra robo o extravío.</p>
+
+      <h4>1. Tiempos de Entrega</h4>
+      <p>• <strong>Envíos Nacionales (México):</strong> De 2 a 4 días hábiles vía Courier Express.<br>
+      • <strong>Envíos Internacionales (EE.UU., Canadá, Europa, Latinoamérica):</strong> De 4 a 7 días hábiles con seguimiento satelital privado.</p>
+
+      <h4>2. Garantía de Ajuste de Muñeca de Cortesía</h4>
+      <p>Si al recibir tu pieza notas que prefieres un calce más ceñido o más holgado, cuentas con <strong>Garantía Total de Ajuste de Cortesía</strong>: nuestro taller reconfigura los nudos o añade/retira cuentas sin ningún costo por el trabajo artesanal.</p>
+
+      <h4>3. Devoluciones por Defecto de Taller</h4>
+      <p>Cuentas con 15 días naturales a partir de la recepción para notificar cualquier eventualidad con los herrajes o acabados orfebres vía WhatsApp al <strong>+52 1 81 1031 6819</strong> o al correo <strong>contacto@magicaintencion.com</strong> para reemplazo prioritario inmediato.</p>
+    `
+  }
+};
+
+window.openLegalModal = function(tabKey = 'privacidad') {
+  const modal = document.getElementById('legalModal');
+  if (!modal) return;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  window.switchLegalTab(tabKey);
+};
+
+window.closeLegalModal = function() {
+  const modal = document.getElementById('legalModal');
+  if (!modal) return;
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+window.switchLegalTab = function(tabKey) {
+  const doc = LEGAL_DOCS[tabKey] || LEGAL_DOCS.privacidad;
+  const bodyEl = document.getElementById('legalContentBody');
+  if (bodyEl) {
+    bodyEl.innerHTML = `
+      <div class="legal-doc-header">
+        <span class="gold-overline">DOCUMENTO OFICIAL · MÁGICA INTENCIÓN</span>
+        <h2>${doc.title}</h2>
+        <small class="legal-date-tag">${doc.updated}</small>
+      </div>
+      <div class="legal-doc-text">
+        ${doc.content}
+      </div>
+      <div class="legal-doc-footer">
+        <a href="https://wa.me/5218110316819?text=Hola%20Concierge%20de%20M%C3%A1gica%2C%20tengo%20una%20consulta%20legal%20o%20de%20env%C3%ADo." target="_blank" class="btn btn-whatsapp-subtle">
+          <span>❦</span> Consultar con Concierge (+52 1 81 1031 6819)
+        </a>
+      </div>
+    `;
+  }
+
+  document.querySelectorAll('.legal-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.id === `tab${tabKey.charAt(0).toUpperCase() + tabKey.slice(1)}`);
+  });
+};
+
+// ==========================================================================
+// REPRODUCTOR DE LA CANCIÓN OFICIAL DE MÁGICA (432 Hz)
+// ==========================================================================
+
+let isMagicaMusicPlaying = false;
+
+window.toggleMagicaMusic = function() {
+  const audio = document.getElementById('magicaAudioPlayer');
+  if (!audio) return;
+
+  const ambientBtn = document.getElementById('ambientMusicBtn');
+  const mobileBtn = document.getElementById('mobileMusicBtn');
+  const ritualPlayBtn = document.getElementById('ritualPlayBtn');
+  const ritualPlayIcon = document.getElementById('ritualPlayIcon');
+  const ritualPlayText = document.getElementById('ritualPlayText');
+  const waveIndicator = document.getElementById('musicWaveIndicator');
+  const musicLabel = document.getElementById('musicBtnLabel');
+  const mobileMusicIcon = document.getElementById('mobileMusicIcon');
+
+  if (audio.paused) {
+    audio.play().then(() => {
+      isMagicaMusicPlaying = true;
+      if (ambientBtn) ambientBtn.classList.add('playing');
+      if (mobileBtn) mobileBtn.classList.add('playing');
+      if (ritualPlayBtn) ritualPlayBtn.classList.add('playing');
+      if (waveIndicator) waveIndicator.classList.add('active');
+      if (musicLabel) musicLabel.textContent = 'Pausar Melodía';
+      if (mobileMusicIcon) mobileMusicIcon.textContent = '❚❚';
+      if (ritualPlayIcon) ritualPlayIcon.textContent = '❚❚';
+      if (ritualPlayText) ritualPlayText.textContent = 'Pausar Melodía Sagrada';
+      showToast('♫ Melodía Oficial Mágica (432 Hz) iniciada', 'gold');
+    }).catch(err => {
+      console.warn('Audio play prevented:', err);
+      showToast('Toca para reproducir la melodía', 'gold');
+    });
+  } else {
+    audio.pause();
+    isMagicaMusicPlaying = false;
+    if (ambientBtn) ambientBtn.classList.remove('playing');
+    if (mobileBtn) mobileBtn.classList.remove('playing');
+    if (ritualPlayBtn) ritualPlayBtn.classList.remove('playing');
+    if (waveIndicator) waveIndicator.classList.remove('active');
+    if (musicLabel) musicLabel.textContent = 'Música 432 Hz';
+    if (mobileMusicIcon) mobileMusicIcon.textContent = '♫';
+    if (ritualPlayIcon) ritualPlayIcon.textContent = '▶';
+    if (ritualPlayText) ritualPlayText.textContent = 'Escuchar Melodía Oficial (3:49)';
+    showToast('Melodía en pausa', 'gold');
+  }
+};
 
 // ==========================================================================
 // INICIALIZACIÓN GLOBAL AL CARGAR

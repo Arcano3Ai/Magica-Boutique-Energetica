@@ -13,21 +13,22 @@
   <meta property="og:title" content="MÁGICA INTENCIÓN | Alta Joyería Holística & Cuarzos de Colección">
   <meta property="og:description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
   <meta property="og:url" content="https://magicaintencion.com/">
-  <meta property="og:image" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg">
-  <meta property="og:image:secure_url" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg">
+  <meta property="og:image" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg?v=20261010">
+  <meta property="og:image:secure_url" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg?v=20261010">
   <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="800">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
   <meta property="og:image:alt" content="MÁGICA INTENCIÓN - Sello Ancestral de Alta Joyería Holística">
+  <link rel="image_src" href="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg?v=20261010">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:domain" content="magicaintencion.com">
   <meta name="twitter:title" content="MÁGICA INTENCIÓN | Alta Joyería Holística & Cuarzos de Colección">
   <meta name="twitter:description" content="Alta orfebrería de cuarzos naturales y gemas sagradas consagradas a mano. Conexión, intención, equilibrio y energía en piezas de lujo de $89 USD.">
-  <meta name="twitter:image" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg">
+  <meta name="twitter:image" content="https://magicaintencion.com/assets/Media/og-share-whatsapp.jpg?v=20261010">
 
-  <link rel="icon" type="image/jpeg" href="assets/Media/og-share-whatsapp.jpg">
-  <link rel="apple-touch-icon" href="assets/Media/og-share-whatsapp.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/Media/og-share-whatsapp.jpg?v=20261010">
+  <link rel="apple-touch-icon" href="assets/Media/og-share-whatsapp.jpg?v=20261010">
 
   <!-- Precarga Prioritaria del Elemento LCP (Hero Background) -->
   <link rel="preload" as="image" href="assets/Media/epic_luxury_bg.jpg" fetchpriority="high">
@@ -97,6 +98,17 @@
             <button class="lang-btn" data-lang="ga" onclick="switchLanguage('ga')" title="Gaeilge">GA</button>
           </div>
 
+          <!-- Reproductor de Melodía Oficial Mágica (432 Hz) -->
+          <button class="music-ambient-btn" id="ambientMusicBtn" onclick="toggleMagicaMusic()" aria-label="Reproducir Melodía Oficial de Mágica" title="Música Oficial de Mágica (Frecuencia Sagrada)">
+            <span class="music-note-icon" id="musicNoteIcon">♫</span>
+            <span class="music-bars-wave" id="musicWaveIndicator">
+              <span class="m-bar"></span>
+              <span class="m-bar"></span>
+              <span class="m-bar"></span>
+            </span>
+            <span class="music-label" id="musicBtnLabel">Música 432 Hz</span>
+          </button>
+
           <!-- Theme Toggle Switcher Desktop -->
           <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar entre Modo Claro y Modo Oscuro" title="Cambiar tema (Luz / Noche)">
             <span class="theme-toggle-icon" id="themeToggleIcon">☾</span>
@@ -135,6 +147,10 @@
         <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Cambiar Tema">
           <span class="mobile-theme-icon" id="mobileThemeIcon">☾</span>
           <span id="mobileThemeText">Noche Mística</span>
+        </button>
+        <button class="mobile-music-btn" id="mobileMusicBtn" onclick="toggleMagicaMusic()" aria-label="Música Mágica">
+          <span id="mobileMusicIcon">♫</span>
+          <span id="mobileMusicText">Música 432 Hz</span>
         </button>
       </div>
     </div>
@@ -403,6 +419,25 @@
               <div>
                 <h4 data-i18n="pillar_4_title">El Estuche The Rose Vault</h4>
                 <p data-i18n="pillar_4_desc">Presentación rígida de terciopelo marfil con certificado gemológico nominativo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reproductor de la Canción Oficial de Mágica (432 Hz) -->
+          <div class="ritual-sound-card">
+            <div class="sound-card-header">
+              <span class="gold-overline">ATMÓSFERA SONORA OFICIAL</span>
+              <h4 class="sound-card-title">La Melodía de Mágica · Frecuencia Sagrada 432 Hz</h4>
+              <p class="sound-card-desc">Atmósfera sonora exclusiva forjada para inducir serenidad, purificar el ambiente y amplificar la intención de tus cuarzos.</p>
+            </div>
+            <div class="sound-card-action">
+              <button class="btn btn-gold btn-play-ritual" id="ritualPlayBtn" onclick="toggleMagicaMusic()" aria-label="Reproducir o pausar melodía">
+                <span class="sound-play-icon" id="ritualPlayIcon">▶</span>
+                <span id="ritualPlayText">Escuchar Melodía Oficial (3:49)</span>
+              </button>
+              <div class="sound-fidelity-badge">
+                <span class="sound-dot-live"></span>
+                <span>Frecuencia 432 Hz · Master HD</span>
               </div>
             </div>
           </div>
@@ -898,16 +933,40 @@
     </div>
   </div>
 
-  <!-- Botón Flotante de Concierge WhatsApp -->
-  <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Joyera Concierge por WhatsApp (+52 1 81 1031 6819)">
-    <div class="concierge-bubble">
-      <span class="concierge-pulse"></span>
-      <span class="concierge-text" data-i18n="concierge_online">Concierge En Línea</span>
-    </div>
-    <div class="concierge-icon-circle">
-      <img src="assets/Media/magica_whatsapp_boutique.jpg" alt="Mágica Concierge Boutique" class="concierge-avatar-img" width="48" height="48">
-    </div>
-  </a>
+  <!-- ===================================================================== -->
+  <!-- BOTÓN FLOTANTE ÉPICO: CONCIERGE BOT & WHATSAPP CON VARITA MÁGICA -->
+  <!-- ===================================================================== -->
+  <div class="floating-concierge-wrapper" id="floatingConciergeWrap">
+    <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20activar%20el%20Concierge%20Bot%20para%20crear%20mi%20pedido%20o%20recibir%20asesor%C3%ADa." target="_blank" class="floating-concierge-btn" aria-label="Hablar con Concierge Bot por WhatsApp (+52 1 81 1031 6819)">
+      <div class="concierge-bubble">
+        <span class="concierge-pulse-dot"></span>
+        <div class="concierge-bubble-text">
+          <strong class="concierge-title-pill" data-i18n="concierge_online">✦ Concierge Bot 24/7</strong>
+          <small class="concierge-sub-pill" data-i18n="concierge_subline">Asesoría & Pedidos al Instante</small>
+        </div>
+      </div>
+      <div class="concierge-orb">
+        <span class="orb-magic-ring"></span>
+        <div class="wand-icon-container">
+          <!-- Varita Mágica Épica Vectorial con Destellos de Alquimia -->
+          <svg class="wand-magic-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2L13.1 4.9L16 6L13.1 7.1L12 10L10.9 7.1L8 6L10.9 4.9L12 2Z" fill="#F4D06F"/>
+            <path d="M19 11L19.6 12.4L21 13L19.6 13.6L19 15L18.4 13.6L17 13L18.4 12.4L19 11Z" fill="#F4D06F"/>
+            <circle cx="5.5" cy="18.5" r="1.5" fill="#FFEAA7"/>
+            <path d="M4 20L15.5 8.5" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M15.5 8.5L17.5 6.5" stroke="#F4D06F" stroke-width="3" stroke-linecap="round"/>
+            <path d="M3 21L5 19" stroke="#966B43" stroke-width="3.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- Badge oficial de WhatsApp acoplado al orbe -->
+        <span class="wa-badge-corner" title="WhatsApp Oficial (+52 1 81 1031 6819)">
+          <svg viewBox="0 0 24 24" fill="#FFFFFF" width="12" height="12">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.3C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.68 12.04 3.68C16.58 3.68 20.27 7.37 20.27 11.91C20.27 16.46 16.58 20.15 12.04 20.15Z"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+  </div>
 
   <!-- Footer de Prestigio -->
   <footer class="footer">
@@ -932,6 +991,9 @@
           <li><a href="#ritual" data-i18n="nav_ritual">El Ritual 432 Hz</a></li>
           <li><a href="#tallas" data-i18n="nav_sizes">Guía de Tallas</a></li>
           <li><a href="#faq" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
+          <li><a href="javascript:void(0)" onclick="openLegalModal('privacidad')">Aviso de Privacidad</a></li>
+          <li><a href="javascript:void(0)" onclick="openLegalModal('terminos')">Términos y Condiciones</a></li>
+          <li><a href="javascript:void(0)" onclick="openLegalModal('envios')">Políticas de Envío & Garantía</a></li>
         </ul>
       </div>
 
@@ -958,10 +1020,34 @@
     <div class="footer-copyright">
       <div class="container copyright-flex">
         <span data-i18n="footer_rights">© 2026 MÁGICA INTENCIÓN (magicaintencion.com). Todos los derechos reservados. Joyería holística de autor.</span>
+        <div class="footer-legal-quicklinks">
+          <a href="javascript:void(0)" onclick="openLegalModal('privacidad')">Privacidad</a> · 
+          <a href="javascript:void(0)" onclick="openLegalModal('terminos')">Términos</a> · 
+          <a href="javascript:void(0)" onclick="openLegalModal('envios')">Garantías & Envíos</a>
+        </div>
         <span data-i18n="footer_subline">Autenticidad Mineral Garantizada · Inversión Fija $89 USD</span>
       </div>
     </div>
   </footer>
+
+  <!-- Modal Legal & Compliance de Producción -->
+  <div class="checkout-modal" id="legalModal">
+    <div class="checkout-dialog legal-dialog">
+      <button class="modal-close-btn" onclick="closeLegalModal()" aria-label="Cerrar Documento Legal">&times;</button>
+      <div class="legal-tabs">
+        <button class="legal-tab-btn active" id="tabPrivacidad" onclick="switchLegalTab('privacidad')">Aviso de Privacidad</button>
+        <button class="legal-tab-btn" id="tabTerminos" onclick="switchLegalTab('terminos')">Términos del Servicio</button>
+        <button class="legal-tab-btn" id="tabEnvios" onclick="switchLegalTab('envios')">Envíos & Garantía</button>
+      </div>
+      <div class="legal-content-body" id="legalContentBody">
+        <!-- Contenido inyectado desde app.js -->
+      </div>
+    </div>
+  <!-- Elemento de Audio Oficial de Mágica (Canción Sagrada 432 Hz) -->
+  <audio id="magicaAudioPlayer" preload="metadata" loop>
+    <source src="assets/Audio/magica-cancion.mp3" type="audio/mpeg">
+    <source src="assets/Audio/magica-cancion.wav" type="audio/wav">
+  </audio>
 
   <script src="translations.js" defer></script>
   <script src="app.js" defer></script>
