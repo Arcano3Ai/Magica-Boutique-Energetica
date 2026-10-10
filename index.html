@@ -831,11 +831,14 @@
       </div>
       <p class="cart-benefit-text" data-i18n="cart_benefit">✓ Envío Priority Courier Asegurado mundial sin cargo adicional</p>
       <div class="cart-checkout-actions">
-        <button class="btn btn-whatsapp-direct" id="directWhatsAppCheckoutBtn" onclick="checkoutDirectViaWhatsApp()" disabled>
-          <span class="wa-icon">❦</span> <span data-i18n="cart_btn_wa">Pedir Directo por WhatsApp (+52 1 81 1031 6819)</span>
+        <button class="btn btn-whatsapp-direct btn-cart-primary" id="directWhatsAppCheckoutBtn" onclick="checkoutDirectViaWhatsApp()" disabled>
+          <span class="wa-icon">❦</span> <span data-i18n="cart_btn_wa">Crear Pedido en WhatsApp (+52 1 81 1031 6819)</span>
         </button>
-        <button class="btn btn-gold btn-checkout" id="checkoutBtn" disabled data-i18n="cart_btn_checkout">
-          Adquisición Privada con Certificado Nominativo
+        <p class="cart-bot-notice">
+          <span data-i18n="cart_bot_notice">🤖 Tu pedido se creará de inmediato y nuestro concierge/bot solicitará tus datos de entrega y talla por WhatsApp (+52 1 81 1031 6819).</span>
+        </p>
+        <button class="btn btn-translucent btn-checkout-optional" id="checkoutBtn" disabled data-i18n="cart_btn_checkout">
+          Completar datos aquí en la web (Opcional) ↗
         </button>
       </div>
     </div>

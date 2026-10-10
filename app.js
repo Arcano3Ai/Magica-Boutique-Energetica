@@ -748,13 +748,17 @@ function buildWhatsAppCartMessage(items, customerData = null) {
     if (customerData.email) message += `${t.wa_cust_email || '• Correo Electrónico:'} ${customerData.email}\n`;
     if (customerData.size) message += `${t.wa_cust_size || '• Talla de Muñeca:'} ${customerData.size}\n`;
     if (customerData.address) message += `${t.wa_cust_address || '• Dirección de Entrega:'} ${customerData.address}\n\n`;
+    const payTitle = t.wa_payment_title || '💳 *CONFIRMACIÓN DE PAGO:*';
+    const payBody = t.wa_payment_body || 'Por favor envíenme los datos bancarios / método de pago para transferirles de inmediato mi comprobante de pago y que puedan trabajar en mi pedido. ¡Muchas gracias!';
+    message += `${payTitle}\n${payBody}`;
   } else {
-    message += `${t.wa_size_coordinate || '📏 *Talla de Muñeca:* A coordinar con Concierge (15cm / 16.5cm / 18cm / Medida a Medida)'}\n\n`;
+    message += `🤖 *DATOS DE ENTREGA & CONFIRMACIÓN:*\n`;
+    message += currentLang === 'ga'
+      ? `Dia duit a bhota/choncierge! Iarr mo chuid sonraí seachadta (Ainm, Seoladh seachadta, Méid láimhe) le do thoil agus seol na roghanna íocaíochta chugam chun m’ordú a dheimhniú. Go raibh maith agat!`
+      : (currentLang === 'en'
+        ? `Hello bot/concierge! Please ask me for my shipping details (Full name, Delivery address, Wrist size) and provide the payment details to confirm my order. Thank you!`
+        : `¡Hola bot/concierge! Por favor solicítame mis datos de envío (Nombre completo, Dirección de entrega, Talla de muñeca) y envíame las opciones de pago para confirmar mi orden. ¡Muchas gracias!`);
   }
-
-  const payTitle = t.wa_payment_title || '💳 *CONFIRMACIÓN DE PAGO:*';
-  const payBody = t.wa_payment_body || 'Por favor envíenme los datos bancarios / método de pago para transferirles de inmediato mi comprobante de pago y que puedan trabajar en mi pedido. ¡Muchas gracias!';
-  message += `${payTitle}\n${payBody}`;
 
   return message;
 }
