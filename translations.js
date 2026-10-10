@@ -227,9 +227,9 @@ const TRANSLATIONS = {
     qv_wa_inquire: '<span>❦</span> Pedir por WhatsApp (+52 1 81 1031 6819)',
 
     // Floating Button & Footer
-    concierge_online: '✦ Concierge Bot 24/7',
-    concierge_subline: 'Asesoría & Pedidos al Instante',
-    concierge_aria: 'Hablar con Concierge Bot por WhatsApp (+52 1 81 1031 6819)',
+    concierge_online: '✦ Aura · Asesora Alquímica',
+    concierge_subline: 'Concierge de Gemas Sagradas 24/7',
+    concierge_aria: 'Consultar a Aura, Asesora Alquímica y Concierge',
     footer_tagline: 'Conexión · Intención · Equilibrio · Energía',
     footer_bio: 'Joyería de intención superior inspirada en la sabiduría ancestral de las gemas sagradas y el arte de la orfebrería de taller de lujo.',
     footer_nav_title: 'Navegación',
@@ -489,9 +489,9 @@ const TRANSLATIONS = {
     qv_wa_inquire: '<span>❦</span> Inquire / Order on WhatsApp (+52 1 81 1031 6819)',
 
     // Floating Button & Footer
-    concierge_online: '✦ 24/7 Concierge Bot',
-    concierge_subline: 'Instant Orders & Guidance',
-    concierge_aria: 'Speak with Concierge Bot on WhatsApp (+52 1 81 1031 6819)',
+    concierge_online: '✦ Aura · Alchemical Advisor',
+    concierge_subline: 'Sacred Gem Concierge 24/7',
+    concierge_aria: 'Consult Aura, Alchemical Advisor & Concierge',
     footer_tagline: 'Connection · Intention · Balance · Energy',
     footer_bio: 'High-intention jewelry rooted in the ancestral wisdom of sacred gems and master artisanal goldsmithing.',
     footer_nav_title: 'Navigation',
@@ -751,9 +751,9 @@ const TRANSLATIONS = {
     qv_wa_inquire: '<span>❦</span> Fiosraigh / Ordaigh ar WhatsApp (+52 1 81 1031 6819)',
 
     // Floating Button & Footer
-    concierge_online: '✦ Bota Concierge 24/7',
-    concierge_subline: 'Orduithe & Treoir Láithreach',
-    concierge_aria: 'Labhair le Bota Concierge ar WhatsApp (+52 1 81 1031 6819)',
+    concierge_online: '✦ Aura · Comhairleoir Ailceimiceach',
+    concierge_subline: 'Concierge Seodra Beannaithe 24/7',
+    concierge_aria: 'Téigh i gcomhairle le hAura, Comhairleoir Ailceimiceach',
     footer_tagline: 'Nascadh · Rún · Cothromaíocht · Fuinneamh',
     footer_bio: 'Seodra ard-intinne bunaithe ar eagna naofa na ngemanna agus ar cheardaíocht ealaíne an óir.',
     footer_nav_title: 'Nascleanúint',
