@@ -16,9 +16,9 @@ const TRANSLATIONS = {
     top_announcement_end: ' · ENVÍO PRIORITARIO ASEGURADO · $89 USD ✦',
 
     // Navigation
-    nav_collection: 'Colección',
+    nav_collection: 'Joyas',
     nav_oracle: 'Oráculo Alquímico',
-    nav_lookbook: 'Lookbook Stacking',
+    nav_lookbook: 'Crea tu Stack',
     nav_ritual: 'El Ritual',
     nav_sizes: 'Tallas & Calidad',
     nav_testimonials: 'Coleccionistas',
@@ -33,11 +33,12 @@ const TRANSLATIONS = {
     theme_toast_dark: '✦ Modo Noche Mística activado',
 
     // Hero Section
-    hero_badge: 'BOUTIQUE EXCLUSIVA DE ALTA ORFEBRERÍA HOLÍSTICA',
-    hero_headline_1: 'La Esencia de la Tierra',
-    hero_headline_script: 'Elevada al Máximo Lujo',
+    hero_badge: 'ALTA JOYERÍA CON INTENCIÓN · EDICIÓN LIMITADA',
+    hero_headline_1: 'PIEZAS QUE SIGNIFICAN',
+    hero_headline_script: 'MUCHO MÁS',
     hero_subtext: 'Cuarzos sagrados seleccionados uno a uno por su pureza cristalina y resonancia armónica a 432 Hz. Un amuleto consciente de <strong>$89.00 USD</strong> forjado en orfebrería fina para ser el testamento silencioso de tu poder personal.',
-    hero_cta_explore: 'Explorar la Colección',
+    hero_cta_explore: 'Explorar Joyas',
+    hero_cta_stack: 'Crea tu Stack',
     hero_cta_oracle: 'Consultar el Oráculo Astral',
     hero_cta_wa: 'WhatsApp Concierge: +52 1 81 1031 6819',
     hero_stat_aaa: '100%',
@@ -122,10 +123,10 @@ const TRANSLATIONS = {
     vault_perk2: 'Certificado gemológico nominativo con folio',
     vault_perk3: 'Envío Priority Courier Asegurado mundial sin cargo',
 
-    // Lookbook & Stacking
-    lookbook_overline: 'ARMONÍA VISUAL Y DUALIDAD DE PODER',
-    lookbook_title: 'El Arte del Stacking Energético',
-    lookbook_subtitle: 'Combina dos o tres piezas para crear campos complementarios de fuerza protectora y atracción magnética.',
+    // Lookbook & Stacking (Shop The Look)
+    lookbook_overline: 'SHOP THE LOOK · DUALIDAD & SINTONÍA',
+    lookbook_title: 'Crea tu Stack Perfecto',
+    lookbook_subtitle: 'Combina dos o tres piezas para crear composiciones minerales complementarias de fuerza protectora y atracción magnética.',
     lookbook_tip1_num: '01',
     lookbook_tip1_title: 'Muñeca Izquierda',
     lookbook_tip1_desc: 'La mano receptiva. Úsala aquí para absorber la calma, el amor propio y la protección espiritual del cuarzo.',

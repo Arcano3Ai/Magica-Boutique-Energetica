@@ -155,7 +155,20 @@ const PRODUCTS = [
   }
 ];
 
-// Estado global del tema (light / dark)
+// ==========================================================================
+// ESTADO GLOBAL DE LA TIENDA, TEMA & MULTILENGUAJE (ES / EN / GA)
+// ==========================================================================
+
+let currentLang = 'es';
+try {
+  const savedLang = localStorage.getItem('magica_lang');
+  if (savedLang && (savedLang === 'es' || savedLang === 'en' || savedLang === 'ga')) {
+    currentLang = savedLang;
+  }
+} catch (e) {
+  currentLang = 'es';
+}
+
 let currentTheme = 'light';
 try {
   const savedTheme = localStorage.getItem('magica_theme');
@@ -207,17 +220,6 @@ window.toggleTheme = function() {
     showToast(tMsg, 'gold');
   }
 };
-
-// Estado global de la tienda y Multilenguaje (ES / EN / GA)
-let currentLang = 'es';
-try {
-  const savedLang = localStorage.getItem('magica_lang');
-  if (savedLang && (savedLang === 'es' || savedLang === 'en' || savedLang === 'ga')) {
-    currentLang = savedLang;
-  }
-} catch (e) {
-  currentLang = 'es';
-}
 
 let cart = [];
 let activeCategory = 'all';
@@ -349,6 +351,17 @@ function getFilteredProducts() {
   });
 }
 
+const LORENZA_META = {
+  'cuarzo-blanco-jade': { badge: 'Best Seller', badgeType: 'black', reviews: 24, colors: ['#EDECE6', '#7F9D83'] },
+  'jade-pez-dorado': { badge: '● Últimas piezas', badgeType: 'red', reviews: 18, colors: ['#E6D799', '#CF9B48'] },
+  'lapislazuli-cabujon-oval': { badge: 'Best Seller', badgeType: 'black', reviews: 31, colors: ['#1C376A', '#CF9B48'] },
+  'turmalina-negra-pez': { badge: 'Nuevo', badgeType: 'neutral', reviews: 14, colors: ['#1B1B1B', '#CF9B48'] },
+  'lapislazuli-placas': { badge: 'Best Seller', badgeType: 'black', reviews: 22, colors: ['#213E78', '#BF9D58'] },
+  'cuarzo-rosa-nacar': { badge: '● Últimas piezas', badgeType: 'red', reviews: 19, colors: ['#F3C5C5', '#F8F6F2'] },
+  'jade-crema-imperial': { badge: 'Nuevo', badgeType: 'neutral', reviews: 16, colors: ['#E9DBBA', '#CF9B48'] },
+  'stacking-amatista-oro': { badge: 'Set de Colección', badgeType: 'black', reviews: 27, colors: ['#885D96', '#CF9B48'] }
+};
+
 function renderCatalog() {
   if (!productsGrid) return;
   const t = (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) ? TRANSLATIONS[currentLang] : {};
@@ -368,43 +381,36 @@ function renderCatalog() {
 
   productsGrid.innerHTML = filtered.map(rawProd => {
     const prod = getLocalizedProduct(rawProd);
-    const chakraName = prod.chakra.split('(')[0].trim();
-    const chakraLabel = t.card_chakra_prefix ? `${t.card_chakra_prefix} ${chakraName}` : `Chakra ${chakraName}`;
-    const zodiacPrefix = t.card_afine || 'Afín a:';
-    const priceLabel = t.card_fixed_investment || 'Inversión Fija';
-    const btnInspect = t.card_inspect || 'Inspección Gemológica';
+    const meta = LORENZA_META[rawProd.id] || { badge: prod.tag, badgeType: 'black', reviews: 18, colors: ['#CF9B48'] };
     const btnAdd = t.card_add_bag || '+ Añadir a Bolsa';
 
+    const badgeClass = meta.badgeType === 'red' ? 'lorenza-badge badge-red' : (meta.badgeType === 'neutral' ? 'lorenza-badge badge-neutral' : 'lorenza-badge badge-black');
+    const swatchesHtml = (meta.colors || []).map(c => `<span class="lorenza-swatch" style="background-color: ${c};" title="Gema / Tono"></span>`).join('');
+
     return `
-      <article class="luxury-card" data-category="${rawProd.category}">
-        <div class="card-image-box">
-          <span class="card-badge">${prod.tag}</span>
-          <img src="${prod.image}" alt="${prod.name}" loading="lazy" decoding="async" width="400" height="400">
-          <div class="card-action-overlay">
-            <button class="btn-inspect" onclick="openQuickView('${prod.id}')">
-              <span>${btnInspect}</span> ↗
-            </button>
-          </div>
+      <article class="lorenza-card" data-category="${rawProd.category}">
+        <div class="lorenza-card-img-wrap">
+          <span class="${badgeClass}">${meta.badge}</span>
+          <img src="${prod.image}" alt="${prod.name}" loading="lazy" decoding="async" width="400" height="400" onclick="openQuickView('${prod.id}')">
+          <button class="lorenza-quick-add" onclick="openQuickView('${prod.id}')" aria-label="Ver detalles y tallas de ${prod.name}" title="Vista Rápida & Tallas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
         </div>
-        <div class="card-details">
-          <div class="card-meta-top">
-            <span class="card-mineral">${prod.mineral}</span>
-            <span class="card-chakra-badge">${chakraLabel}</span>
+        <div class="lorenza-card-info">
+          <h3 class="lorenza-product-title" onclick="openQuickView('${prod.id}')">${prod.name.toUpperCase()}</h3>
+          <div class="lorenza-stars">
+            <span class="stars-gold">★★★★★</span>
+            <span class="review-count">(${meta.reviews})</span>
           </div>
-          <h3 class="card-title">${prod.name}</h3>
-          <p class="card-intention">${prod.intention}</p>
-          <div class="card-zodiac-tag">
-            <strong>${zodiacPrefix}</strong> ${prod.zodiac}
+          <div class="lorenza-price-row">
+            <span class="lorenza-price">$${prod.price.toFixed(0)} USD</span>
           </div>
-          <div class="card-footer-row">
-            <div class="card-price-block">
-              <span class="card-price-label">${priceLabel}</span>
-              <span class="card-price">$${prod.price.toFixed(2)} USD</span>
-            </div>
-            <button class="btn-add-bag" onclick="addToCart('${prod.id}')">
-              <span>${btnAdd}</span>
-            </button>
+          <div class="lorenza-swatches">
+            ${swatchesHtml}
           </div>
+          <button class="lorenza-btn-bag" onclick="addToCart('${prod.id}')">
+            <span>AGREGAR A LA BOLSA</span>
+          </button>
         </div>
       </article>
     `;

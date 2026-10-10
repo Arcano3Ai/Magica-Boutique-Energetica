@@ -4,43 +4,43 @@
    ========================================================================== */
 
 :root {
-  /* FONDOS ORGÁNICOS & ALTA JOYERÍA (MARFIL, ALABASTRO & BLANCO PURO) */
-  --bg-deep: #FAF8F5;          /* Alabastro italiano / Marfil cálido base */
-  --bg-velvet: #F3EFE8;        /* Lino suave / Tono pergamino para contraste */
-  --bg-card: #FFFFFF;          /* Blanco níveo editorial para piezas y tarjetas */
+  /* FONDOS LORENZA.MX (MINIMALISMO NÓRDICO & CONTEMPORÁNEO) */
+  --bg-deep: #F3F3F3;          /* Gris neutro cálido base característico de Lorenza */
+  --bg-velvet: #EAEAEA;        /* Separadores y cajas secundarias */
+  --bg-card: #FFFFFF;          /* Blanco puro para tarjetas y superficies */
   --bg-card-hover: #FFFFFF;
-  --bg-glass: rgba(255, 255, 255, 0.88);
-  --bg-glass-strong: rgba(250, 248, 245, 0.96);
+  --bg-glass: rgba(255, 255, 255, 0.95);
+  --bg-glass-strong: rgba(243, 243, 243, 0.98);
   
-  /* ACENTOS METÁLICOS & ORFEBRERÍA (ORO VIEJO SATINADO & CHAMPAGNE) */
-  --gold-primary: #966B43;     /* Oro viejo noble con contraste en claro */
-  --gold-sheen: #744E2C;       /* Bronce editorial para títulos destacados */
-  --gold-accent: #B5885C;      /* Champagne cálido */
-  --rose-gold: #A25C4D;        /* Oro rosa terracota para overlines */
-  --rose-dark: #6E382C;
+  /* ACENTOS METÁLICOS & ORFEBRERÍA (ORO PULIDO & ACENTO NEGRO) */
+  --gold-primary: #151515;     /* Negro ébano nórdico predominante en Lorenza */
+  --gold-sheen: #151515;       /* Títulos con contraste gráfico limpio */
+  --gold-accent: #966B43;      /* Oro noble complementario para orfebrería */
+  --rose-gold: #5C5C5C;        /* Tono subtítulo editorial */
+  --rose-dark: #333333;
   
-  /* TIPOGRAFÍA & TEXTOS (CARBÓN EDITORIAL & TINTA CHINA SUAVE) */
-  --text-pure: #161413;        /* Negro carbón ultra nítido */
-  --text-cream: #2C2724;       /* Tinta suave para cuerpo de texto */
-  --text-muted: #655E57;       /* Gris mineral cálido */
-  --text-dim: #8E857C;         /* Tono neutro secundario */
+  /* TIPOGRAFÍA & TEXTOS (FIGTREE & CONTRASTE ALTO) */
+  --text-pure: #151515;        /* Negro carbón puro */
+  --text-cream: #282828;       /* Texto de lectura */
+  --text-muted: #5C5C5C;       /* Gris medio corporativo Lorenza */
+  --text-dim: #7C7C7C;         /* Detalles y metadatos */
   
-  /* BORDES FINOS DE JOYERO & ALTA PRECISIÓN */
-  --border-hairline: rgba(150, 107, 67, 0.16);
-  --border-gold: rgba(150, 107, 67, 0.38);
-  --border-gold-bright: rgba(150, 107, 67, 0.72);
+  /* BORDES FINOS DE PRECISIÓN */
+  --border-hairline: #E2E2E2;  /* Gris claro nítido para divisores */
+  --border-gold: #151515;
+  --border-gold-bright: #333333;
   
-  /* SOMBRAS ETÉREAS (LUZ NATURAL, SUAVE & PROFUNDA) */
-  --shadow-luxury: 0 16px 40px rgba(35, 28, 22, 0.06);
-  --shadow-glow: 0 8px 24px rgba(162, 92, 77, 0.12);
-  --shadow-gold-halo: 0 10px 32px rgba(150, 107, 67, 0.14);
+  /* SOMBRAS SUTILES EDITORIALES */
+  --shadow-luxury: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  --shadow-gold-halo: 0 4px 16px rgba(0, 0, 0, 0.06);
   
-  --font-cinzel: 'Cinzel', serif;
-  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Montserrat', -apple-system, sans-serif;
+  --font-cinzel: 'Figtree', -apple-system, sans-serif;
+  --font-cormorant: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   
   --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-smooth: all 0.35s var(--ease-luxury);
+  --transition-smooth: all 0.25s var(--ease-luxury);
 }
 
 /* ==========================================================================
@@ -138,37 +138,39 @@ button {
   padding: 0 24px;
 }
 
-/* TYPOGRAPHY HELPERS */
+/* TYPOGRAPHY HELPERS (LORENZA.MX MINIMALIST SYSTEM) */
 .gold-overline {
   display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.28em;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--rose-gold);
-  margin-bottom: 12px;
-  font-weight: 500;
+  color: #777777;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .section-title-wrap {
   text-align: center;
   max-width: 780px;
-  margin: 0 auto 56px;
+  margin: 0 auto 48px;
 }
 
 .section-title {
-  font-family: var(--font-cinzel);
-  font-size: 2.2rem;
-  letter-spacing: 0.08em;
-  color: var(--text-pure);
-  font-weight: 500;
-  margin-bottom: 16px;
+  font-family: var(--font-sans);
+  font-size: 1.85rem;
+  letter-spacing: 0.06em;
+  color: #151515;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .section-subtitle {
-  font-family: var(--font-cormorant);
-  font-size: 1.25rem;
-  font-style: italic;
-  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-style: normal;
+  color: #5C5C5C;
   line-height: 1.6;
 }
 
@@ -176,21 +178,23 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 18px;
-  background: rgba(230, 194, 168, 0.08);
-  border: 1px solid var(--border-gold);
-  padding: 6px 18px;
-  border-radius: 30px;
-  font-size: 0.8rem;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  padding: 6px 16px;
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
 }
 
 .price-pill strong {
-  color: var(--gold-sheen);
-  font-size: 0.95rem;
+  color: #151515;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .price-pill small {
-  color: var(--text-dim);
+  color: #777777;
 }
 
 /* BUTTONS */
@@ -211,31 +215,38 @@ button {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--gold-accent) 0%, var(--gold-primary) 60%, var(--gold-sheen) 100%);
+  background: #151515;
   color: #FFFFFF;
-  box-shadow: 0 4px 18px rgba(150, 107, 67, 0.22);
-  border: 1px solid var(--gold-sheen);
+  border: 1px solid #151515;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .btn-gold:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(150, 107, 67, 0.35);
-  filter: brightness(1.04);
+  background: #333333;
+  border-color: #333333;
+  color: #FFFFFF;
+  transform: translateY(-1px);
 }
 
 .btn-translucent {
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--text-pure);
-  border: 1px solid var(--border-gold);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  background: #FFFFFF;
+  color: #151515;
+  border: 1px solid #151515;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .btn-translucent:hover {
-  background: var(--bg-velvet);
-  border-color: var(--gold-sheen);
-  color: var(--gold-sheen);
-  transform: translateY(-2px);
+  background: #151515;
+  color: #FFFFFF;
+  transform: translateY(-1px);
 }
 
 .btn-full {
@@ -308,12 +319,12 @@ button {
 }
 
 /* ==========================================================================
-   ANNOUNCEMENT BAR & NAVBAR
+   ANNOUNCEMENT BAR & NAVBAR (LORENZA.MX MINIMALIST LUXURY)
    ========================================================================== */
 
 .luxury-bar {
-  background: #191614;
-  border-bottom: 1px solid rgba(150, 107, 67, 0.25);
+  background: #000000;
+  border-bottom: 1px solid #222222;
   padding: 8px 24px;
   position: relative;
   z-index: 1001;
@@ -329,11 +340,12 @@ button {
 }
 
 .luxury-bar-inner #topAnnouncement {
-  font-size: 0.65rem;
-  letter-spacing: 0.22em;
-  color: #EDE7DF;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -436,9 +448,8 @@ button {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(250, 248, 245, 0.94);
-  backdrop-filter: blur(24px);
-  border-bottom: 1px solid var(--border-hairline);
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E2E2;
   padding: 12px 0;
   transition: var(--transition-smooth);
 }
@@ -467,7 +478,7 @@ button {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--gold-primary);
+  background: #151515;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -491,16 +502,16 @@ button {
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 22px;
   align-items: center;
 }
 
 .nav-links a {
-  color: var(--text-cream);
+  color: #151515;
   font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   position: relative;
   font-weight: 500;
 }
@@ -512,12 +523,12 @@ button {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--gold-primary);
-  transition: width 0.3s var(--ease-luxury);
+  background: #151515;
+  transition: width 0.25s ease;
 }
 
 .nav-links a:hover {
-  color: var(--gold-sheen);
+  color: #000000;
 }
 
 .nav-links a:hover::after {
@@ -527,21 +538,20 @@ button {
 .brand-container {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .brand-crest {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--border-gold);
-  box-shadow: 0 0 14px rgba(150, 107, 67, 0.2);
-  transition: transform 0.4s var(--ease-luxury);
+  border: 1px solid #E2E2E2;
+  transition: transform 0.3s ease;
 }
 
 .brand-container:hover .brand-crest {
-  transform: scale(1.06) rotate(4deg);
+  transform: scale(1.05);
 }
 
 .brand-text-block {
@@ -550,52 +560,50 @@ button {
 }
 
 .brand-title {
-  font-family: var(--font-cinzel);
-  font-size: 1.55rem;
-  letter-spacing: 0.32em;
-  color: var(--text-pure);
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 1.42rem;
+  letter-spacing: 0.28em;
+  color: #151515;
+  font-weight: 700;
   line-height: 1.1;
 }
 
 .brand-slogan {
   font-size: 0.52rem;
-  letter-spacing: 0.26em;
-  color: var(--rose-gold);
+  letter-spacing: 0.2em;
+  color: #777777;
   margin-top: 2px;
   font-weight: 500;
 }
 
 .cart-trigger {
   background: #FFFFFF;
-  border: 1px solid var(--border-hairline);
-  color: var(--text-pure);
+  border: 1px solid #E2E2E2;
+  color: #151515;
   padding: 8px 16px;
-  border-radius: 30px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: 500;
-  transition: var(--transition-smooth);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  font-weight: 600;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .cart-trigger:hover {
-  border-color: var(--gold-primary);
-  background: var(--bg-velvet);
-  box-shadow: var(--shadow-glow);
+  border-color: #151515;
+  background: #FAFAFA;
 }
 
 .bag-icon {
-  color: var(--gold-primary);
+  color: #151515;
   font-size: 0.95rem;
 }
 
 .cart-count {
-  background: var(--gold-primary);
+  background: #151515;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 0.65rem;
@@ -774,24 +782,24 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 20px;
-  border-radius: 30px;
+  padding: 6px 16px;
+  border-radius: 0;
   background: #FFFFFF;
-  border: 1px solid var(--border-gold);
-  box-shadow: 0 4px 16px rgba(150, 107, 67, 0.08);
+  border: 1px solid #151515;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold-sheen);
+  color: #151515;
+  font-weight: 700;
   margin-bottom: 24px;
 }
 
 .badge-dot {
   width: 6px;
   height: 6px;
-  background: var(--gold-primary);
+  background: #151515;
   border-radius: 50%;
-  box-shadow: 0 0 8px var(--gold-primary);
   animation: pulseDot 2s infinite ease-in-out;
 }
 
@@ -801,12 +809,12 @@ button {
 }
 
 .hero-headline {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-sans);
   font-size: clamp(2.4rem, 5.2vw, 4.4rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.15;
-  letter-spacing: 0.05em;
-  color: var(--text-pure);
+  letter-spacing: 0.02em;
+  color: #151515;
   margin-bottom: 20px;
   text-shadow: none;
 }
@@ -815,16 +823,14 @@ button {
   font-family: var(--font-cormorant);
   font-weight: 400;
   font-style: italic;
-  letter-spacing: 0.02em;
-  background: linear-gradient(135deg, var(--gold-sheen) 0%, var(--gold-primary) 50%, var(--rose-gold) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.01em;
+  color: #151515;
   display: inline-block;
 }
 
 .hero-subtext {
   font-size: clamp(0.95rem, 1.4vw, 1.1rem);
-  color: var(--text-muted);
+  color: #5C5C5C;
   max-width: 680px;
   margin: 0 auto 36px;
   font-weight: 400;
@@ -832,8 +838,8 @@ button {
 }
 
 .hero-subtext strong {
-  color: var(--gold-sheen);
-  font-weight: 600;
+  color: #151515;
+  font-weight: 700;
 }
 
 .hero-action-group {
@@ -848,12 +854,11 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid var(--border-hairline);
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
   padding: 14px 28px;
-  border-radius: 50px;
-  backdrop-filter: blur(14px);
-  box-shadow: 0 10px 30px rgba(35, 28, 22, 0.06);
+  border-radius: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1246,39 +1251,45 @@ button {
 
 .filter-pills-bar {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 4px;
 }
 
 .filter-pill {
-  background: #FFFFFF;
-  border: 1px solid var(--border-hairline);
-  color: var(--text-muted);
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #777777;
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-weight: 500;
-  transition: var(--transition-smooth);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .filter-pill:hover {
-  color: var(--text-pure);
-  border-color: var(--gold-primary);
+  color: #151515;
 }
 
 .filter-pill.active {
-  background: #191614;
-  border-color: #191614;
-  color: #FAF8F5;
-  box-shadow: 0 4px 14px rgba(25, 22, 20, 0.15);
+  background: transparent;
+  border-bottom: 2px solid #151515;
+  color: #151515;
+  font-weight: 700;
+  box-shadow: none;
 }
 
 .catalog-search-wrap {
   position: relative;
-  min-width: 290px;
+  min-width: 280px;
 }
 
 .catalog-search-wrap .search-symbol {
@@ -1287,25 +1298,25 @@ button {
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.85rem;
-  color: var(--text-dim);
+  color: #888888;
 }
 
 .catalog-search-wrap input {
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid var(--border-hairline);
-  border-radius: 30px;
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
   padding: 10px 16px 10px 38px;
-  color: var(--text-pure);
+  color: #151515;
+  font-family: var(--font-sans);
   font-size: 0.78rem;
   outline: none;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
-  transition: border-color 0.3s ease;
+  transition: border-color 0.2s ease;
 }
 
 .catalog-search-wrap input:focus {
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 12px rgba(150, 107, 67, 0.15);
+  border-color: #151515;
+  box-shadow: 0 0 0 1px #151515;
 }
 
 .catalog-empty-search {
@@ -1336,28 +1347,236 @@ button {
   margin-bottom: 24px;
 }
 
-/* PRODUCT GRID & CARDS */
+/* PRODUCT GRID & CARDS (LORENZA.MX 4-COLUMN CONTEMPORARY SYSTEM) */
 .luxury-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 20px;
 }
 
-.luxury-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-hairline);
-  border-radius: 8px;
-  overflow: hidden;
+@media (max-width: 1100px) {
+  .luxury-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+}
+
+/* ==========================================================================
+   LORENZA PRODUCT CARD ARCHITECTURE
+   ========================================================================== */
+.lorenza-card {
   display: flex;
   flex-direction: column;
-  transition: var(--transition-smooth);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  position: relative;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
 }
 
-.luxury-card:hover {
-  border-color: var(--border-gold);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-luxury), var(--shadow-gold-halo);
+.lorenza-card:hover {
+  border-color: #151515;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.lorenza-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #F4F4F4;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lorenza-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.lorenza-card:hover .lorenza-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+.lorenza-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.lorenza-badge.badge-black {
+  background: #151515;
+  color: #FFFFFF;
+  padding: 5px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lorenza-badge.badge-red {
+  background: #FFFFFF;
+  color: #B91C1C;
+  padding: 4px 8px;
+  font-weight: 600;
+  border: 1px solid #F1D4D4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lorenza-badge.badge-neutral {
+  background: #EAE6DF;
+  color: #151515;
+  padding: 5px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lorenza-quick-add {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  z-index: 3;
+}
+
+.lorenza-quick-add svg {
+  width: 15px;
+  height: 15px;
+}
+
+.lorenza-quick-add:hover {
+  background: #151515;
+  color: #FFFFFF;
+  border-color: #151515;
+  transform: scale(1.1);
+}
+
+.lorenza-card-info {
+  padding: 14px 14px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: #FFFFFF;
+}
+
+.lorenza-product-title {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #151515;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  cursor: pointer;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.lorenza-product-title:hover {
+  color: #744E2C;
+}
+
+.lorenza-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.lorenza-stars .stars-gold {
+  color: #151515;
+  letter-spacing: 1px;
+}
+
+.lorenza-stars .review-count {
+  color: #777777;
+  font-size: 11px;
+}
+
+.lorenza-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.lorenza-price {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #151515;
+  letter-spacing: 0.02em;
+}
+
+.lorenza-swatches {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  min-height: 14px;
+}
+
+.lorenza-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lorenza-swatch:hover {
+  transform: scale(1.2);
+}
+
+.lorenza-btn-bag {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 0;
+  background: #151515;
+  color: #FFFFFF;
+  border: 1px solid #151515;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lorenza-btn-bag:hover {
+  background: #FFFFFF;
+  color: #151515;
 }
 
 .card-image-box {
