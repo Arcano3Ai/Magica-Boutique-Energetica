@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@500;600;700&display=swap">
   </noscript>
 
-  <link rel="stylesheet" href="styles.css?v=20261010-v5">
+  <link rel="stylesheet" href="styles.css?v=20261010-v6">
 </head>
 <body>
   <!-- Top Luxury Announcement -->
@@ -181,6 +181,11 @@
     <!-- Hero Section Editorial Boutique -->
     <section class="hero">
       <div class="hero-backdrop" style="background-image: url('assets/Media/epic_luxury_bg.jpg');"></div>
+      <!-- Video Cinemático Sagrado de Fondo en el Hero -->
+      <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/Media/epic_luxury_bg.jpg" aria-hidden="true">
+        <source src="assets/Media/hero-bg-stream.mp4" type="video/mp4">
+        <source src="assets/Media/magica-hero-video.mp4" type="video/mp4">
+      </video>
       <div class="hero-overlay-gradient"></div>
       <canvas id="stardustCanvas" class="stardust-canvas"></canvas>
       <div class="hero-container">
@@ -956,15 +961,8 @@
       <div class="concierge-orb">
         <span class="orb-magic-ring"></span>
         <div class="wand-icon-container">
-          <!-- Varita Mágica Épica Vectorial con Destellos de Alquimia -->
-          <svg class="wand-magic-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2L13.1 4.9L16 6L13.1 7.1L12 10L10.9 7.1L8 6L10.9 4.9L12 2Z" fill="#F4D06F"/>
-            <path d="M19 11L19.6 12.4L21 13L19.6 13.6L19 15L18.4 13.6L17 13L18.4 12.4L19 11Z" fill="#F4D06F"/>
-            <circle cx="5.5" cy="18.5" r="1.5" fill="#FFEAA7"/>
-            <path d="M4 20L15.5 8.5" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
-            <path d="M15.5 8.5L17.5 6.5" stroke="#F4D06F" stroke-width="3" stroke-linecap="round"/>
-            <path d="M3 21L5 19" stroke="#966B43" stroke-width="3.2" stroke-linecap="round"/>
-          </svg>
+          <!-- Varita Mágica Oficial de Taller Alquímico -->
+          <img src="assets/Media/varita-icon.png" alt="Varita Mágica Alquímica" class="wand-magic-img" width="38" height="38" loading="eager">
         </div>
         <!-- Badge oficial de WhatsApp en la esquina (para confirmar orden) -->
         <span class="wa-badge-corner" title="WhatsApp Oficial para Confirmación (+52 1 81 1031 6819)">
@@ -984,7 +982,7 @@
     <div class="chat-header">
       <div class="chat-header-info">
         <div class="chat-avatar-ring">
-          <span class="chat-avatar-icon">✦</span>
+          <img src="assets/Media/varita-icon.png" alt="Aura Varita" class="chat-avatar-wand-img" width="22" height="22">
           <span class="chat-live-badge"></span>
         </div>
         <div>
@@ -1124,7 +1122,7 @@
     <source src="assets/Audio/magica-cancion.wav" type="audio/wav">
   </audio>
 
-  <script src="translations.js?v=20261010-v5" defer></script>
-  <script src="app.js?v=20261010-v5" defer></script>
+  <script src="translations.js?v=20261010-v6" defer></script>
+  <script src="app.js?v=20261010-v6" defer></script>
 </body>
 </html>
