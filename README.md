@@ -28,10 +28,10 @@
 1. **Barra de Anuncios Luxury**: Garantía VIP, inversión fija $89 USD, selectores de idioma `ES | EN | GA` y enlace directo al WhatsApp Concierge (`+52 1 81 1031 6819`).
 2. **Navegación Sticky con Monograma HD**: Logotipo vectorial oficial, enlaces de salto fluido, menú hamburguesa responsivo, selector de idioma y acceso a la bolsa de joyas.
 3. **Hero Editorial**: Fondo inmersivo con animación sutil, degradados radiales, canvas de polvo estelar en oro rosa (*Stardust Canvas*) y métricas de exclusividad.
-4. **Curaduría & Distinción**: Pilares de extracción ética, orfebrería fina, consagración y empaque The Rose Vault.
+4. **Curaduría & Distinción**: Pilares de extracción ética, orfebrería fina, consagración y empaque Signature de Colección.
 5. **Oráculo Alquímico Interactivo**: Selector por intención + signo zodiacal con recomendación armónica en tiempo real y sintetizador armónico sagrado a **432 Hz** usando la Web Audio API.
 6. **Catálogo Selecto con Filtros y Buscador**: Filtros por categoría (*Protección, Abundancia, Sabiduría, Amor*) y búsqueda instantánea multilingüe.
-7. **El Ritual de Consagración**: Filosofía de taller, armonización sonora y presentación del cofre rígido marfil *The Rose Vault*.
+7. **El Ritual de Consagración**: Filosofía de taller, armonización sonora y presentación del cofre rígido marfil *Estuche Signature de Colección*.
 8. **Lookbook Editorial "El Arte del Stacking"**: Galería *in situ* de pulseras en muñeca y guía para combinar 2 o 3 gemas simultáneas según la mano receptiva o proyectiva.
 9. **Guía de Tallas & Probador Interactivo**: Selector de medidas (Petite 15cm, Estándar 16.5cm, Comfort 18cm, Personalizada) y sellos de calidad de taller.
 10. **Testimonios de Coleccionistas VIP**: Reseñas verificadas con estética de terciopelo y 5 estrellas doradas.

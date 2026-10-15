@@ -57,7 +57,7 @@ const TRANSLATIONS = {
     pillar_2_desc: 'Herrajes nobles forjados a mano con sellado hidrófugo y durabilidad eterna.',
     pillar_3_title: 'Sintonización Sagrada 432 Hz',
     pillar_3_desc: 'Cada lote es consagrado bajo campanas tibetanas y cuencos de cuarzo cristalino.',
-    pillar_4_title: 'El Estuche The Rose Vault',
+    pillar_4_title: 'Estuche Signature de Colección',
     pillar_4_desc: 'Presentación rígida de terciopelo marfil con certificado gemológico nominativo.',
 
     // Oráculo
@@ -117,7 +117,7 @@ const TRANSLATIONS = {
     ritual_title: 'El Ritual de Consagración',
     ritual_p1: 'En Mágica, una pulsera no es un accesorio decorativo: es un vórtice energético que se fusiona con tu pulso arterial. Antes de ingresar a su estuche, cada espécimen reposa sobre una cama de selenita marroquí y es expuesto a secuencias armónicas de 432 Hz.',
     ritual_p2: 'Nuestros maestros orfebres entrelazan cada cuenta sobre hilos de silicona náutica de memoria indeformable y engarzan herrajes con baños en oro de 14K y acero inoxidable quirúrgico, asegurando que tu amuleto resista el paso de los años con inalterable esplendor.',
-    vault_title: 'Cofre The Rose Vault (De Cortesía)',
+    vault_title: 'Estuche Signature de Colección (De Cortesía)',
     vault_desc: 'Cada adquisición se despacha en nuestro packaging insignia: cofre rígido forrado en lino crudo y terciopelo, lazo de seda, gamuza de limpieza y certificado de autenticidad.',
     vault_perk1: 'Estuche rígido de preservación mineral',
     vault_perk2: 'Certificado gemológico nominativo con folio',
@@ -192,7 +192,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Completar datos aquí en la web (Opcional) ↗',
     cart_selected_label: 'Piezas Seleccionadas:',
     cart_items_count_suffix: 'joya(s) de autor',
-    cart_perk_vault: '✓ Estuche The Rose Vault de cortesía',
+    cart_perk_vault: '✓ Estuche Signature de Colección de cortesía',
     cart_perk_courier: '✓ Envío Priority Courier Asegurado mundial',
     cart_perk_cert: '✓ Certificado Mineral Nominativo con Folio',
 
@@ -222,7 +222,7 @@ const TRANSLATIONS = {
     qv_alchemical_element: 'Elemento Alquímico',
     qv_zodiac_signs: 'Signos Zodiacales',
     qv_fine_jewelry: 'Orfebrería Fina',
-    qv_inclusion_note: 'Incluye cofre rígido <em>The Rose Vault</em>, paño de gamuza y certificado nominativo de autenticidad.',
+    qv_inclusion_note: 'Incluye estuche rígido de preservación mineral, paño de gamuza y certificado nominativo de autenticidad.',
     qv_add_bag: '+ Añadir a la Bolsa',
     qv_wa_inquire: '<span>❦</span> Pedir por WhatsApp (+52 1 81 1031 6819)',
 
@@ -247,7 +247,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *PIEZAS SELECCIONADAS:*',
     wa_total_pieces: '📦 *Total Piezas:*',
     wa_total_pay: '💰 *TOTAL A PAGAR:*',
-    wa_perks_note: '✨ *Cortesía:* Estuche The Rose Vault + Envío Courier Asegurado',
+    wa_perks_note: '✨ *Cortesía:* Estuche Signature de Colección + Envío Courier Asegurado',
     wa_customer_title: '👤 *DATOS DEL CLIENTE / ENVÍO:*',
     wa_cust_name: '• Nombre:',
     wa_cust_phone: '• Teléfono WhatsApp:',
@@ -320,7 +320,7 @@ const TRANSLATIONS = {
     pillar_2_desc: 'Noble hardware handcrafted with hydrophobic sealing and everlasting endurance.',
     pillar_3_title: 'Sacred 432 Hz Attunement',
     pillar_3_desc: 'Each master batch is attuned under Himalayan singing bowls and crystal sound vibrations.',
-    pillar_4_title: 'The Rose Vault Rigid Casket',
+    pillar_4_title: 'Signature Collection Jewelry Casket',
     pillar_4_desc: 'Ivory velvet presentation box complete with personal nominative gemological certificate.',
 
     // Oráculo
@@ -380,7 +380,7 @@ const TRANSLATIONS = {
     ritual_title: 'The Consecration Ritual',
     ritual_p1: 'At Mágica, a bracelet is not merely an ornament: it is an energetic vortex that aligns with your arterial pulse. Before leaving our sanctuary, each piece rests on Moroccan selenite and absorbs pure harmonic 432 Hz frequencies.',
     ritual_p2: 'Our master artisans knot every bead upon indeformable nautical memory silicone cords, framing them in 14K gold and surgical-grade stainless steel accents, engineered to endure the passage of time with immutable splendor.',
-    vault_title: 'The Rose Vault Casket (Complimentary)',
+    vault_title: 'Signature Collection Casket (Complimentary)',
     vault_desc: 'Every acquisition is dispatched in our signature packaging: ivory linen rigid casket, velvet interior, silk ribbon, polishing cloth and certificate of authenticity.',
     vault_perk1: 'Rigid mineral preservation jewelry casket',
     vault_perk2: 'Nominative gemological certificate with registered folio',
@@ -455,7 +455,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Fill in details on web (Optional) ↗',
     cart_selected_label: 'Selected Creations:',
     cart_items_count_suffix: 'master piece(s)',
-    cart_perk_vault: '✓ Complimentary The Rose Vault casket',
+    cart_perk_vault: '✓ Complimentary Signature Collection casket',
     cart_perk_courier: '✓ Insured worldwide Priority Courier',
     cart_perk_cert: '✓ Nominative certificate with unique folio',
 
@@ -485,7 +485,7 @@ const TRANSLATIONS = {
     qv_alchemical_element: 'Alchemical Element',
     qv_zodiac_signs: 'Resonant Zodiac',
     qv_fine_jewelry: 'Fine Goldsmithing',
-    qv_inclusion_note: 'Includes <em>The Rose Vault</em> rigid casket, polishing velvet cloth and nominative authenticity certificate.',
+    qv_inclusion_note: 'Includes rigid preservation casket, polishing velvet cloth and nominative authenticity certificate.',
     qv_add_bag: '+ Add to Bag',
     qv_wa_inquire: '<span>❦</span> Inquire / Order on WhatsApp (+52 1 81 1031 6819)',
 
@@ -510,7 +510,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *SELECTED CREATIONS:*',
     wa_total_pieces: '📦 *Total Pieces:*',
     wa_total_pay: '💰 *TOTAL AMOUNT:*',
-    wa_perks_note: '✨ *Complimentary:* The Rose Vault Casket + Insured Priority Courier',
+    wa_perks_note: '✨ *Complimentary:* Signature Collection Casket + Insured Priority Courier',
     wa_customer_title: '👤 *CLIENT / DELIVERY DETAILS:*',
     wa_cust_name: '• Name:',
     wa_cust_phone: '• WhatsApp Phone:',
@@ -583,7 +583,7 @@ const TRANSLATIONS = {
     pillar_2_desc: 'Feistis uaisle ceaptha de láimh le séalú hidreafóbach agus buanseasmhacht shíoraí.',
     pillar_3_title: 'Tiúnadh Naofa 432 Hz',
     pillar_3_desc: 'Gach eagrann coisricthe faoi chloig Thiobéiteacha agus bhabhlaí grianchloiche.',
-    pillar_4_title: 'Ciste The Rose Vault',
+    pillar_4_title: 'Ciste Bhailiúchán Shínithe',
     pillar_4_desc: 'Bosca daingean veilbhit eabhair le teastas geameolaíochta ainmniúil san áireamh.',
 
     // Oráculo
@@ -643,7 +643,7 @@ const TRANSLATIONS = {
     ritual_title: 'Deasghnáth an Choisricthe',
     ritual_p1: 'I Mágica, ní maisiú simplí é an cúngrach: is guairneán fuinnimh é a cheanglaíonn le do chuisle. Sula gcuirtear ina chiste é, luíonn gach seoid ar shailenít Mharacach agus ionsúnn sé minicíochtaí armónacha 432 Hz.',
     ritual_p2: 'Fíonn ár máistir-cheardaithe gach coirnín ar shnáitheanna mara dochumtha sileacóin le feistis óir 14K agus cruach dhosmálta, ag cinntiú go mairfidh do gheasa thar na glúnta gan smál.',
-    vault_title: 'Ciste The Rose Vault (Saor in Aisce)',
+    vault_title: 'Ciste Bhailiúchán Shínithe (Saor in Aisce)',
     vault_desc: 'Seoltar gach ordú inár gciste sainiúil: bosca daingean línéadaigh agus veilbhite eabhair, ribín síoda, éadach glanta agus teastas bharántúlachta.',
     vault_perk1: 'Ciste daingean cosanta do mhianraí luachmhara',
     vault_perk2: 'Teastas geameolaíochta ainmniúil le fóilió cláraithe',
@@ -718,7 +718,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Líon sonraí ar an suíomh gréasáin (Roghnach) ↗',
     cart_selected_label: 'Seoda Roghnaithe:',
     cart_items_count_suffix: 'máistir-sheoid',
-    cart_perk_vault: '✓ Ciste The Rose Vault saor in aisce',
+    cart_perk_vault: '✓ Ciste Bhailiúchán Shínithe saor in aisce',
     cart_perk_courier: '✓ Seachadadh tosaíochta faoi árachas domhanda',
     cart_perk_cert: '✓ Teastas mianra ainmniúil le fóilió',
 
@@ -748,7 +748,7 @@ const TRANSLATIONS = {
     qv_alchemical_element: 'Dúil Ailceamach',
     qv_zodiac_signs: 'Comharthaí Stoidiaca',
     qv_fine_jewelry: 'Ceardaíocht Seodra',
-    qv_inclusion_note: 'Cuimsíonn sé ciste daingean <em>The Rose Vault</em>, éadach veilbhite agus teastas ainmniúil barántúlachta.',
+    qv_inclusion_note: 'Cuimsíonn sé ciste daingean cosanta mianraí, éadach veilbhite agus teastas ainmniúil barántúlachta.',
     qv_add_bag: '+ Cuir sa Mhála',
     qv_wa_inquire: '<span>❦</span> Fiosraigh / Ordaigh ar WhatsApp (+52 1 81 1031 6819)',
 
@@ -773,7 +773,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *SEODA ROGHNAITHE:*',
     wa_total_pieces: '📦 *Méid Seod:*',
     wa_total_pay: '💰 *INFHEISTÍOCHT IOMLÁN:*',
-    wa_perks_note: '✨ *Saor in aisce:* Ciste The Rose Vault + Cúiréir Tosaíochta Faoi Árachas',
+    wa_perks_note: '✨ *Saor in aisce:* Ciste Bhailiúchán Shínithe + Cúiréir Tosaíochta Faoi Árachas',
     wa_customer_title: '👤 *SONRAÍ AN CHLIENT / AN SEACHADTA:*',
     wa_cust_name: '• Ainm:',
     wa_cust_phone: '• Fón WhatsApp:',

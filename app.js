@@ -482,7 +482,7 @@ window.openQuickView = function(productId) {
       </div>
 
       <div class="qv-inclusion-note">
-        <span class="star-gold">✧</span> ${t.qv_inclusion_note || 'Incluye cofre rígido <em>The Rose Vault</em>, paño de gamuza y certificado nominativo de autenticidad.'}
+        <span class="star-gold">✧</span> ${t.qv_inclusion_note || 'Incluye estuche rígido de preservación mineral, paño de gamuza y certificado nominativo de autenticidad.'}
       </div>
 
       <div class="qv-footer">
@@ -738,7 +738,7 @@ function buildWhatsAppCartMessage(items, customerData = null) {
   message += `─────────────────────────\n`;
   message += `${t.wa_total_pieces || '📦 *Total Piezas:*'} ${items.length} ${piecesWord}\n`;
   message += `${t.wa_total_pay || '💰 *TOTAL A PAGAR:*'} $${total.toFixed(2)} USD\n`;
-  message += `${t.wa_perks_note || '✨ *Cortesía:* Estuche The Rose Vault + Envío Courier Asegurado'}\n`;
+  message += `${t.wa_perks_note || '✨ *Cortesía:* Estuche Signature de Colección + Envío Courier Asegurado'}\n`;
   message += `─────────────────────────\n\n`;
 
   if (customerData) {
@@ -1310,7 +1310,7 @@ const LEGAL_DOCS = {
       <p>Al acceder y realizar un pedido en <strong>magicaintencion.com</strong> o a través de nuestros canales oficiales de WhatsApp Concierge, usted acepta los siguientes términos:</p>
 
       <h4>1. Precios y Divisas</h4>
-      <p>Nuestra colección se comercializa a una inversión transparente fija de <strong>$89.00 USD</strong> por pieza (o su equivalente en Pesos Mexicanos al tipo de cambio oficial vigente al momento de emitir la orden). Todos los precios incluyen estuche rígido de lujo <em>The Rose Vault</em>, paño de gamuza, certificado gemológico y envío prioritario asegurado de cortesía.</p>
+      <p>Nuestra colección se comercializa a una inversión transparente fija de <strong>$89.00 USD</strong> por pieza (o su equivalente en Pesos Mexicanos al tipo de cambio oficial vigente al momento de emitir la orden). Todos los precios incluyen estuche rígido de preservación mineral, paño de gamuza, certificado gemológico y envío prioritario asegurado de cortesía.</p>
 
       <h4>2. Autenticidad Mineral Garantizada</h4>
       <p>Garantizamos al 100% que los cuarzos y piedras empleadas son minerales naturales legítimos extraídos de vetas geológicas reales (Grado AAA+), libres de resinas o imitaciones plásticas. Cada gema puede presentar variaciones cromáticas naturales irrepetibles inherentes a su formación geológica.</p>
@@ -1540,7 +1540,7 @@ function processChatQuery(rawQuery) {
             ${itemNames}
           </div>
           <p><strong>Inversión Total: $${totalAmount.toFixed(0)} USD</strong></p>
-          <p style="font-size: 0.78rem; color: #555;">✓ Incluye cofre de alta custodia <em>The Rose Vault</em>, Certificado Nominativo y Envío Priority Courier Asegurado mundial de cortesía.</p>
+          <p style="font-size: 0.78rem; color: #555;">✓ Incluye estuche rígido de preservación mineral de alta custodia, Certificado Nominativo y Envío Priority Courier Asegurado mundial de cortesía.</p>
           <p>Para entrar al <strong>círculo sagrado de taller</strong> y verificar tus medidas con una joyera humana, pulsa el botón a continuación. Pasaremos a WhatsApp únicamente para sellar tu folio:</p>
           <a href="https://wa.me/5218110316819?text=${waMsg}" target="_blank" class="chat-btn-wa-confirm">
             <span>❦</span> Confirmar Talismán en WhatsApp (+52 1 81 1031 6819) ↗
@@ -1549,7 +1549,7 @@ function processChatQuery(rawQuery) {
       } else {
         reply = `
           <p>✦ Aún no has depositado ninguna joya en tu bolsa sagrada.</p>
-          <p>Cada pieza de nuestra colección tiene una inversión transparente fija de <strong>$89.00 USD</strong> y te llega en el cofre marfil <em>The Rose Vault</em> con certificado nominativo.</p>
+          <p>Cada pieza de nuestra colección tiene una inversión transparente fija de <strong>$89.00 USD</strong> y te llega en su estuche rígido de colección con certificado nominativo.</p>
           <p>Puedes elegir tu gema en el catálogo o, si deseas que una maestra joyera prepare un diseño personalizado para tu carta astral, conéctate ahora mismo a WhatsApp:</p>
           <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="chat-btn-wa-confirm">
             <span>❦</span> Hablar con Joyera en WhatsApp (+52 1 81 1031 6819) ↗
@@ -1576,7 +1576,7 @@ function processChatQuery(rawQuery) {
         <p>Nuestras piezas están forjadas con minerales geológicos auténticos y herrajes nobles con sellado hidrófugo, pero su energía sutil agradece cuidados conscientes:</p>
         <p>• <strong>Sahumerio Purificador (Recomendado):</strong> Pasa tu pulsera por el humo de <em>Palo Santo, Salvia Blanca o Copal</em> durante 30 segundos. Disolverá cualquier carga estática acumulada sin alterar los aceites de la orfebrería.</p>
         <p>• <strong>Recarga de Luna Llena:</strong> Colócala cerca de una ventana bajo la luz de la Luna Llena. Los cristales se sintonizan con los ciclos cósmicos de renovación.</p>
-        <p>• <strong>Frecuencia Sagrada a 432 Hz:</strong> Antes de sellar cada cofre <em>The Rose Vault</em>, hacemos vibrar cuencos de cuarzo a 432 Hz para devolver el cristal a su armonía geométrica pura original.</p>
+        <p>• <strong>Frecuencia Sagrada a 432 Hz:</strong> Antes de sellar cada estuche de colección, hacemos vibrar cuencos de cuarzo a 432 Hz para devolver el cristal a su armonía geométrica pura original.</p>
         <p>• <strong>¿Se pueden mojar?</strong> Sí, toleran agua dulce natural. Sugerimos evitar cloro de piscinas o químicos abrasivos para conservar el brillo eterno del oro de 14K.</p>
       `;
     }
@@ -1674,13 +1674,13 @@ function processChatQuery(rawQuery) {
         <p><em>✓ Todas las piezas cuentan con Garantía de Ajuste Perpetuo de Cortesía en taller.</em></p>
       `;
     }
-    // 9. AUTENTICIDAD MINERAL & THE ROSE VAULT
+    // 9. AUTENTICIDAD MINERAL & ESTUCHE SIGNATURE
     else if (q.includes('autentic') || q.includes('natural') || q.includes('sintet') || q.includes('fals') || q.includes('plastico') || q.includes('certificado') || q.includes('estuche') || q.includes('vault')) {
       reply = `
-        <p>💎 <strong>Pureza Geológica Grado AAA+ & The Rose Vault</strong></p>
+        <p>💎 <strong>Pureza Geológica Grado AAA+ & Estuche Signature</strong></p>
         <p>En MÁGICA no existen piedras sintéticas, resinas ni tinturas plásticas. Cada mineral procede de <strong>vetas geológicas legítimas de extracción ética</strong>:</p>
         <p>• <strong>Certificado Nominativo:</strong> Cada pieza se entrega con folio único numerado impreso con tu nombre.<br>
-        • <strong>The Rose Vault:</strong> El estuche rígido marfil de colección (valorado en $35 USD) incluido sin costo, con bolsa protectora de gamuza y paño abrillantador de orfebrería.<br>
+        • <strong>Estuche Signature:</strong> El estuche rígido marfil de colección (valorado en $35 USD) incluido sin costo, con bolsa protectora de gamuza y paño abrillantador de orfebrería.<br>
         • <strong>Consagración 432 Hz:</strong> Se purifica con sonido armónico antes del sellado final.</p>
       `;
     }
@@ -1690,7 +1690,7 @@ function processChatQuery(rawQuery) {
         <p>✦ <strong>Inversión Transparente Fija</strong></p>
         <p>Cada talismán de MÁGICA tiene un valor único de <strong>$89.00 USD</strong> (o su conversión oficial al día en Pesos Mexicanos) e incluye:</p>
         <p>• El talismán forjado a mano con gemas Grado AAA+.<br>
-        • El cofre rígido de lujo <em>The Rose Vault</em>.<br>
+        • El estuche rígido de preservación mineral de alta joyería.<br>
         • El Certificado Nominativo de Autenticidad.<br>
         • <strong>Envío Priority Courier Asegurado de Cortesía</strong> (2 a 4 días en todo México; 4 a 7 días internacional).</p>
       `;
@@ -1718,7 +1718,7 @@ function processChatQuery(rawQuery) {
     else {
       reply = `
         <p>✦ <strong>Percibo tu búsqueda sobre <em>"${rawQuery}"</em>.</strong></p>
-        <p>En el universo de Mágica, cada piedra natural posee una firma energética única. Nuestras piezas tienen una inversión fija de <strong>$89 USD</strong> e incluyen consagración a 432 Hz y estuche <em>The Rose Vault</em>.</p>
+        <p>En el universo de Mágica, cada piedra natural posee una firma energética única. Nuestras piezas tienen una inversión fija de <strong>$89 USD</strong> e incluyen consagración a 432 Hz y estuche rígido de colección.</p>
         <p>Para orientar tu camino con precisión, dime: ¿sientes el llamado de un talismán para <strong>Blindaje y Protección</strong>, <strong>Flujo de Abundancia</strong>, <strong>Sabiduría y Tercer Ojo</strong> o <strong>Amor y Paz Interior</strong>?</p>
         <p><small>Si ya tienes definida tu pieza, podemos pasar a WhatsApp (+52 1 81 1031 6819) únicamente a sellar tu folio de entrega.</small></p>
       `;
