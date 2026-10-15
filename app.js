@@ -46,7 +46,7 @@ const PRODUCTS = [
     chakra: 'Corona (Sahasrara) & Corazón (Anahata)',
     element: 'Tierra / Aire',
     zodiac: 'Tauro, Virgo, Cáncer',
-    metal: 'Separadores facetados en baño de oro de 14K y acero inoxidable'
+    metal: 'Separadores facetados en acero inoxidable quirúrgico'
   },
   {
     id: 'jade-pez-dorado',
@@ -61,7 +61,7 @@ const PRODUCTS = [
     chakra: 'Plexo Solar (Manipura)',
     element: 'Fuego / Tierra',
     zodiac: 'Leo, Géminis, Aries',
-    metal: 'Charm de Orfebrería bañado en Oro de 14K y acero inoxidable'
+    metal: 'Charm y fornituras en acero inoxidable quirúrgico'
   },
   {
     id: 'lapislazuli-cabujon-oval',
@@ -87,11 +87,11 @@ const PRODUCTS = [
     category: 'proteccion',
     categoryName: 'Protección & Blindaje',
     price: 89.00,
-    intention: 'La turmalina negra es el transmutador por excelencia de radiación electromagnética y energías densas, ennoblecida con el pez de la suerte en oro pulido.',
+    intention: 'La turmalina negra es el transmutador por excelencia de radiación electromagnética y energías densas, ennoblecida con el pez de la suerte en acabado dorado pulido.',
     chakra: 'Raíz (Muladhara)',
     element: 'Tierra / Fuego',
     zodiac: 'Escorpio, Capricornio, Aries',
-    metal: 'Pez tallado con chapa de oro de 14K y rondelas en acero inoxidable'
+    metal: 'Pez tallado y rondelas en acero inoxidable quirúrgico'
   },
   {
     id: 'lapislazuli-placas',
@@ -106,7 +106,7 @@ const PRODUCTS = [
     chakra: 'Tercer Ojo (Ajna)',
     element: 'Agua / Aire',
     zodiac: 'Sagitario, Libra, Acuario',
-    metal: 'Esferas separadoras facetadas en oro de 14K y acero inoxidable'
+    metal: 'Esferas separadoras facetadas en acero inoxidable quirúrgico'
   },
   {
     id: 'cuarzo-rosa-nacar',
@@ -136,7 +136,7 @@ const PRODUCTS = [
     chakra: 'Plexo Solar & Corazón',
     element: 'Tierra',
     zodiac: 'Tauro, Virgo, Géminis, Leo',
-    metal: 'Cuentas cúbicas facetadas en oro de 14K y acero inoxidable'
+    metal: 'Cuentas cúbicas facetadas en acero inoxidable quirúrgico'
   },
   {
     id: 'stacking-amatista-oro',
@@ -151,7 +151,7 @@ const PRODUCTS = [
     chakra: 'Corona & Tercer Ojo',
     element: 'Aire / Éter',
     zodiac: 'Piscis, Acuario, Sagitario, Virgo',
-    metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 14K en acero inoxidable'
+    metal: 'Charms de orfebrería con esmaltado marfil y herrajes en acero inoxidable quirúrgico'
   }
 ];
 
@@ -482,7 +482,7 @@ window.openQuickView = function(productId) {
       </div>
 
       <div class="qv-inclusion-note">
-        <span class="star-gold">✧</span> ${t.qv_inclusion_note || 'Incluye estuche rígido de preservación mineral, paño de gamuza y certificado nominativo de autenticidad.'}
+        <span class="star-gold">✧</span> ${t.qv_inclusion_note || 'Incluye herrajes en acero inoxidable quirúrgico, paño protector y certificado nominativo de autenticidad.'}
       </div>
 
       <div class="qv-footer">
@@ -738,7 +738,7 @@ function buildWhatsAppCartMessage(items, customerData = null) {
   message += `─────────────────────────\n`;
   message += `${t.wa_total_pieces || '📦 *Total Piezas:*'} ${items.length} ${piecesWord}\n`;
   message += `${t.wa_total_pay || '💰 *TOTAL A PAGAR:*'} $${total.toFixed(2)} USD\n`;
-  message += `${t.wa_perks_note || '✨ *Cortesía:* Estuche Signature de Colección + Envío Courier Asegurado'}\n`;
+  message += `${t.wa_perks_note || '✨ *Incluye:* Consagración 432 Hz + Certificado + Envío Courier Asegurado'}\n`;
   message += `─────────────────────────\n\n`;
 
   if (customerData) {
@@ -801,8 +801,8 @@ if (checkoutBtn) {
             <strong class="gold-amount">$${total.toFixed(2)} USD</strong>
           </div>
           <div class="summary-perks">
-            <span>✓ ${t.vault_perk1 || 'Estuche rígido de preservación mineral'}</span>
-            <span>✓ ${t.vault_perk3 || 'Envío Priority Courier Asegurado mundial sin cargo'}</span>
+            <span>✓ ${t.vault_perk1 || 'Herrajes en acero inoxidable grado quirúrgico'}</span>
+            <span>✓ ${t.vault_perk3 || 'Envío Priority Courier Asegurado sin cargo'}</span>
             <span>✓ ${t.vault_perk2 || 'Certificado gemológico nominativo con folio'}</span>
           </div>
         </div>
@@ -1310,7 +1310,7 @@ const LEGAL_DOCS = {
       <p>Al acceder y realizar un pedido en <strong>magicaintencion.com</strong> o a través de nuestros canales oficiales de WhatsApp Concierge, usted acepta los siguientes términos:</p>
 
       <h4>1. Precios y Divisas</h4>
-      <p>Nuestra colección se comercializa a una inversión transparente fija de <strong>$89.00 USD</strong> por pieza (o su equivalente en Pesos Mexicanos al tipo de cambio oficial vigente al momento de emitir la orden). Todos los precios incluyen estuche rígido de preservación mineral, paño de gamuza, certificado gemológico y envío prioritario asegurado de cortesía.</p>
+      <p>Nuestra colección se comercializa a una inversión transparente fija de <strong>$89.00 USD</strong> por pieza (o su equivalente en Pesos Mexicanos al tipo de cambio oficial vigente al momento de emitir la orden). Todos los precios incluyen consagración sonora a 432 Hz, herrajes de acero inoxidable hipoalergénico, paño protector, certificado gemológico y envío prioritario asegurado de cortesía.</p>
 
       <h4>2. Autenticidad Mineral Garantizada</h4>
       <p>Garantizamos al 100% que los cuarzos y piedras empleadas son minerales naturales legítimos extraídos de vetas geológicas reales (Grado AAA+), libres de resinas o imitaciones plásticas. Cada gema puede presentar variaciones cromáticas naturales irrepetibles inherentes a su formación geológica.</p>
@@ -1540,7 +1540,7 @@ function processChatQuery(rawQuery) {
             ${itemNames}
           </div>
           <p><strong>Inversión Total: $${totalAmount.toFixed(0)} USD</strong></p>
-          <p style="font-size: 0.78rem; color: #555;">✓ Incluye estuche rígido de preservación mineral de alta custodia, Certificado Nominativo y Envío Priority Courier Asegurado mundial de cortesía.</p>
+          <p style="font-size: 0.78rem; color: #555;">✓ Incluye herrajes de acero inoxidable quirúrgico, Consagración 432 Hz, Certificado Nominativo y Envío Priority Courier Asegurado mundial de cortesía.</p>
           <p>Para entrar al <strong>círculo sagrado de taller</strong> y verificar tus medidas con una joyera humana, pulsa el botón a continuación. Pasaremos a WhatsApp únicamente para sellar tu folio:</p>
           <a href="https://wa.me/5218110316819?text=${waMsg}" target="_blank" class="chat-btn-wa-confirm">
             <span>❦</span> Confirmar Talismán en WhatsApp (+52 1 81 1031 6819) ↗
@@ -1549,7 +1549,7 @@ function processChatQuery(rawQuery) {
       } else {
         reply = `
           <p>✦ Aún no has depositado ninguna joya en tu bolsa sagrada.</p>
-          <p>Cada pieza de nuestra colección tiene una inversión transparente fija de <strong>$89.00 USD</strong> y te llega en su estuche rígido de colección con certificado nominativo.</p>
+          <p>Cada pieza de nuestra colección tiene una inversión transparente fija de <strong>$89.00 USD</strong> y te llega con su Certificado Nominativo de Autenticidad Mineral y consagración a 432 Hz.</p>
           <p>Puedes elegir tu gema en el catálogo o, si deseas que una maestra joyera prepare un diseño personalizado para tu carta astral, conéctate ahora mismo a WhatsApp:</p>
           <a href="https://wa.me/5218110316819?text=Hola%20M%C3%A1gica%20Joyer%C3%ADa%2C%20deseo%20asesor%C3%ADa%20personalizada%20con%20una%20joyera%20concierge." target="_blank" class="chat-btn-wa-confirm">
             <span>❦</span> Hablar con Joyera en WhatsApp (+52 1 81 1031 6819) ↗
@@ -1576,8 +1576,8 @@ function processChatQuery(rawQuery) {
         <p>Nuestras piezas están forjadas con minerales geológicos auténticos y herrajes nobles con sellado hidrófugo, pero su energía sutil agradece cuidados conscientes:</p>
         <p>• <strong>Sahumerio Purificador (Recomendado):</strong> Pasa tu pulsera por el humo de <em>Palo Santo, Salvia Blanca o Copal</em> durante 30 segundos. Disolverá cualquier carga estática acumulada sin alterar los aceites de la orfebrería.</p>
         <p>• <strong>Recarga de Luna Llena:</strong> Colócala cerca de una ventana bajo la luz de la Luna Llena. Los cristales se sintonizan con los ciclos cósmicos de renovación.</p>
-        <p>• <strong>Frecuencia Sagrada a 432 Hz:</strong> Antes de sellar cada estuche de colección, hacemos vibrar cuencos de cuarzo a 432 Hz para devolver el cristal a su armonía geométrica pura original.</p>
-        <p>• <strong>¿Se pueden mojar?</strong> Sí, toleran agua dulce natural. Sugerimos evitar cloro de piscinas o químicos abrasivos para conservar el brillo eterno del oro de 14K.</p>
+        <p>• <strong>Frecuencia Sagrada a 432 Hz:</strong> Antes de su despacho hacia ti, hacemos vibrar cuencos de cuarzo a 432 Hz para devolver el cristal a su armonía geométrica pura original.</p>
+        <p>• <strong>¿Se pueden mojar?</strong> Sí, toleran agua dulce natural perfectamente. Nuestros herrajes son de acero inoxidable de grado quirúrgico hipoalergénico que no se oxida ni mancha la piel. Para cuidar la gema natural, sugerimos evitar cloro de piscinas o químicos abrasivos.</p>
       `;
     }
     // 4. PROTECCIÓN, BLINDAJE Y ENERGÍAS DENSAS
@@ -1618,12 +1618,12 @@ function processChatQuery(rawQuery) {
             <img src="assets/Catalogo/pulsera-jade-pez-dorado.jpg" class="chat-card-thumb" alt="Jade Dorado">
             <div class="chat-card-info">
               <h5>Jade Dorado & Pez de Fortuna</h5>
-              <span>Jade Amarillo Imperial & Oro 14K · $89 USD</span>
+              <span>Jade Amarillo Imperial & Acero Inox · $89 USD</span>
             </div>
           </div>
           <button class="chat-card-btn" onclick="addToCart('jade-pez-dorado'); showToast('✦ Jade Dorado agregado a tu bolsa de abundancia', 'gold');">+ Agregar a la Bolsa</button>
         </div>
-        <p style="margin-top: 8px;">El <strong>Pez de Fortuna forjado en oro</strong> nada a contracorriente, recordando que la riqueza verdadera fluye hacia quien confía en su valor divino.</p>
+        <p style="margin-top: 8px;">El <strong>Pez de Fortuna en acabado dorado</strong> nada a contracorriente, recordando que la riqueza verdadera fluye hacia quien confía en su valor divino.</p>
       `;
     }
     // 6. SABIDURÍA, ENFOQUE, INTUICIÓN, LAPISLÁZULI
@@ -1674,13 +1674,13 @@ function processChatQuery(rawQuery) {
         <p><em>✓ Todas las piezas cuentan con Garantía de Ajuste Perpetuo de Cortesía en taller.</em></p>
       `;
     }
-    // 9. AUTENTICIDAD MINERAL & ESTUCHE SIGNATURE
-    else if (q.includes('autentic') || q.includes('natural') || q.includes('sintet') || q.includes('fals') || q.includes('plastico') || q.includes('certificado') || q.includes('estuche') || q.includes('vault')) {
+    // 9. AUTENTICIDAD MINERAL & ACERO INOXIDABLE
+    else if (q.includes('autentic') || q.includes('natural') || q.includes('sintet') || q.includes('fals') || q.includes('plastico') || q.includes('certificado') || q.includes('material') || q.includes('acero') || q.includes('metal')) {
       reply = `
-        <p>💎 <strong>Pureza Geológica Grado AAA+ & Estuche Signature</strong></p>
-        <p>En MÁGICA no existen piedras sintéticas, resinas ni tinturas plásticas. Cada mineral procede de <strong>vetas geológicas legítimas de extracción ética</strong>:</p>
+        <p>💎 <strong>Pureza Geológica Genuina & Acero Inoxidable Quirúrgico</strong></p>
+        <p>En MÁGICA no existen piedras sintéticas, resinas ni tinturas plásticas. Cada mineral procede de <strong>vetas geológicas legítimas seleccionadas a mano</strong>:</p>
         <p>• <strong>Certificado Nominativo:</strong> Cada pieza se entrega con folio único numerado impreso con tu nombre.<br>
-        • <strong>Estuche Signature:</strong> El estuche rígido marfil de colección (valorado en $35 USD) incluido sin costo, con bolsa protectora de gamuza y paño abrillantador de orfebrería.<br>
+        • <strong>Herrajes en Acero Inoxidable:</strong> Grado quirúrgico hipoalergénico, libre de níquel, inoxidable y resistente al agua.<br>
         • <strong>Consagración 432 Hz:</strong> Se purifica con sonido armónico antes del sellado final.</p>
       `;
     }
@@ -1689,8 +1689,8 @@ function processChatQuery(rawQuery) {
       reply = `
         <p>✦ <strong>Inversión Transparente Fija</strong></p>
         <p>Cada talismán de MÁGICA tiene un valor único de <strong>$89.00 USD</strong> (o su conversión oficial al día en Pesos Mexicanos) e incluye:</p>
-        <p>• El talismán forjado a mano con gemas Grado AAA+.<br>
-        • El estuche rígido de preservación mineral de alta joyería.<br>
+        <p>• El talismán forjado a mano con gemas naturales auténticas.<br>
+        • Herrajes nobles en acero inoxidable quirúrgico hipoalergénico.<br>
         • El Certificado Nominativo de Autenticidad.<br>
         • <strong>Envío Priority Courier Asegurado de Cortesía</strong> (2 a 4 días en todo México; 4 a 7 días internacional).</p>
       `;
@@ -1718,7 +1718,7 @@ function processChatQuery(rawQuery) {
     else {
       reply = `
         <p>✦ <strong>Percibo tu búsqueda sobre <em>"${rawQuery}"</em>.</strong></p>
-        <p>En el universo de Mágica, cada piedra natural posee una firma energética única. Nuestras piezas tienen una inversión fija de <strong>$89 USD</strong> e incluyen consagración a 432 Hz y estuche rígido de colección.</p>
+        <p>En el universo de Mágica, cada piedra natural posee una firma energética única. Nuestras piezas tienen una inversión fija de <strong>$89 USD</strong> e incluyen consagración a 432 Hz, herrajes en acero inoxidable y certificado de autenticidad.</p>
         <p>Para orientar tu camino con precisión, dime: ¿sientes el llamado de un talismán para <strong>Blindaje y Protección</strong>, <strong>Flujo de Abundancia</strong>, <strong>Sabiduría y Tercer Ojo</strong> o <strong>Amor y Paz Interior</strong>?</p>
         <p><small>Si ya tienes definida tu pieza, podemos pasar a WhatsApp (+52 1 81 1031 6819) únicamente a sellar tu folio de entrega.</small></p>
       `;

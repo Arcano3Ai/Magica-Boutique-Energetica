@@ -47,18 +47,18 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Frecuencia de Consagración',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Inversión Fija por Joya',
-    hero_stat_metal: '14K',
-    hero_stat_metal_desc: 'Acabados en Oro 14K & Acero Inoxidable',
+    hero_stat_metal: 'Inox',
+    hero_stat_metal_desc: 'Herrajes en Acero Inoxidable Quirúrgico',
 
     // Prestige Pillars
-    pillar_1_title: 'Gemas Naturales Grado AAA+',
-    pillar_1_desc: 'Extracción ética sin tratamientos térmicos invasivos ni imitaciones sintéticas.',
-    pillar_2_title: 'Orfebrería en Oro 14K & Acero Inoxidable',
-    pillar_2_desc: 'Herrajes nobles forjados a mano con sellado hidrófugo y durabilidad eterna.',
+    pillar_1_title: 'Gemas Naturales Genuinas',
+    pillar_1_desc: 'Minerales auténticos seleccionados a mano, libres de resinas y tinturas sintéticas.',
+    pillar_2_title: 'Herrajes en Acero Inoxidable',
+    pillar_2_desc: 'Grado quirúrgico hipoalergénico con resistencia total al agua y al uso diario continuo.',
     pillar_3_title: 'Sintonización Sagrada 432 Hz',
     pillar_3_desc: 'Cada lote es consagrado bajo campanas tibetanas y cuencos de cuarzo cristalino.',
-    pillar_4_title: 'Estuche Signature de Colección',
-    pillar_4_desc: 'Presentación rígida de terciopelo marfil con certificado gemológico nominativo.',
+    pillar_4_title: 'Envío Prioritario Asegurado',
+    pillar_4_desc: 'Despacho protegido con guía satelital y garantía total de ajuste a tu medida.',
 
     // Oráculo
     oracle_overline: 'SINTONIZACIÓN ASTRAL & FRECUENCIA 432 HZ',
@@ -115,11 +115,11 @@ const TRANSLATIONS = {
     // Ritual
     ritual_overline: 'DEVOCIÓN POR EL ORIGEN Y EL OFICIO',
     ritual_title: 'El Ritual de Consagración',
-    ritual_p1: 'En Mágica, una pulsera no es un accesorio decorativo: es un vórtice energético que se fusiona con tu pulso arterial. Antes de ingresar a su estuche, cada espécimen reposa sobre una cama de selenita marroquí y es expuesto a secuencias armónicas de 432 Hz.',
-    ritual_p2: 'Nuestros maestros orfebres entrelazan cada cuenta sobre hilos de silicona náutica de memoria indeformable y engarzan herrajes con baños en oro de 14K y acero inoxidable quirúrgico, asegurando que tu amuleto resista el paso de los años con inalterable esplendor.',
-    vault_title: 'Estuche Signature de Colección (De Cortesía)',
-    vault_desc: 'Cada adquisición se despacha en nuestro packaging insignia: cofre rígido forrado en lino crudo y terciopelo, lazo de seda, gamuza de limpieza y certificado de autenticidad.',
-    vault_perk1: 'Estuche rígido de preservación mineral',
+    ritual_p1: 'En Mágica, una pulsera no es un accesorio decorativo: es un vórtice energético que se fusiona con tu pulso arterial. Antes de su despacho, cada espécimen reposa sobre una cama de selenita marroquí y es expuesto a secuencias armónicas de 432 Hz.',
+    ritual_p2: 'Nuestros artesanos entrelazan cada cuenta sobre hilos de silicona náutica de memoria indeformable y engarzan herrajes en acero inoxidable quirúrgico hipoalergénico, asegurando que tu amuleto resista el paso de los años con inalterable esplendor.',
+    vault_title: 'Consagración Sonora & Envío Asegurado',
+    vault_desc: 'Cada adquisición incluye consagración acústica a 432 Hz, herrajes de acero inoxidable hipoalergénico, certificado gemológico nominativo y envío prioritario asegurado.',
+    vault_perk1: 'Herrajes en acero inoxidable grado quirúrgico',
     vault_perk2: 'Certificado gemológico nominativo con folio',
     vault_perk3: 'Envío Priority Courier Asegurado mundial sin cargo',
 
@@ -192,7 +192,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Completar datos aquí en la web (Opcional) ↗',
     cart_selected_label: 'Piezas Seleccionadas:',
     cart_items_count_suffix: 'joya(s) de autor',
-    cart_perk_vault: '✓ Estuche Signature de Colección de cortesía',
+    cart_perk_vault: '✓ Herrajes en acero inoxidable quirúrgico hipoalergénico',
     cart_perk_courier: '✓ Envío Priority Courier Asegurado mundial',
     cart_perk_cert: '✓ Certificado Mineral Nominativo con Folio',
 
@@ -221,8 +221,8 @@ const TRANSLATIONS = {
     qv_chakra_rector: 'Chakra Rector',
     qv_alchemical_element: 'Elemento Alquímico',
     qv_zodiac_signs: 'Signos Zodiacales',
-    qv_fine_jewelry: 'Orfebrería Fina',
-    qv_inclusion_note: 'Incluye estuche rígido de preservación mineral, paño de gamuza y certificado nominativo de autenticidad.',
+    qv_fine_jewelry: 'Acero Inoxidable Quirúrgico',
+    qv_inclusion_note: 'Incluye herrajes en acero inoxidable quirúrgico, paño protector y certificado nominativo de autenticidad.',
     qv_add_bag: '+ Añadir a la Bolsa',
     qv_wa_inquire: '<span>❦</span> Pedir por WhatsApp (+52 1 81 1031 6819)',
 
@@ -247,7 +247,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *PIEZAS SELECCIONADAS:*',
     wa_total_pieces: '📦 *Total Piezas:*',
     wa_total_pay: '💰 *TOTAL A PAGAR:*',
-    wa_perks_note: '✨ *Cortesía:* Estuche Signature de Colección + Envío Courier Asegurado',
+    wa_perks_note: '✨ *Incluye:* Consagración 432 Hz + Certificado + Envío Courier Asegurado',
     wa_customer_title: '👤 *DATOS DEL CLIENTE / ENVÍO:*',
     wa_cust_name: '• Nombre:',
     wa_cust_phone: '• Teléfono WhatsApp:',
@@ -310,18 +310,18 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Consecration Frequency',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Fixed Investment per Jewel',
-    hero_stat_metal: '14K',
-    hero_stat_metal_desc: 'Finished in 14K Gold & Stainless Steel',
+    hero_stat_metal: 'Inox',
+    hero_stat_metal_desc: 'Surgical-Grade Stainless Steel Hardware',
 
     // Prestige Pillars
-    pillar_1_title: 'Grade AAA+ Natural Gemstones',
-    pillar_1_desc: 'Ethically sourced without invasive thermal treatments or synthetic imitations.',
-    pillar_2_title: '14K Gold & Stainless Steel',
-    pillar_2_desc: 'Noble hardware handcrafted with hydrophobic sealing and everlasting endurance.',
+    pillar_1_title: 'Genuine Natural Gemstones',
+    pillar_1_desc: 'Authentic hand-selected crystals free from resins and synthetic imitations.',
+    pillar_2_title: 'Surgical Stainless Steel',
+    pillar_2_desc: 'Hypoallergenic surgical-grade hardware engineered for water resistance and daily wear.',
     pillar_3_title: 'Sacred 432 Hz Attunement',
     pillar_3_desc: 'Each master batch is attuned under Himalayan singing bowls and crystal sound vibrations.',
-    pillar_4_title: 'Signature Collection Jewelry Casket',
-    pillar_4_desc: 'Ivory velvet presentation box complete with personal nominative gemological certificate.',
+    pillar_4_title: 'Insured Priority Shipping',
+    pillar_4_desc: 'Worldwide protected delivery with tracking and bespoke fit guarantee.',
 
     // Oráculo
     oracle_overline: 'ASTRAL ATTUNEMENT & 432 HZ SACRED FREQUENCY',
@@ -378,11 +378,11 @@ const TRANSLATIONS = {
     // Ritual
     ritual_overline: 'DEVOTION TO THE SOURCE & SACRED CRAFT',
     ritual_title: 'The Consecration Ritual',
-    ritual_p1: 'At Mágica, a bracelet is not merely an ornament: it is an energetic vortex that aligns with your arterial pulse. Before leaving our sanctuary, each piece rests on Moroccan selenite and absorbs pure harmonic 432 Hz frequencies.',
-    ritual_p2: 'Our master artisans knot every bead upon indeformable nautical memory silicone cords, framing them in 14K gold and surgical-grade stainless steel accents, engineered to endure the passage of time with immutable splendor.',
-    vault_title: 'Signature Collection Casket (Complimentary)',
-    vault_desc: 'Every acquisition is dispatched in our signature packaging: ivory linen rigid casket, velvet interior, silk ribbon, polishing cloth and certificate of authenticity.',
-    vault_perk1: 'Rigid mineral preservation jewelry casket',
+    ritual_p1: 'At Mágica, a bracelet is not merely an ornament: it is an energetic vortex that aligns with your arterial pulse. Before leaving our workshop, each piece rests on selenite and absorbs pure harmonic 432 Hz frequencies.',
+    ritual_p2: 'Our artisans knot every bead upon indeformable nautical memory silicone cords, framing them in hypoallergenic surgical stainless steel accents, engineered to endure the passage of time.',
+    vault_title: 'Sound Consecration & Insured Delivery',
+    vault_desc: 'Every acquisition includes 432 Hz harmonic attunement, hypoallergenic stainless steel fittings, nominative certificate and insured priority delivery.',
+    vault_perk1: 'Surgical-grade stainless steel hardware',
     vault_perk2: 'Nominative gemological certificate with registered folio',
     vault_perk3: 'Worldwide Insured Priority Courier Delivery included',
 
@@ -455,7 +455,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Fill in details on web (Optional) ↗',
     cart_selected_label: 'Selected Creations:',
     cart_items_count_suffix: 'master piece(s)',
-    cart_perk_vault: '✓ Complimentary Signature Collection casket',
+    cart_perk_vault: '✓ Hypoallergenic surgical stainless steel hardware',
     cart_perk_courier: '✓ Insured worldwide Priority Courier',
     cart_perk_cert: '✓ Nominative certificate with unique folio',
 
@@ -484,8 +484,8 @@ const TRANSLATIONS = {
     qv_chakra_rector: 'Governing Chakra',
     qv_alchemical_element: 'Alchemical Element',
     qv_zodiac_signs: 'Resonant Zodiac',
-    qv_fine_jewelry: 'Fine Goldsmithing',
-    qv_inclusion_note: 'Includes rigid preservation casket, polishing velvet cloth and nominative authenticity certificate.',
+    qv_fine_jewelry: 'Surgical Stainless Steel',
+    qv_inclusion_note: 'Includes surgical stainless steel hardware, protective pouch and nominative authenticity certificate.',
     qv_add_bag: '+ Add to Bag',
     qv_wa_inquire: '<span>❦</span> Inquire / Order on WhatsApp (+52 1 81 1031 6819)',
 
@@ -510,7 +510,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *SELECTED CREATIONS:*',
     wa_total_pieces: '📦 *Total Pieces:*',
     wa_total_pay: '💰 *TOTAL AMOUNT:*',
-    wa_perks_note: '✨ *Complimentary:* Signature Collection Casket + Insured Priority Courier',
+    wa_perks_note: '✨ *Included:* 432 Hz Consecration + Certificate + Insured Priority Courier',
     wa_customer_title: '👤 *CLIENT / DELIVERY DETAILS:*',
     wa_cust_name: '• Name:',
     wa_cust_phone: '• WhatsApp Phone:',
@@ -573,18 +573,18 @@ const TRANSLATIONS = {
     hero_stat_hz_desc: 'Minicíocht Coisricthe',
     hero_stat_price: '$89 USD',
     hero_stat_price_desc: 'Infheistíocht Fhosaithe in aghaidh an tSeoid',
-    hero_stat_metal: '14K',
-    hero_stat_metal_desc: 'Ceardaíocht in Ór 14K & Cruach Dhosmálta',
+    hero_stat_metal: 'Inox',
+    hero_stat_metal_desc: 'Feistis i gCruach Dhosmálta Máinliachta',
 
     // Prestige Pillars
-    pillar_1_title: 'GEMS Nádúrtha Grád AAA+',
-    pillar_1_desc: 'Bainte go heiticiúil gan próisis theasa millteacha ná aithrisí sintéiseacha.',
-    pillar_2_title: 'Ór 14K & Cruach Dhosmálta',
-    pillar_2_desc: 'Feistis uaisle ceaptha de láimh le séalú hidreafóbach agus buanseasmhacht shíoraí.',
+    pillar_1_title: 'Fíor-GEMS Nádúrtha',
+    pillar_1_desc: 'Bainte go heiticiúil gan aithrisí plaisteacha ná sintéiseacha.',
+    pillar_2_title: 'Cruach Dhosmálta Máinliachta',
+    pillar_2_desc: 'Feistis hipialairgineacha a sheasann in aghaidh uisce agus caithimh laethúil.',
     pillar_3_title: 'Tiúnadh Naofa 432 Hz',
     pillar_3_desc: 'Gach eagrann coisricthe faoi chloig Thiobéiteacha agus bhabhlaí grianchloiche.',
-    pillar_4_title: 'Ciste Bhailiúchán Shínithe',
-    pillar_4_desc: 'Bosca daingean veilbhit eabhair le teastas geameolaíochta ainmniúil san áireamh.',
+    pillar_4_title: 'Seachadadh Tosaíochta Faoi Árachas',
+    pillar_4_desc: 'Seachadadh domhanda cosanta le rianú satailíte agus barántas feistithe.',
 
     // Oráculo
     oracle_overline: 'TIÚNADH RÉALTACH & MINICÍOCHT NAOFA 432 HZ',
@@ -641,11 +641,11 @@ const TRANSLATIONS = {
     // Ritual
     ritual_overline: 'DÚTHRACHT DON CHRUTHÚ AGUS DON CHEIRD',
     ritual_title: 'Deasghnáth an Choisricthe',
-    ritual_p1: 'I Mágica, ní maisiú simplí é an cúngrach: is guairneán fuinnimh é a cheanglaíonn le do chuisle. Sula gcuirtear ina chiste é, luíonn gach seoid ar shailenít Mharacach agus ionsúnn sé minicíochtaí armónacha 432 Hz.',
-    ritual_p2: 'Fíonn ár máistir-cheardaithe gach coirnín ar shnáitheanna mara dochumtha sileacóin le feistis óir 14K agus cruach dhosmálta, ag cinntiú go mairfidh do gheasa thar na glúnta gan smál.',
-    vault_title: 'Ciste Bhailiúchán Shínithe (Saor in Aisce)',
-    vault_desc: 'Seoltar gach ordú inár gciste sainiúil: bosca daingean línéadaigh agus veilbhite eabhair, ribín síoda, éadach glanta agus teastas bharántúlachta.',
-    vault_perk1: 'Ciste daingean cosanta do mhianraí luachmhara',
+    ritual_p1: 'I Mágica, ní maisiú simplí é an cúngrach: is guairneán fuinnimh é a cheanglaíonn le do chuisle. Sula seoltar chugat é, luíonn gach seoid ar shailenít agus ionsúnn sé minicíochtaí armónacha 432 Hz.',
+    ritual_p2: 'Fíonn ár gceardaithe gach coirnín ar shnáitheanna mara sileacóin le feistis chruach dhosmálta mháinliachta a sheasfaidh thar na blianta gan smál.',
+    vault_title: 'Coisreacan Naofa & Seachadadh Faoi Árachas',
+    vault_desc: 'Áirítear le gach ordú coisreacan fuaime 432 Hz, feistis chruach dhosmálta, teastas ainmniúil agus seachadadh tosaíochta faoi árachas.',
+    vault_perk1: 'Feistis i gcruach dhosmálta máinliachta',
     vault_perk2: 'Teastas geameolaíochta ainmniúil le fóilió cláraithe',
     vault_perk3: 'Seachadadh tosaíochta cúiréire faoi árachas domhanda saor in aisce',
 
@@ -718,7 +718,7 @@ const TRANSLATIONS = {
     cart_btn_checkout: 'Líon sonraí ar an suíomh gréasáin (Roghnach) ↗',
     cart_selected_label: 'Seoda Roghnaithe:',
     cart_items_count_suffix: 'máistir-sheoid',
-    cart_perk_vault: '✓ Ciste Bhailiúchán Shínithe saor in aisce',
+    cart_perk_vault: '✓ Feistis i gcruach dhosmálta mháinliachta hipialairgineach',
     cart_perk_courier: '✓ Seachadadh tosaíochta faoi árachas domhanda',
     cart_perk_cert: '✓ Teastas mianra ainmniúil le fóilió',
 
@@ -747,8 +747,8 @@ const TRANSLATIONS = {
     qv_chakra_rector: 'Chakra Rialaithe',
     qv_alchemical_element: 'Dúil Ailceamach',
     qv_zodiac_signs: 'Comharthaí Stoidiaca',
-    qv_fine_jewelry: 'Ceardaíocht Seodra',
-    qv_inclusion_note: 'Cuimsíonn sé ciste daingean cosanta mianraí, éadach veilbhite agus teastas ainmniúil barántúlachta.',
+    qv_fine_jewelry: 'Cruach Dhosmálta Máinliachta',
+    qv_inclusion_note: 'Áirítear feistis chruach dhosmálta mháinliachta, mála cosanta agus teastas ainmniúil bharántúlachta.',
     qv_add_bag: '+ Cuir sa Mhála',
     qv_wa_inquire: '<span>❦</span> Fiosraigh / Ordaigh ar WhatsApp (+52 1 81 1031 6819)',
 
@@ -773,7 +773,7 @@ const TRANSLATIONS = {
     wa_selected_pieces: '🛍️ *SEODA ROGHNAITHE:*',
     wa_total_pieces: '📦 *Méid Seod:*',
     wa_total_pay: '💰 *INFHEISTÍOCHT IOMLÁN:*',
-    wa_perks_note: '✨ *Saor in aisce:* Ciste Bhailiúchán Shínithe + Cúiréir Tosaíochta Faoi Árachas',
+    wa_perks_note: '✨ *San áireamh:* Coisreacan 432 Hz + Teastas + Cúiréir Tosaíochta Faoi Árachas',
     wa_customer_title: '👤 *SONRAÍ AN CHLIENT / AN SEACHADTA:*',
     wa_cust_name: '• Ainm:',
     wa_cust_phone: '• Fón WhatsApp:',
@@ -879,7 +879,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Corona (Sahasrara) & Corazón (Anahata)',
       element: 'Tierra / Aire',
       zodiac: 'Tauro, Virgo, Cáncer',
-      metal: 'Separadores facetados en baño de oro de 14K y acero inoxidable'
+      metal: 'Separadores facetados en acero inoxidable quirúrgico'
     },
     en: {
       name: 'White Quartz & Sculpted Jade',
@@ -890,7 +890,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Crown (Sahasrara) & Heart (Anahata)',
       element: 'Earth / Air',
       zodiac: 'Taurus, Virgo, Cancer',
-      metal: 'Faceted spacers layered in 14K gold & stainless steel'
+      metal: 'Faceted spacers in surgical stainless steel'
     },
     ga: {
       name: 'Grianchloch Bhán & Sead Dealbhaithe',
@@ -901,7 +901,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Coróin (Sahasrara) & Croí (Anahata)',
       element: 'Talamh / Aer',
       zodiac: 'Tarbh, Maighdean, Portán',
-      metal: 'Idir-roinnteoirí snasta le leictreaphlátáil óir 14K & cruach dhosmálta'
+      metal: 'Idir-roinnteoirí snasta i gcruach dhosmálta mháinliachta'
     }
   },
   'jade-pez-dorado': {
@@ -914,7 +914,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Plexo Solar (Manipura)',
       element: 'Fuego / Tierra',
       zodiac: 'Leo, Géminis, Aries',
-      metal: 'Charm de Orfebrería bañado en Oro de 14K y acero inoxidable'
+      metal: 'Charm y fornituras en acero inoxidable quirúrgico'
     },
     en: {
       name: 'Golden Jade & Fortune Fish',
@@ -925,7 +925,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Solar Plexus (Manipura)',
       element: 'Fire / Earth',
       zodiac: 'Leo, Gemini, Aries',
-      metal: 'Handcrafted charm plated in 14K gold & stainless steel'
+      metal: 'Handcrafted charm and hardware in surgical stainless steel'
     },
     ga: {
       name: 'Sead Órga & Iasc an Ádh',
@@ -936,7 +936,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Pléacs Gréine (Manipura)',
       element: 'Tine / Talamh',
       zodiac: 'Leon, Cúpla, Reithe',
-      metal: 'Seoid thaisce óir 14K dealbhaithe de láimh'
+      metal: 'Seoid thaisce agus feistis i gcruach dhosmálta mháinliachta'
     }
   },
   'lapislazuli-cabujon-oval': {
@@ -980,33 +980,33 @@ const PRODUCT_TRANSLATIONS = {
       mineral: 'Turmalina Negra Facetada & Mate',
       tag: 'Escudo Supremo',
       categoryName: 'Protección & Blindaje',
-      intention: 'La turmalina negra es el transmutador por excelencia de radiación electromagnética y energías densas, ennoblecida con el pez de la suerte en oro pulido.',
+      intention: 'La turmalina negra es el transmutador por excelencia de radiación electromagnética y energías densas, ennoblecida con el pez de la suerte en acabado dorado pulido.',
       chakra: 'Raíz (Muladhara)',
       element: 'Tierra / Fuego',
       zodiac: 'Escorpio, Capricornio, Aries',
-      metal: 'Pez tallado con chapa de oro de 14K y rondelas en acero inoxidable'
+      metal: 'Pez tallado y rondelas en acero inoxidable quirúrgico'
     },
     en: {
       name: 'Black Tourmaline & Gold Fish',
       mineral: 'Faceted & Matte Black Tourmaline',
       tag: 'Supreme Shield',
       categoryName: 'Protection & Shielding',
-      intention: 'Black tourmaline is the quintessential transmuter of electromagnetic stress and heavy vibes, crowned with the lucky fish in polished gold.',
+      intention: 'Black tourmaline is the quintessential transmuter of electromagnetic stress and heavy vibes, crowned with the lucky fish talisman in polished golden tone.',
       chakra: 'Root (Muladhara)',
       element: 'Earth / Fire',
       zodiac: 'Scorpio, Capricorn, Aries',
-      metal: 'Carved fish talisman in 14K gold and stainless steel'
+      metal: 'Carved fish talisman and rondelles in surgical stainless steel'
     },
     ga: {
       name: 'Túrmailín Dubh & Iasc Óir',
       mineral: 'Túrmailín Dubh Snasta & Neamhlonrach',
       tag: 'Sciath Uachtarach',
       categoryName: 'Cosaint & Sciathán',
-      intention: 'Is é an túrmailín dubh an t-athraitheoir fuinnimh is cumhachtaí in aghaidh radaíochta agus trom-fhuinnimh, feistithe le hiasc an áidh in ór.',
+      intention: 'Is é an túrmailín dubh an t-athraitheoir fuinnimh is cumhachtaí in aghaidh radaíochta agus trom-fhuinnimh, feistithe le hiasc an áidh i lí óir.',
       chakra: 'Fréamh (Muladhara)',
       element: 'Talamh / Tine',
       zodiac: 'Scairp, Gabhar, Reithe',
-      metal: 'Iasc snoite críochnaithe in ór 14K'
+      metal: 'Iasc snoite agus fáinní i gcruach dhosmálta mháinliachta'
     }
   },
   'lapislazuli-placas': {
@@ -1019,7 +1019,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Tercer Ojo (Ajna)',
       element: 'Agua / Aire',
       zodiac: 'Sagitario, Libra, Acuario',
-      metal: 'Esferas separadoras facetadas en oro de 14K y acero inoxidable'
+      metal: 'Esferas separadoras facetadas en acero inoxidable quirúrgico'
     },
     en: {
       name: 'Geometric Lapis Lazuli Plaques',
@@ -1030,7 +1030,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Third Eye (Ajna)',
       element: 'Water / Air',
       zodiac: 'Sagittarius, Libra, Aquarius',
-      metal: 'Faceted spacer beads in 14K gold and stainless steel'
+      metal: 'Faceted spacer beads in surgical stainless steel'
     },
     ga: {
       name: 'Lé Pleaca Geoiméadracha Lapis',
@@ -1041,7 +1041,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'An Tríú Súil (Ajna)',
       element: 'Uisce / Aer',
       zodiac: 'Saighdeoir, Meá, Uisceadóir',
-      metal: 'Coirníní deighilteora in ór 14K'
+      metal: 'Coirníní deighilteora snasta i gcruach dhosmálta mháinliachta'
     }
   },
   'cuarzo-rosa-nacar': {
@@ -1089,7 +1089,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Plexo Solar & Corazón',
       element: 'Tierra',
       zodiac: 'Tauro, Virgo, Géminis, Leo',
-      metal: 'Cuentas cúbicas facetadas en oro de 14K y acero inoxidable'
+      metal: 'Cuentas cúbicas facetadas en acero inoxidable quirúrgico'
     },
     en: {
       name: 'Imperial Cream Jade & Totem Fish',
@@ -1100,7 +1100,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Solar Plexus & Heart',
       element: 'Earth',
       zodiac: 'Taurus, Virgo, Gemini, Leo',
-      metal: 'Cubic faceted beads in 14K gold and stainless steel'
+      metal: 'Cubic faceted beads in surgical stainless steel'
     },
     ga: {
       name: 'Sead Uachtair Impireachta & Iasc Tótem',
@@ -1111,7 +1111,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Pléacs Gréine & Croí',
       element: 'Talamh',
       zodiac: 'Tarbh, Maighdean, Cúpla, Leon',
-      metal: 'Coirníní ciúbacha snasta in ór 14K'
+      metal: 'Coirníní ciúbacha snasta i gcruach dhosmálta mháinliachta'
     }
   },
   'stacking-amatista-oro': {
@@ -1124,7 +1124,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Corona & Tercer Ojo',
       element: 'Aire / Éter',
       zodiac: 'Piscis, Acuario, Sagitario, Virgo',
-      metal: 'Charms de orfebrería con esmaltado marfil y baño de oro 14K en acero inoxidable'
+      metal: 'Charms de orfebrería con esmaltado marfil y herrajes en acero inoxidable quirúrgico'
     },
     en: {
       name: 'Alchemical Amethyst & Gold Stacking',
@@ -1135,7 +1135,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Crown & Third Eye',
       element: 'Air / Ether',
       zodiac: 'Pisces, Aquarius, Sagittarius, Virgo',
-      metal: 'Enameled ivory charms dipped in 14K gold and stainless steel'
+      metal: 'Enameled ivory charms with surgical stainless steel hardware'
     },
     ga: {
       name: 'Stacking Ailceamach Aimitis & Ór',
@@ -1146,7 +1146,7 @@ const PRODUCT_TRANSLATIONS = {
       chakra: 'Coróin & An Tríú Súil',
       element: 'Aer / Éitear',
       zodiac: 'Iasc, Uisceadóir, Saighdeoir, Maighdean',
-      metal: 'Seoda ceardaíochta le heabhair agus ór 14K'
+      metal: 'Seoda ceardaíochta le heabhair agus cruach dhosmálta mháinliachta'
     }
   }
 };

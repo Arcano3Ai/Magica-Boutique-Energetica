@@ -6,14 +6,14 @@
 ---
 
 ## 💎 Sobre la Marca
-**Mágica** es una firma de joyería energética orientada al segmento de ultra-lujo holístico (*high-ticket holistic jewelry*), donde cada diseño actúa como un ancla consciente y amuleto de poder personal. Cada pieza cuenta con una inversión fija de **$89.00 USD**, elaborada con minerales naturales grado AAA+ no tratados sintéticamente y orfebrería fina con acabados en oro de 14K y acero inoxidable de grado quirúrgico.
+**Mágica** es una firma de joyería energética orientada al segmento de ultra-lujo holístico (*high-ticket holistic jewelry*), donde cada diseño actúa como un ancla consciente y amuleto de poder personal. Cada pieza cuenta con una inversión fija de **$89.00 USD**, elaborada con minerales naturales grado AAA+ no tratados sintéticamente y herrajes de orfebrería en acero inoxidable de grado quirúrgico hipoalergénico con hilo elástico de silicona náutica con memoria.
 
 ---
 
 ## ✦ Catálogo de Joyas Exclusivas (Fotografía Real de Taller)
 1. **Lapislázuli Imperial & Plata Facetada** (`$89.00 USD`) — Gema sagrada de clarividencia, sabiduría e intuición.
 2. **Ónix Nocturno & Centinela Azul** (`$89.00 USD`) — Blindaje magnético de protección y anclaje con esfera centinela de Lapislázuli.
-3. **Cuarzo Blanco & Jade Esculpido** (`$89.00 USD`) — Pureza mental y armonía próspera con separadores bañados en oro de 14K.
+3. **Cuarzo Blanco & Jade Esculpido** (`$89.00 USD`) — Pureza mental y armonía próspera con separadores en acero inoxidable quirúrgico.
 4. **Jade Dorado & Pez de Fortuna** (`$89.00 USD`) — Amuleto de orfebrería para el flujo perpetuo de riqueza y bienestar.
 5. **Lapislázuli Cabujón Soberana** (`$89.00 USD`) — Pieza de autor con gran gema ovalada pulida en el pulso.
 6. **Turmalina Negra & Pez de Oro** (`$89.00 USD`) — Escudo bioenergético supremo contra vibraciones densas y campos electromagnéticos.
@@ -28,10 +28,10 @@
 1. **Barra de Anuncios Luxury**: Garantía VIP, inversión fija $89 USD, selectores de idioma `ES | EN | GA` y enlace directo al WhatsApp Concierge (`+52 1 81 1031 6819`).
 2. **Navegación Sticky con Monograma HD**: Logotipo vectorial oficial, enlaces de salto fluido, menú hamburguesa responsivo, selector de idioma y acceso a la bolsa de joyas.
 3. **Hero Editorial**: Fondo inmersivo con animación sutil, degradados radiales, canvas de polvo estelar en oro rosa (*Stardust Canvas*) y métricas de exclusividad.
-4. **Curaduría & Distinción**: Pilares de extracción ética, orfebrería fina, consagración y empaque Signature de Colección.
+4. **Curaduría & Distinción**: Pilares de extracción ética, herrajes en acero inoxidable quirúrgico, consagración a 432 Hz y envío prioritario asegurado.
 5. **Oráculo Alquímico Interactivo**: Selector por intención + signo zodiacal con recomendación armónica en tiempo real y sintetizador armónico sagrado a **432 Hz** usando la Web Audio API.
 6. **Catálogo Selecto con Filtros y Buscador**: Filtros por categoría (*Protección, Abundancia, Sabiduría, Amor*) y búsqueda instantánea multilingüe.
-7. **El Ritual de Consagración**: Filosofía de taller, armonización sonora y presentación del cofre rígido marfil *Estuche Signature de Colección*.
+7. **El Ritual de Consagración**: Filosofía de taller, armonización sonora acústica a 432 Hz y envío prioritario asegurado.
 8. **Lookbook Editorial "El Arte del Stacking"**: Galería *in situ* de pulseras en muñeca y guía para combinar 2 o 3 gemas simultáneas según la mano receptiva o proyectiva.
 9. **Guía de Tallas & Probador Interactivo**: Selector de medidas (Petite 15cm, Estándar 16.5cm, Comfort 18cm, Personalizada) y sellos de calidad de taller.
 10. **Testimonios de Coleccionistas VIP**: Reseñas verificadas con estética de terciopelo y 5 estrellas doradas.

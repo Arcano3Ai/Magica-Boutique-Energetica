@@ -1919,68 +1919,78 @@ button {
   line-height: 1.5;
 }
 
-.vault-showcase {
-  background: #FFFFFF;
+.ritual-sound-card {
+  background: var(--bg-card);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
-  padding: 40px;
+  padding: 40px 32px;
   box-shadow: var(--shadow-luxury), var(--shadow-gold-halo);
-  position: relative;
-}
-
-.vault-inner {
   text-align: center;
 }
 
-.vault-logo-img {
-  width: 68px;
-  height: 68px;
+.ritual-sound-card .vault-logo-img {
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   margin: 0 auto 16px;
   border: 1px solid var(--border-gold);
   box-shadow: 0 0 16px rgba(150, 107, 67, 0.2);
+  display: block;
 }
 
-.vault-tag {
-  display: inline-block;
-  font-size: 0.65rem;
-  letter-spacing: 0.22em;
-  color: var(--rose-gold);
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.vault-inner h3 {
+.sound-card-title {
   font-family: var(--font-cinzel);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: var(--text-pure);
-  margin-bottom: 12px;
+  margin: 10px 0 12px;
   font-weight: 600;
 }
 
-.vault-inner p {
-  font-size: 0.85rem;
+.sound-card-desc {
+  font-size: 0.86rem;
   color: var(--text-muted);
-  margin-bottom: 24px;
+  line-height: 1.6;
+  margin-bottom: 26px;
 }
 
-.vault-list {
-  list-style: none;
-  text-align: left;
+.sound-card-action {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
-.vault-list li {
-  font-size: 0.82rem;
-  color: var(--text-cream);
-  display: flex;
+.btn-play-ritual {
+  min-height: 48px;
+  padding: 12px 28px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
 }
 
-.vault-list li span {
-  color: var(--gold-primary);
+.sound-fidelity-badge {
+  font-size: 0.72rem;
+  color: var(--rose-gold);
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.sound-dot-live {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
 }
 
 /* ==========================================================================
