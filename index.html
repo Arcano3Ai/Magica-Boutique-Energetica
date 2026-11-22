@@ -34,7 +34,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=4.0">
+  <link rel="stylesheet" href="styles.css?v=4.2">
 
   <!-- Estilos Críticos Inline para Botón Joya de Música (Inmunidad Total a Caché en Móvil) -->
   <style>
@@ -77,6 +77,27 @@
     .header-audio-pill.is-paused .audio-icon-eq { display: none !important; }
     .header-audio-pill.is-playing .audio-icon-play { display: none !important; }
     .header-audio-pill.is-playing .audio-icon-eq { display: inline-flex !important; }
+    
+    /* Alineación Óptica Milimétrica del Logo de Brújula/Loto con el Texto */
+    .header-brand {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 9px !important;
+    }
+    .header-symbol {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transform: translateY(2.5px) !important;
+      flex-shrink: 0 !important;
+    }
+    .header-symbol svg {
+      display: block !important;
+    }
+    .header-brand-title {
+      line-height: 1 !important;
+      display: inline-block !important;
+    }
   </style>
 
   <!-- Schema.org Microdatos -->

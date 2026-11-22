@@ -222,19 +222,34 @@ input {
 }
 
 .header-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.header-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: translateY(2.5px); /* Ajuste óptico: baja el glifo 2.5px para centrarse perfectamente con Tarot Simbólico */
+}
+
+.header-symbol svg {
+  display: block;
 }
 
 .header-brand-title {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.22rem;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  line-height: 1;
+  letter-spacing: 0.02em;
   background: linear-gradient(135deg, #FAF5F0, #F3D5A5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .header-actions {
