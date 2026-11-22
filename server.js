@@ -55,6 +55,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, '127.0.0.1', () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor local ARCANO escuchando en http://localhost:${PORT}`);
+  console.log(`Acceso desde móvil (mismo Wi-Fi): http://192.168.1.67:${PORT}`);
 });
