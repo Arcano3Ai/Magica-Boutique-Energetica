@@ -243,56 +243,160 @@ input {
   gap: 8px;
 }
 
-/* Botón discreto Play/Pause en el Header */
+/* ==========================================================================
+   BOTÓN BOUTIQUE DE MÚSICA EN EL HEADER (DISEÑO JOYERO MÍSTICO)
+   ========================================================================== */
+.header-audio-pill,
 .header-audio-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(243, 213, 165, 0.3);
-  border-radius: var(--radius-full);
-  padding: 4px 11px;
-  min-height: 32px;
-  color: var(--gem-champagne);
-  font-size: 11.5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-smooth);
-  touch-action: manipulation;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 4px 12px !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  background: rgba(26, 14, 38, 0.88) !important;
+  border: 1px solid rgba(243, 213, 165, 0.42) !important;
+  border-radius: var(--radius-full) !important;
+  color: var(--gem-champagne) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  cursor: pointer !important;
+  outline: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  transition: all var(--transition-smooth) !important;
+  touch-action: manipulation !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
 }
 
+.header-audio-pill:hover,
+.header-audio-pill:active,
 .header-audio-btn:hover,
 .header-audio-btn:active {
-  background: rgba(243, 213, 165, 0.16);
-  border-color: rgba(243, 213, 165, 0.55);
+  background: rgba(45, 20, 65, 0.95) !important;
+  border-color: rgba(243, 213, 165, 0.75) !important;
+  box-shadow: 0 0 12px rgba(243, 213, 165, 0.3) !important;
+  transform: scale(0.97) !important;
 }
 
-.header-audio-btn .audio-icon-play,
-.header-audio-btn .audio-icon-pause {
-  color: var(--gem-champagne);
+.header-audio-pill .audio-pill-wave,
+.header-audio-btn .audio-pill-wave {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
+  position: relative;
 }
 
-/* Control visual Play / Pause típico */
-.header-audio-btn.is-paused .audio-icon-play {
-  display: block;
-}
-.header-audio-btn.is-paused .audio-icon-pause {
-  display: none;
-}
-.header-audio-btn.is-paused .audio-state-text {
-  color: var(--text-pearl-lilac);
-  opacity: 0.85;
-}
-
-.header-audio-btn.is-playing .audio-icon-play {
-  display: none;
-}
-.header-audio-btn.is-playing .audio-icon-pause {
-  display: block;
-}
-.header-audio-btn.is-playing .audio-state-text {
+/* Ícono de Play fino en oro champán */
+.header-audio-pill .audio-icon-play,
+.header-audio-btn .audio-icon-play {
   color: var(--gem-champagne);
+  transition: transform 0.2s ease;
+}
+
+/* Micro-ecualizador boutique animado de 3 barritas */
+.audio-icon-eq {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 12px;
+  height: 11px;
+  gap: 2px;
+}
+
+.audio-icon-eq .eq-bar {
+  width: 2.2px;
+  background: var(--gem-champagne);
+  border-radius: 2px;
+  display: inline-block;
+  transform-origin: bottom;
+}
+
+.audio-icon-eq .bar-1 {
+  height: 5px;
+}
+.audio-icon-eq .bar-2 {
+  height: 10px;
+}
+.audio-icon-eq .bar-3 {
+  height: 7px;
+}
+
+/* Estado: EN PAUSA */
+.header-audio-pill.is-paused .audio-icon-play,
+.header-audio-btn.is-paused .audio-icon-play {
+  display: block !important;
+}
+.header-audio-pill.is-paused .audio-icon-eq,
+.header-audio-btn.is-paused .audio-icon-eq {
+  display: none !important;
+}
+.header-audio-pill.is-paused .audio-pill-text,
+.header-audio-btn.is-paused .audio-state-text {
+  color: var(--gem-champagne);
+  opacity: 0.95;
+}
+
+/* Estado: REPRODUCIENDO (Animación de ondas de sonido) */
+.header-audio-pill.is-playing,
+.header-audio-btn.is-playing {
+  border-color: rgba(243, 213, 165, 0.65) !important;
+  background: linear-gradient(135deg, rgba(45, 20, 65, 0.9), rgba(26, 14, 38, 0.95)) !important;
+  box-shadow: 0 0 14px rgba(243, 213, 165, 0.35), inset 0 0 8px rgba(192, 132, 252, 0.15) !important;
+}
+
+.header-audio-pill.is-playing .audio-icon-play,
+.header-audio-btn.is-playing .audio-icon-play {
+  display: none !important;
+}
+
+.header-audio-pill.is-playing .audio-icon-eq,
+.header-audio-btn.is-playing .audio-icon-eq {
+  display: inline-flex !important;
+}
+
+.header-audio-pill.is-playing .audio-icon-eq .bar-1,
+.header-audio-btn.is-playing .audio-icon-eq .bar-1 {
+  animation: eqBounce1 0.9s ease-in-out infinite alternate;
+}
+.header-audio-pill.is-playing .audio-icon-eq .bar-2,
+.header-audio-btn.is-playing .audio-icon-eq .bar-2 {
+  animation: eqBounce2 0.75s ease-in-out infinite alternate 0.15s;
+}
+.header-audio-pill.is-playing .audio-icon-eq .bar-3,
+.header-audio-btn.is-playing .audio-icon-eq .bar-3 {
+  animation: eqBounce3 0.85s ease-in-out infinite alternate 0.3s;
+}
+
+@keyframes eqBounce1 {
+  0% { height: 3px; }
+  100% { height: 11px; }
+}
+
+@keyframes eqBounce2 {
+  0% { height: 11px; }
+  100% { height: 4px; }
+}
+
+@keyframes eqBounce3 {
+  0% { height: 4px; }
+  100% { height: 10px; }
+}
+
+.header-audio-pill .audio-pill-text,
+.header-audio-btn .audio-state-text {
+  font-size: 11.5px;
+  line-height: 1;
 }
 
 .header-cta-btn {
@@ -301,6 +405,7 @@ input {
   gap: 4px;
   padding: 5px 14px;
   min-height: 32px;
+  height: 32px;
   border-radius: var(--radius-full);
   background: rgba(243, 213, 165, 0.12);
   border: 1px solid rgba(243, 213, 165, 0.35);

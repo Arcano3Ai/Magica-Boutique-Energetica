@@ -199,34 +199,45 @@
   });
 
   // --------------------------------------------------------------------------
-  // AUDIO DE FONDO: "SOY MÁGICA" (INICIO AL SCROLL CON FADE-IN SUAVE)
+  // AUDIO DE FONDO: "SOY MÁGICA" (INICIO AL PRIMER TOQUE O SCROLL EN MÓVIL)
   // --------------------------------------------------------------------------
-  var TARGET_VOLUME = 0.38; // Volumen normal óptimo para fondo
+  var TARGET_VOLUME = 0.45; // Volumen óptimo y envolvente
   var fadeInTimer = null;
+  var audioStarted = false;
 
-  if (bgAudio) {
-    bgAudio.volume = 0.02; // Inicia bajito
+  function safeSetVolume(vol) {
+    if (!bgAudio) return;
+    try {
+      bgAudio.volume = Math.max(0, Math.min(1, vol));
+    } catch (e) {
+      // Ignorar en dispositivos donde volume es de solo lectura (como iOS)
+    }
   }
 
   function startFadeIn() {
     if (!bgAudio) return;
     if (fadeInTimer) clearInterval(fadeInTimer);
 
-    // Sube suavemente en ~3.5 segundos (35 pasos de 100ms)
-    var step = (TARGET_VOLUME - 0.02) / 35;
+    // Intentar iniciar bajo y subir gradualmente
+    safeSetVolume(0.05);
+    var step = (TARGET_VOLUME - 0.05) / 25;
 
     fadeInTimer = setInterval(function () {
       if (!bgAudio || bgAudio.paused) {
         clearInterval(fadeInTimer);
         return;
       }
-      if (bgAudio.volume + step < TARGET_VOLUME) {
-        bgAudio.volume = Math.min(TARGET_VOLUME, bgAudio.volume + step);
-      } else {
-        bgAudio.volume = TARGET_VOLUME;
+      try {
+        if (bgAudio.volume + step < TARGET_VOLUME) {
+          safeSetVolume(bgAudio.volume + step);
+        } else {
+          safeSetVolume(TARGET_VOLUME);
+          clearInterval(fadeInTimer);
+        }
+      } catch (err) {
         clearInterval(fadeInTimer);
       }
-    }, 100);
+    }, 120);
   }
 
   function updateAudioUI(isPlaying) {
@@ -240,57 +251,56 @@
       audioToggleBtn.classList.remove('is-playing');
       audioToggleBtn.classList.add('is-paused');
       audioToggleBtn.setAttribute('aria-label', 'Reproducir música de fondo');
-      if (audioStateLabel) audioStateLabel.textContent = 'Play';
+      if (audioStateLabel) audioStateLabel.textContent = 'Música';
     }
   }
 
-  var audioStarted = false;
-
   function removeAudioTriggers() {
-    window.removeEventListener('scroll', onFirstScrollOrTouch, { passive: true });
-    window.removeEventListener('touchstart', onFirstScrollOrTouch, { passive: true });
-    window.removeEventListener('pointerdown', onFirstScrollOrTouch, { passive: true });
-    document.removeEventListener('click', onFirstScrollOrTouch);
+    ['touchstart', 'touchend', 'pointerdown', 'pointerup', 'click', 'scroll'].forEach(function (evt) {
+      window.removeEventListener(evt, onFirstInteraction, { passive: true, capture: true });
+      document.removeEventListener(evt, onFirstInteraction, { passive: true, capture: true });
+    });
   }
 
-  function tryPlayAudioWithFadeIn() {
-    if (!bgAudio || audioStarted) return;
-    bgAudio.volume = 0.02; // Inicia bien bajito
+  function onFirstInteraction() {
+    if (audioStarted || !bgAudio) return;
+
+    safeSetVolume(0.05);
     var playPromise = bgAudio.play();
     if (playPromise !== undefined) {
       playPromise.then(function () {
         audioStarted = true;
         updateAudioUI(true);
         removeAudioTriggers();
-        startFadeIn(); // Va subiendo suavemente a su volumen normal
+        startFadeIn();
       }).catch(function () {
-        // Espera al siguiente gesto del usuario si el navegador es estricto
+        // Si el navegador bloquea en este gesto, se mantiene esperando al siguiente toque
       });
     }
   }
 
-  function onFirstScrollOrTouch() {
-    tryPlayAudioWithFadeIn();
-  }
+  // Escuchar en window y document para captura inmediata en celular
+  ['touchstart', 'touchend', 'pointerdown', 'pointerup', 'click', 'scroll'].forEach(function (evt) {
+    window.addEventListener(evt, onFirstInteraction, { passive: true, capture: true });
+    document.addEventListener(evt, onFirstInteraction, { passive: true, capture: true });
+  });
 
-  // Detectar el primer scroll o interacción táctil para iniciar
-  window.addEventListener('scroll', onFirstScrollOrTouch, { passive: true });
-  window.addEventListener('touchstart', onFirstScrollOrTouch, { passive: true });
-  window.addEventListener('pointerdown', onFirstScrollOrTouch, { passive: true });
-  document.addEventListener('click', onFirstScrollOrTouch);
-
-  // Botón típico Play / Pause en el Header
+  // Botón joyero Play / Pause en el Header
   if (audioToggleBtn && bgAudio) {
     audioToggleBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       removeAudioTriggers();
+
       if (bgAudio.paused) {
         if (fadeInTimer) clearInterval(fadeInTimer);
-        bgAudio.volume = TARGET_VOLUME;
-        bgAudio.play().then(function () {
-          audioStarted = true;
-          updateAudioUI(true);
-        }).catch(function () {});
+        safeSetVolume(TARGET_VOLUME);
+        var p = bgAudio.play();
+        if (p !== undefined) {
+          p.then(function () {
+            audioStarted = true;
+            updateAudioUI(true);
+          }).catch(function () {});
+        }
       } else {
         if (fadeInTimer) clearInterval(fadeInTimer);
         bgAudio.pause();
