@@ -16,13 +16,20 @@
   --bg-glass-card-hover: rgba(36, 22, 52, 0.78);
 
   /* Paleta Holística de Piedras Preciosas & Aura Suave */
-  --gem-rosequartz: #F4A7B9;    /* Cuarzo Rosa */
-  --gem-amethyst: #C084FC;      /* Amatista Suave */
-  --gem-champagne: #F3D5A5;     /* Dorado Champán */
-  --gem-aquamarine: #7DD3C8;    /* Aguamarina Suave */
-  --gem-garnet: #D9777F;        /* Granate / Rubí Suave */
-  --gem-amber: #EAA86C;         /* Ámbar Miel */
-  --gem-sapphire: #818CF8;      /* Zafiro Índigo */
+  --gem-rosequartz: #F4A7B9;
+  /* Cuarzo Rosa */
+  --gem-amethyst: #C084FC;
+  /* Amatista Suave */
+  --gem-champagne: #F3D5A5;
+  /* Dorado Champán */
+  --gem-aquamarine: #7DD3C8;
+  /* Aguamarina Suave */
+  --gem-garnet: #D9777F;
+  /* Granate / Rubí Suave */
+  --gem-amber: #EAA86C;
+  /* Ámbar Miel */
+  --gem-sapphire: #818CF8;
+  /* Zafiro Índigo */
 
   /* Degradado Boutique Principal para Botones */
   --grad-champagne-rose: linear-gradient(135deg, #F3D5A5 0%, #E6A4B4 100%);
@@ -30,10 +37,14 @@
   --grad-card-featured: linear-gradient(180deg, rgba(243, 213, 165, 0.12) 0%, rgba(28, 17, 40, 0.85) 100%);
 
   /* Tipografía Editorial Femenina */
-  --text-ivory: #FAF5F0;        /* Marfil Cálido */
-  --text-pearl-lilac: #D8CFE6;  /* Lila Perla Suave para Lectura */
-  --text-muted: #A396B8;        /* Malva Apagado para Notas */
-  --text-dark: #1A0F24;         /* Contraste Óptimo sobre Botón Dorado */
+  --text-ivory: #FAF5F0;
+  /* Marfil Cálido */
+  --text-pearl-lilac: #D8CFE6;
+  /* Lila Perla Suave para Lectura */
+  --text-muted: #A396B8;
+  /* Malva Apagado para Notas */
+  --text-dark: #1A0F24;
+  /* Contraste Óptimo sobre Botón Dorado */
 
   /* Fuentes */
   --font-serif: 'Cormorant Garamond', Garamond, 'Times New Roman', serif;
@@ -42,7 +53,8 @@
   /* Glassmorphism Boutique: Bordes Finos Translúcidos y Curvas Suaves */
   --border-glass: 1px solid rgba(255, 255, 255, 0.12);
   --border-glass-delicate: 1px solid rgba(243, 213, 165, 0.28);
-  --radius-card: 24px;          /* Esquinas Redondeadas Boutique */
+  --radius-card: 24px;
+  /* Esquinas Redondeadas Boutique */
   --radius-full: 999px;
   --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -50,13 +62,16 @@
 /* --------------------------------------------------------------------------
    2. RESET & REGLAS MÓVILES GLOBALES (CERO DESBORDE)
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -71,7 +86,7 @@ html, body {
 
 body {
   position: relative;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(192, 132, 252, 0.15) 0%, transparent 60%),
     radial-gradient(circle at 10% 40%, rgba(244, 167, 185, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 90% 70%, rgba(125, 211, 200, 0.1) 0%, transparent 50%);
@@ -83,7 +98,8 @@ a {
   text-decoration: none;
 }
 
-button, input {
+button,
+input {
   font-family: inherit;
 }
 
@@ -282,10 +298,13 @@ button, input {
 }
 
 @keyframes avatarFloatAura {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
     opacity: 0.96;
   }
+
   50% {
     transform: translateY(-4px);
     opacity: 1;
@@ -321,7 +340,8 @@ button, input {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.07); /* Zoom que empuja esquinas blancas fuera del recorte circular */
+  transform: scale(1.07);
+  /* Zoom que empuja esquinas blancas fuera del recorte circular */
   display: block;
 }
 
@@ -364,9 +384,19 @@ button, input {
 }
 
 @keyframes pulseBoutique {
-  0% { transform: scale(0.97); opacity: 0.8; }
-  50% { transform: scale(1.02); color: var(--gem-champagne); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.97);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.02);
+    color: var(--gem-champagne);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Separador Minimalista de 7 Chakras (Piedras Preciosas Suaves) */
@@ -387,13 +417,40 @@ button, input {
   opacity: 0.85;
 }
 
-.chakra-dot--root      { background-color: var(--gem-garnet); color: var(--gem-garnet); }
-.chakra-dot--sacral    { background-color: var(--gem-amber); color: var(--gem-amber); }
-.chakra-dot--solar     { background-color: var(--gem-champagne); color: var(--gem-champagne); }
-.chakra-dot--heart     { background-color: #8FD8A8; color: #8FD8A8; }
-.chakra-dot--throat    { background-color: var(--gem-aquamarine); color: var(--gem-aquamarine); }
-.chakra-dot--third-eye { background-color: var(--gem-sapphire); color: var(--gem-sapphire); }
-.chakra-dot--crown     { background-color: var(--gem-amethyst); color: var(--gem-amethyst); }
+.chakra-dot--root {
+  background-color: var(--gem-garnet);
+  color: var(--gem-garnet);
+}
+
+.chakra-dot--sacral {
+  background-color: var(--gem-amber);
+  color: var(--gem-amber);
+}
+
+.chakra-dot--solar {
+  background-color: var(--gem-champagne);
+  color: var(--gem-champagne);
+}
+
+.chakra-dot--heart {
+  background-color: #8FD8A8;
+  color: #8FD8A8;
+}
+
+.chakra-dot--throat {
+  background-color: var(--gem-aquamarine);
+  color: var(--gem-aquamarine);
+}
+
+.chakra-dot--third-eye {
+  background-color: var(--gem-sapphire);
+  color: var(--gem-sapphire);
+}
+
+.chakra-dot--crown {
+  background-color: var(--gem-amethyst);
+  color: var(--gem-amethyst);
+}
 
 /* Subtítulo Corto y Femenino */
 .hero-short-sub {
@@ -566,9 +623,20 @@ button, input {
   flex-shrink: 0;
 }
 
-.dot--aquamarine { background: rgba(125, 211, 200, 0.14); border: 1px solid rgba(125, 211, 200, 0.4); }
-.dot--amethyst   { background: rgba(192, 132, 252, 0.14); border: 1px solid rgba(192, 132, 252, 0.4); }
-.dot--champagne  { background: rgba(243, 213, 165, 0.14); border: 1px solid rgba(243, 213, 165, 0.4); }
+.dot--aquamarine {
+  background: rgba(125, 211, 200, 0.14);
+  border: 1px solid rgba(125, 211, 200, 0.4);
+}
+
+.dot--amethyst {
+  background: rgba(192, 132, 252, 0.14);
+  border: 1px solid rgba(192, 132, 252, 0.4);
+}
+
+.dot--champagne {
+  background: rgba(243, 213, 165, 0.14);
+  border: 1px solid rgba(243, 213, 165, 0.4);
+}
 
 .pillar-title {
   font-family: var(--font-serif);
@@ -752,9 +820,17 @@ button, input {
   line-height: 1.5;
 }
 
-.bullet--aquamarine { color: var(--gem-aquamarine); }
-.bullet--champagne  { color: var(--gem-champagne); }
-.bullet--rosequartz { color: var(--gem-rosequartz); }
+.bullet--aquamarine {
+  color: var(--gem-aquamarine);
+}
+
+.bullet--champagne {
+  color: var(--gem-champagne);
+}
+
+.bullet--rosequartz {
+  color: var(--gem-rosequartz);
+}
 
 /* Botones Táctiles de Tarjetas: min-height: 48px, width: 100% */
 .btn-card-mobile {
@@ -840,8 +916,15 @@ button, input {
   flex-shrink: 0;
 }
 
-.icon--aquamarine { background: rgba(125, 211, 200, 0.12); border: 1px solid rgba(125, 211, 200, 0.35); }
-.icon--champagne  { background: rgba(243, 213, 165, 0.12); border: 1px solid rgba(243, 213, 165, 0.35); }
+.icon--aquamarine {
+  background: rgba(125, 211, 200, 0.12);
+  border: 1px solid rgba(125, 211, 200, 0.35);
+}
+
+.icon--champagne {
+  background: rgba(243, 213, 165, 0.12);
+  border: 1px solid rgba(243, 213, 165, 0.35);
+}
 
 .modality-title {
   font-family: var(--font-serif);
@@ -964,7 +1047,8 @@ button, input {
   background: #0B0610;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 24px;
-  padding-bottom: 95px; /* CERO EMPALME CON BOTONES FLOTANTES */
+  padding-bottom: 95px;
+  /* CERO EMPALME CON BOTONES FLOTANTES */
   font-size: 12.5px;
   color: var(--text-muted);
   text-align: center;
@@ -1056,8 +1140,15 @@ button, input {
 }
 
 @keyframes popIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .personalize-popup[hidden] {
@@ -1212,7 +1303,18 @@ button, input {
 }
 
 @keyframes pulseFloat {
-  0%   { transform: scale(0.96); opacity: 0.8; }
-  60%  { transform: scale(1.25); opacity: 0; }
-  100% { transform: scale(1.25); opacity: 0; }
+  0% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+
+  60% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
 }
