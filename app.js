@@ -8,7 +8,7 @@
 
   var DEFAULT_HERO_NAME = '[ TU NOMBRE O MARCA ]';
   var DEFAULT_FOOTER_NAME = '[ Tu Nombre o Marca ]';
-  var WA_BASE = 'https://wa.me/5215500000000';
+  var WA_BASE = 'https://wa.me/528121912778';
 
   // Elementos DOM
   var toggleBtn = document.getElementById('personalize-toggle-btn');
@@ -16,6 +16,7 @@
   var closeBtn = document.getElementById('personalize-close-btn');
   var nameInput = document.getElementById('custom-name-input');
   var resetBtn = document.getElementById('reset-name-btn');
+  var acceptNameBtn = document.getElementById('accept-name-btn');
   var heroTitle = document.getElementById('hero-brand-name');
   var footerName = document.getElementById('footer-brand-name');
   var currentYearEl = document.getElementById('current-year');
@@ -160,6 +161,20 @@
       updateAllLinks(chosen);
     });
   });
+
+  // Botón Aceptar y Probar WhatsApp
+  if (acceptNameBtn) {
+    acceptNameBtn.addEventListener('click', function () {
+      var val = nameInput ? nameInput.value : '';
+      updateAllLinks(val);
+      togglePopover(false);
+      if (heroWaBtn) {
+        heroWaBtn.classList.remove('custom-pulse');
+        void heroWaBtn.offsetWidth;
+        heroWaBtn.classList.add('custom-pulse');
+      }
+    });
+  }
 
   // Botón Restaurar
   if (resetBtn) {
