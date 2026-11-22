@@ -24,6 +24,9 @@
   var contactWaBtn = document.getElementById('contact-whatsapp-btn');
   var sessionBtns = document.querySelectorAll('[data-session-key]');
   var chipButtons = document.querySelectorAll('.btn-chip-name');
+  var bgAudio = document.getElementById('bg-music');
+  var audioToggleBtn = document.getElementById('header-audio-toggle');
+  var audioStateLabel = document.getElementById('audio-state-label');
 
   // Inicializar año actual
   if (currentYearEl) {
@@ -179,6 +182,78 @@
       }
     });
   });
+
+  // --------------------------------------------------------------------------
+  // AUDIO DE FONDO: "SOY MÁGICA" (INICIO AL PRIMER SCROLL / TOGGLE DISCRETO)
+  // --------------------------------------------------------------------------
+  if (bgAudio) {
+    bgAudio.volume = 0.35; // Volumen relajante para atmósfera de tarot
+  }
+
+  function updateAudioUI(isPlaying) {
+    if (!audioToggleBtn) return;
+    if (isPlaying) {
+      audioToggleBtn.classList.remove('is-paused');
+      audioToggleBtn.classList.add('is-playing');
+      audioToggleBtn.setAttribute('aria-label', 'Pausar música de fondo');
+      if (audioStateLabel) audioStateLabel.textContent = 'Música';
+    } else {
+      audioToggleBtn.classList.remove('is-playing');
+      audioToggleBtn.classList.add('is-paused');
+      audioToggleBtn.setAttribute('aria-label', 'Reproducir música de fondo');
+      if (audioStateLabel) audioStateLabel.textContent = 'Pausada';
+    }
+  }
+
+  var audioStarted = false;
+
+  function removeAudioTriggers() {
+    window.removeEventListener('scroll', onFirstScrollOrTouch, { passive: true });
+    window.removeEventListener('touchstart', onFirstScrollOrTouch, { passive: true });
+    window.removeEventListener('pointerdown', onFirstScrollOrTouch, { passive: true });
+    document.removeEventListener('click', onFirstScrollOrTouch);
+  }
+
+  function tryPlayAudio() {
+    if (!bgAudio || audioStarted) return;
+    var playPromise = bgAudio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function () {
+        audioStarted = true;
+        updateAudioUI(true);
+        removeAudioTriggers();
+      }).catch(function () {
+        // En navegadores estrictos espera al siguiente toque
+      });
+    }
+  }
+
+  function onFirstScrollOrTouch() {
+    tryPlayAudio();
+  }
+
+  // Detectar el primer scroll o interacción táctil para iniciar
+  window.addEventListener('scroll', onFirstScrollOrTouch, { passive: true });
+  window.addEventListener('touchstart', onFirstScrollOrTouch, { passive: true });
+  window.addEventListener('pointerdown', onFirstScrollOrTouch, { passive: true });
+  document.addEventListener('click', onFirstScrollOrTouch);
+
+  // Botón discreto en el Header (Pausar / Reproducir)
+  if (audioToggleBtn && bgAudio) {
+    audioToggleBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      removeAudioTriggers();
+      if (bgAudio.paused) {
+        bgAudio.play().then(function () {
+          audioStarted = true;
+          updateAudioUI(true);
+        }).catch(function () {});
+      } else {
+        bgAudio.pause();
+        updateAudioUI(false);
+      }
+    });
+  }
 
   // Inicializar enlaces
   updateAllLinks('');

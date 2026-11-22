@@ -85,16 +85,34 @@
         <span class="header-brand-title">Tarot Simbólico</span>
       </a>
 
-      <!-- Botón de acción rápida -->
-      <a href="#servicios" class="header-cta-btn">
-        <span>Reservar</span>
-        <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
-          aria-hidden="true">
-          <path d="M6 3l5 5-5 5" />
-        </svg>
-      </a>
+      <!-- Acciones de Cabecera: Botón Discreto de Audio + Botón Reservar -->
+      <div class="header-actions">
+        <button type="button" 
+                class="header-audio-btn is-paused" 
+                id="header-audio-toggle" 
+                aria-label="Reproducir música de fondo" 
+                title="Música de fondo: Soy Mágica">
+          <span class="audio-wave-bars" aria-hidden="true">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </span>
+          <span class="audio-state-text" id="audio-state-label">Música</span>
+        </button>
+
+        <a href="#servicios" class="header-cta-btn">
+          <span>Reservar</span>
+          <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M6 3l5 5-5 5" />
+          </svg>
+        </a>
+      </div>
     </div>
   </header>
+
+  <!-- Elemento de Audio de Fondo (Soy Mágica) -->
+  <audio id="bg-music" src="soy-magica.mp3" preload="auto" loop></audio>
 
   <!-- DECORACIONES AMBIENTALES DE AURA SUAVE (CUARZO ROSA & AMATISTA DIFUMINADAS) -->
   <div class="ambient-aura ambient-aura--purple" aria-hidden="true"></div>
