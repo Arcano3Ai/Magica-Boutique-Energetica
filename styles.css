@@ -243,17 +243,17 @@ input {
   gap: 8px;
 }
 
-/* Botón muy discreto para pausar / reproducir música de fondo */
+/* Botón discreto Play/Pause en el Header */
 .header-audio-btn {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(243, 213, 165, 0.28);
+  border: 1px solid rgba(243, 213, 165, 0.3);
   border-radius: var(--radius-full);
-  padding: 4px 10px;
+  padding: 4px 11px;
   min-height: 32px;
-  color: var(--text-pearl-lilac);
+  color: var(--gem-champagne);
   font-size: 11.5px;
   font-weight: 600;
   cursor: pointer;
@@ -263,53 +263,36 @@ input {
 
 .header-audio-btn:hover,
 .header-audio-btn:active {
-  background: rgba(243, 213, 165, 0.15);
-  border-color: rgba(243, 213, 165, 0.5);
+  background: rgba(243, 213, 165, 0.16);
+  border-color: rgba(243, 213, 165, 0.55);
+}
+
+.header-audio-btn .audio-icon-play,
+.header-audio-btn .audio-icon-pause {
   color: var(--gem-champagne);
+  flex-shrink: 0;
 }
 
-/* Micro-barras animadas de ondas sonoras */
-.audio-wave-bars {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 2px;
-  height: 12px;
-  width: 10px;
-}
-
-.audio-wave-bars .bar {
-  width: 2px;
-  background-color: var(--gem-champagne);
-  border-radius: 1px;
+/* Control visual Play / Pause típico */
+.header-audio-btn.is-paused .audio-icon-play {
   display: block;
-  height: 3px;
-  transition: height 0.2s ease, opacity 0.2s ease;
 }
-
-/* Animación de barras cuando la música está sonando */
-.header-audio-btn.is-playing .bar-1 {
-  animation: waveBarPulse 0.8s ease-in-out infinite alternate;
+.header-audio-btn.is-paused .audio-icon-pause {
+  display: none;
 }
-.header-audio-btn.is-playing .bar-2 {
-  animation: waveBarPulse 0.8s ease-in-out 0.25s infinite alternate;
-}
-.header-audio-btn.is-playing .bar-3 {
-  animation: waveBarPulse 0.8s ease-in-out 0.5s infinite alternate;
-}
-
-@keyframes waveBarPulse {
-  0% { height: 3px; }
-  100% { height: 11px; }
-}
-
-/* Estado pausado */
-.header-audio-btn.is-paused .audio-wave-bars .bar {
-  height: 3px;
-  opacity: 0.45;
-}
-
 .header-audio-btn.is-paused .audio-state-text {
-  opacity: 0.75;
+  color: var(--text-pearl-lilac);
+  opacity: 0.85;
+}
+
+.header-audio-btn.is-playing .audio-icon-play {
+  display: none;
+}
+.header-audio-btn.is-playing .audio-icon-pause {
+  display: block;
+}
+.header-audio-btn.is-playing .audio-state-text {
+  color: var(--gem-champagne);
 }
 
 .header-cta-btn {

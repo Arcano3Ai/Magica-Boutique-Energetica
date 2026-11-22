@@ -85,19 +85,23 @@
         <span class="header-brand-title">Tarot Simbólico</span>
       </a>
 
-      <!-- Acciones de Cabecera: Botón Discreto de Audio + Botón Reservar -->
+      <!-- Acciones de Cabecera: Botón Típico Play/Pause + Botón Reservar -->
       <div class="header-actions">
         <button type="button" 
                 class="header-audio-btn is-paused" 
                 id="header-audio-toggle" 
                 aria-label="Reproducir música de fondo" 
-                title="Música de fondo: Soy Mágica">
-          <span class="audio-wave-bars" aria-hidden="true">
-            <span class="bar bar-1"></span>
-            <span class="bar bar-2"></span>
-            <span class="bar bar-3"></span>
-          </span>
-          <span class="audio-state-text" id="audio-state-label">Música</span>
+                title="Música: Soy Mágica">
+          <!-- Ícono típico Play ▶ -->
+          <svg class="audio-icon-play" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+            <polygon points="6 3 20 12 6 21 6 3" />
+          </svg>
+          <!-- Ícono típico Pause ❚❚ -->
+          <svg class="audio-icon-pause" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+            <rect x="5" y="4" width="4" height="16" rx="1" />
+            <rect x="15" y="4" width="4" height="16" rx="1" />
+          </svg>
+          <span class="audio-state-text" id="audio-state-label">Play</span>
         </button>
 
         <a href="#servicios" class="header-cta-btn">

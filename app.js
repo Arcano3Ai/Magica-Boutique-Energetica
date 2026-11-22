@@ -184,10 +184,34 @@
   });
 
   // --------------------------------------------------------------------------
-  // AUDIO DE FONDO: "SOY MÁGICA" (INICIO AL PRIMER SCROLL / TOGGLE DISCRETO)
+  // AUDIO DE FONDO: "SOY MÁGICA" (INICIO AL SCROLL CON FADE-IN SUAVE)
   // --------------------------------------------------------------------------
+  var TARGET_VOLUME = 0.38; // Volumen normal óptimo para fondo
+  var fadeInTimer = null;
+
   if (bgAudio) {
-    bgAudio.volume = 0.35; // Volumen relajante para atmósfera de tarot
+    bgAudio.volume = 0.02; // Inicia bajito
+  }
+
+  function startFadeIn() {
+    if (!bgAudio) return;
+    if (fadeInTimer) clearInterval(fadeInTimer);
+
+    // Sube suavemente en ~3.5 segundos (35 pasos de 100ms)
+    var step = (TARGET_VOLUME - 0.02) / 35;
+
+    fadeInTimer = setInterval(function () {
+      if (!bgAudio || bgAudio.paused) {
+        clearInterval(fadeInTimer);
+        return;
+      }
+      if (bgAudio.volume + step < TARGET_VOLUME) {
+        bgAudio.volume = Math.min(TARGET_VOLUME, bgAudio.volume + step);
+      } else {
+        bgAudio.volume = TARGET_VOLUME;
+        clearInterval(fadeInTimer);
+      }
+    }, 100);
   }
 
   function updateAudioUI(isPlaying) {
@@ -196,12 +220,12 @@
       audioToggleBtn.classList.remove('is-paused');
       audioToggleBtn.classList.add('is-playing');
       audioToggleBtn.setAttribute('aria-label', 'Pausar música de fondo');
-      if (audioStateLabel) audioStateLabel.textContent = 'Música';
+      if (audioStateLabel) audioStateLabel.textContent = 'Pausar';
     } else {
       audioToggleBtn.classList.remove('is-playing');
       audioToggleBtn.classList.add('is-paused');
       audioToggleBtn.setAttribute('aria-label', 'Reproducir música de fondo');
-      if (audioStateLabel) audioStateLabel.textContent = 'Pausada';
+      if (audioStateLabel) audioStateLabel.textContent = 'Play';
     }
   }
 
@@ -214,22 +238,24 @@
     document.removeEventListener('click', onFirstScrollOrTouch);
   }
 
-  function tryPlayAudio() {
+  function tryPlayAudioWithFadeIn() {
     if (!bgAudio || audioStarted) return;
+    bgAudio.volume = 0.02; // Inicia bien bajito
     var playPromise = bgAudio.play();
     if (playPromise !== undefined) {
       playPromise.then(function () {
         audioStarted = true;
         updateAudioUI(true);
         removeAudioTriggers();
+        startFadeIn(); // Va subiendo suavemente a su volumen normal
       }).catch(function () {
-        // En navegadores estrictos espera al siguiente toque
+        // Espera al siguiente gesto del usuario si el navegador es estricto
       });
     }
   }
 
   function onFirstScrollOrTouch() {
-    tryPlayAudio();
+    tryPlayAudioWithFadeIn();
   }
 
   // Detectar el primer scroll o interacción táctil para iniciar
@@ -238,17 +264,20 @@
   window.addEventListener('pointerdown', onFirstScrollOrTouch, { passive: true });
   document.addEventListener('click', onFirstScrollOrTouch);
 
-  // Botón discreto en el Header (Pausar / Reproducir)
+  // Botón típico Play / Pause en el Header
   if (audioToggleBtn && bgAudio) {
     audioToggleBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       removeAudioTriggers();
       if (bgAudio.paused) {
+        if (fadeInTimer) clearInterval(fadeInTimer);
+        bgAudio.volume = TARGET_VOLUME;
         bgAudio.play().then(function () {
           audioStarted = true;
           updateAudioUI(true);
         }).catch(function () {});
       } else {
+        if (fadeInTimer) clearInterval(fadeInTimer);
         bgAudio.pause();
         updateAudioUI(false);
       }
