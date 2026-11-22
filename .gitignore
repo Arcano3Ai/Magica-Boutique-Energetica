@@ -2,4 +2,6 @@
 Thumbs.db
 *.log
 scratch/
-*.wav
+node_modules/
+dist/
+.vscode/
