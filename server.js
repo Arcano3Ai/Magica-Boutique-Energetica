@@ -25,6 +25,8 @@ const server = http.createServer((req, res) => {
   let reqPath = decodeURI(req.url.split('?')[0]);
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
+  } else if (reqPath === '/boutique' || reqPath === '/boutique/') {
+    reqPath = '/boutique/index.html';
   }
 
   const safePath = path.normalize(path.join(PUBLIC_DIR, reqPath));

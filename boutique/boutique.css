@@ -1,0 +1,1032 @@
+/* ==========================================================================
+   BOUTIQUE ESOTÉRICA MÁGICA INTENCIÓN — ESTILOS FRONTEND PUROS
+   Mobile-First (360px–430px) · Glassmorphism · Estética Mística Boutique
+   ========================================================================== */
+
+:root {
+  /* Paleta Boutique Mística */
+  --bg-deep: #130B1C;
+  --bg-surface: #1B1226;
+  --bg-card: rgba(27, 18, 38, 0.78);
+  --bg-card-hover: rgba(38, 24, 54, 0.88);
+  --bg-glass-elevated: rgba(22, 12, 32, 0.92);
+
+  /* Acentos de Piedras Preciosas & Chakras */
+  --gem-champagne: #F3D5A5;
+  --gem-rose-gold: #E6A4B4;
+  --gem-rose-quartz: #F4A7B9;
+  --gem-amethyst: #C084FC;
+  --gem-amethyst-dark: #2D1047;
+  --gem-aquamarine: #7DD3C8;
+  --gem-gold: #FACC15;
+
+  /* Tipografías */
+  --text-pure: #FAF5F0;
+  --text-muted: #D8CFE6;
+  --text-subtle: #A396B8;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Bordes y Sombras */
+  --border-delicate: 1px solid rgba(243, 213, 165, 0.22);
+  --border-glow: 1px solid rgba(243, 213, 165, 0.55);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 20px rgba(243, 213, 165, 0.22);
+}
+
+/* Reset y Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-pure);
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 110px; /* Espacio para barra flotante de carrito */
+}
+
+/* Fondos de Aura Suave */
+.ambient-aura {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+.ambient-aura--purple {
+  width: 380px;
+  height: 380px;
+  top: -80px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.35) 0%, rgba(45, 16, 71, 0) 70%);
+}
+
+.ambient-aura--rose {
+  width: 340px;
+  height: 340px;
+  top: 35%;
+  left: -120px;
+  background: radial-gradient(circle, rgba(244, 167, 185, 0.28) 0%, rgba(26, 20, 70, 0) 70%);
+}
+
+.ambient-aura--teal {
+  width: 320px;
+  height: 320px;
+  bottom: 10%;
+  right: -80px;
+  background: radial-gradient(circle, rgba(125, 211, 200, 0.22) 0%, rgba(14, 59, 67, 0) 70%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   HEADER FIJO COMPACTO BOUTIQUE
+   ========================================================================== */
+.boutique-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: rgba(19, 11, 28, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(243, 213, 165, 0.15);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.boutique-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.boutique-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-pure);
+}
+
+.boutique-brand-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(2px);
+}
+
+.boutique-brand-text {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #FAF5F0, #F3D5A5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.02em;
+}
+
+.boutique-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.1);
+  border: 1px solid rgba(243, 213, 165, 0.3);
+  color: var(--gem-champagne);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-back-home:hover,
+.btn-back-home:active {
+  background: rgba(243, 213, 165, 0.2);
+  border-color: rgba(243, 213, 165, 0.6);
+  transform: scale(0.97);
+}
+
+.btn-cart-toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #F3D5A5, #E6A4B4);
+  border: none;
+  color: #1A0F24;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(243, 213, 165, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.btn-cart-toggle:active {
+  transform: scale(0.95);
+}
+
+.cart-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: #1A0F24;
+  color: #F3D5A5;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   HERO BOUTIQUE
+   ========================================================================== */
+.boutique-hero {
+  padding: 24px 0 16px;
+  text-align: center;
+}
+
+.boutique-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.1);
+  border: 1px solid rgba(243, 213, 165, 0.32);
+  color: var(--gem-champagne);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.boutique-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 5.5vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-pure);
+  margin-bottom: 10px;
+}
+
+.boutique-title span {
+  background: linear-gradient(135deg, #FAF5F0, #F3D5A5 55%, #E6A4B4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boutique-subtitle {
+  font-size: clamp(14px, 3.8vw, 15.5px);
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 16px;
+  line-height: 1.55;
+}
+
+/* Separador 7 Chakras Minimalista */
+.chakras-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 20px;
+}
+
+.chakra-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.chakra-1 { color: #EF4444; background-color: #EF4444; } /* Raíz */
+.chakra-2 { color: #F97316; background-color: #F97316; } /* Sacro */
+.chakra-3 { color: #FACC15; background-color: #FACC15; } /* Solar */
+.chakra-4 { color: #10B981; background-color: #10B981; } /* Corazón */
+.chakra-5 { color: #06B6D4; background-color: #06B6D4; } /* Garganta */
+.chakra-6 { color: #6366F1; background-color: #6366F1; } /* Tercer Ojo */
+.chakra-7 { color: #A855F7; background-color: #A855F7; } /* Corona */
+
+/* ==========================================================================
+   BARRA DE BÚSQUEDA Y FILTROS POR CATEGORÍA (MOBILE SCROLL)
+   ========================================================================== */
+.controls-bar {
+  margin-bottom: 24px;
+}
+
+.search-wrap {
+  position: relative;
+  margin-bottom: 16px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 42px 0 44px;
+  border-radius: var(--radius-full);
+  background: rgba(27, 18, 38, 0.85);
+  border: 1px solid rgba(243, 213, 165, 0.35);
+  color: var(--text-pure);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  outline: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.search-input::placeholder {
+  color: var(--text-subtle);
+  font-size: 13.5px;
+}
+
+.search-input:focus {
+  border-color: rgba(243, 213, 165, 0.75);
+  box-shadow: 0 0 16px rgba(243, 213, 165, 0.25);
+  background: rgba(35, 22, 50, 0.95);
+}
+
+.search-icon-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gem-champagne);
+  pointer-events: none;
+}
+
+.btn-clear-search {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-subtle);
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  padding: 4px;
+}
+
+.btn-clear-search.is-visible {
+  display: block;
+}
+
+/* Chips de Categorías con Scroll Horizontal Fluido en Móvil */
+.category-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 4px 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.category-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(27, 18, 38, 0.7);
+  border: 1px solid rgba(243, 213, 165, 0.22);
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  touch-action: manipulation;
+}
+
+.chip-btn:hover {
+  background: rgba(45, 26, 62, 0.85);
+  color: var(--text-pure);
+}
+
+.chip-btn.is-active {
+  background: linear-gradient(135deg, rgba(243, 213, 165, 0.22), rgba(230, 164, 180, 0.25));
+  border-color: rgba(243, 213, 165, 0.7);
+  color: var(--gem-champagne);
+  box-shadow: 0 0 12px rgba(243, 213, 165, 0.22);
+}
+
+.chip-count {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--gem-champagne);
+}
+
+/* ==========================================================================
+   GRID DE PRODUCTOS (MOBILE-FIRST 360PX–430PX)
+   ========================================================================== */
+.products-counter-text {
+  font-size: 13px;
+  color: var(--text-subtle);
+  margin-bottom: 14px;
+  padding: 0 4px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+}
+
+/* Tarjeta Individual de Producto */
+.product-card {
+  background: var(--bg-card);
+  border: var(--border-delicate);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(243, 213, 165, 0.5);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(192, 132, 252, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Cabecera / Ilustración Simbólica de la Tarjeta */
+.product-visual-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(45, 16, 71, 0.8), rgba(26, 20, 70, 0.65));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.product-visual-halo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(243, 213, 165, 0.35) 0%, rgba(192, 132, 252, 0.15) 50%, transparent 70%);
+  filter: blur(14px);
+}
+
+.product-visual-icon {
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  color: var(--gem-champagne);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-visual-icon svg {
+  width: 44px;
+  height: 44px;
+}
+
+/* Badge de Intención */
+.product-badge-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.12);
+  border: 1px solid rgba(243, 213, 165, 0.3);
+  color: var(--gem-champagne);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.product-category-tag {
+  font-size: 11px;
+  color: var(--text-subtle);
+  font-weight: 600;
+}
+
+.product-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-pure);
+  margin-bottom: 6px;
+}
+
+.product-intent {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--gem-rose-quartz);
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+/* Pie de Tarjeta: Precio y Acciones */
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+}
+
+.product-price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price-label {
+  font-size: 10px;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-price-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gem-champagne);
+  line-height: 1.1;
+  font-family: var(--font-sans);
+}
+
+.product-actions-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-add-cart {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  min-height: 38px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.12);
+  border: 1px solid rgba(243, 213, 165, 0.4);
+  color: var(--gem-champagne);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+}
+
+.btn-add-cart:hover,
+.btn-add-cart:active {
+  background: rgba(243, 213, 165, 0.24);
+  border-color: rgba(243, 213, 165, 0.7);
+  transform: scale(0.97);
+}
+
+.btn-direct-wa {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F3D5A5, #E6A4B4);
+  border: none;
+  color: #1A0F24;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-direct-wa:active {
+  transform: scale(0.93);
+}
+
+/* ==========================================================================
+   ESTADO VACÍO (SIN RESULTADOS DE BÚSQUEDA)
+   ========================================================================== */
+.empty-state {
+  text-align: center;
+  padding: 48px 16px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: var(--border-delicate);
+  margin-top: 12px;
+  display: none;
+}
+
+.empty-state.is-visible {
+  display: block;
+}
+
+.empty-state-icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.empty-state-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-pure);
+  margin-bottom: 6px;
+}
+
+.empty-state-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.btn-reset-filters {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.15);
+  border: 1px solid rgba(243, 213, 165, 0.4);
+  color: var(--gem-champagne);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   BARRA FLOTANTE INFERIOR DE PEDIDO (MOBILE THUMB ZONE)
+   ========================================================================== */
+.floating-order-bar {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: var(--radius-full);
+  background: rgba(26, 14, 38, 0.94);
+  border: 1px solid rgba(243, 213, 165, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65), 0 0 20px rgba(243, 213, 165, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 0 18px;
+  z-index: 90;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.floating-order-bar.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.floating-order-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-order-count {
+  font-size: 11.5px;
+  color: var(--gem-rose-quartz);
+  font-weight: 600;
+}
+
+.floating-order-total {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gem-champagne);
+  line-height: 1.1;
+}
+
+.btn-open-cart-floating {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #F3D5A5, #E6A4B4);
+  border: none;
+  color: #1A0F24;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(243, 213, 165, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.btn-open-cart-floating:active {
+  transform: scale(0.96);
+}
+
+/* ==========================================================================
+   DRAWER / MODAL DEL CARRITO DE COMPRAS ("BOLSA SAGRADA")
+   ========================================================================== */
+.cart-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 5, 16, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.cart-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  max-height: 85vh;
+  background: var(--bg-glass-elevated);
+  border: 1px solid rgba(243, 213, 165, 0.35);
+  border-bottom: none;
+  border-radius: 28px 28px 0 0;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  z-index: 210;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.cart-modal-backdrop.is-open .cart-drawer {
+  transform: translateY(0);
+}
+
+.cart-drawer-header {
+  padding: 18px 20px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cart-drawer-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-drawer-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-pure);
+}
+
+.btn-close-cart {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-items-list {
+  padding: 16px 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 48vh;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cart-item-info {
+  flex-grow: 1;
+  padding-right: 12px;
+}
+
+.cart-item-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-pure);
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+
+.cart-item-unit-price {
+  font-size: 12px;
+  color: var(--gem-champagne);
+  font-weight: 600;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-qty {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(243, 213, 165, 0.15);
+  border: 1px solid rgba(243, 213, 165, 0.35);
+  color: var(--gem-champagne);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart-item-qty {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-pure);
+  min-width: 18px;
+  text-align: center;
+}
+
+.cart-drawer-footer {
+  padding: 18px 20px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(19, 10, 26, 0.98);
+}
+
+.cart-total-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.cart-total-label {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.cart-total-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gem-champagne);
+  font-family: var(--font-sans);
+}
+
+.btn-checkout-wa {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  min-height: 50px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #F3D5A5, #E6A4B4);
+  border: none;
+  color: #1A0F24;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(243, 213, 165, 0.35);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.btn-checkout-wa:active {
+  transform: scale(0.98);
+}
+
+.cart-note {
+  font-size: 11px;
+  color: var(--text-subtle);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   FOOTER BOUTIQUE
+   ========================================================================== */
+.boutique-footer {
+  margin-top: 50px;
+  padding: 30px 0 40px;
+  border-top: 1px solid rgba(243, 213, 165, 0.15);
+  text-align: center;
+}
+
+.boutique-footer-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gem-champagne);
+  margin-bottom: 14px;
+}
+
+.boutique-footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.boutique-footer-links a {
+  color: var(--text-muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.boutique-footer-links a:hover {
+  color: var(--gem-champagne);
+}
+
+.boutique-copy {
+  font-size: 12px;
+  color: var(--text-subtle);
+}

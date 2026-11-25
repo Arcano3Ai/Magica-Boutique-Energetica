@@ -1699,3 +1699,116 @@ input {
 .terms-link:active {
   color: #FAF5F0;
 }
+
+/* ==========================================================================
+   CONEXIÓN CON LA BOUTIQUE ESOTÉRICA (HEADER Y BANNER INVITACIÓN)
+   ========================================================================== */
+.header-boutique-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  min-height: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: rgba(244, 167, 185, 0.12);
+  border: 1px solid rgba(244, 167, 185, 0.35);
+  color: var(--gem-rose-gold);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+}
+
+.header-boutique-btn:hover,
+.header-boutique-btn:active {
+  background: rgba(244, 167, 185, 0.22);
+  border-color: rgba(244, 167, 185, 0.6);
+  transform: scale(0.97);
+}
+
+.boutique-invite-section {
+  padding: 36px 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.boutique-invite-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(38, 18, 54, 0.85), rgba(22, 13, 31, 0.9));
+  border: 1px solid rgba(243, 213, 165, 0.35);
+  border-radius: 24px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+.invite-halo {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(243, 213, 165, 0.25) 0%, rgba(192, 132, 252, 0.15) 50%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.invite-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(243, 213, 165, 0.12);
+  border: 1px solid rgba(243, 213, 165, 0.35);
+  color: var(--gem-champagne);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.invite-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4.5vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-pure);
+  margin-bottom: 10px;
+}
+
+.invite-desc {
+  font-size: 13.5px;
+  color: var(--text-pearl-lilac);
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto 20px;
+}
+
+.btn-invite-boutique {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  min-height: 48px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #F3D5A5, #E6A4B4);
+  border: none;
+  color: #1A0F24;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(243, 213, 165, 0.35);
+  transition: transform 0.2s ease;
+  touch-action: manipulation;
+}
+
+.btn-invite-boutique:active {
+  transform: scale(0.97);
+}

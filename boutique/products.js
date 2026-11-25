@@ -1,0 +1,373 @@
+// Catálogo Oficial de la Boutique Esotérica Mágica Intención
+// 30 Productos Esotéricos Seleccionados con Precios en MXN
+window.BOUTIQUE_PRODUCTS = [
+  // --- 1. MAZOS Y ORÁCULOS (6) ---
+  {
+    id: "tarot-rider-waite",
+    name: "Tarot Rider-Waite Smith Tradicional",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 580,
+    priceFormatted: "$580 MXN",
+    badge: "✦ Clásico Esencial",
+    intent: "Claridad y Simbolismo Arquetípico",
+    description: "La baraja de referencia mundial. 78 cartas de alta resistencia con la iconografía original de Pamela Colman Smith y guía en español.",
+    icon: "cards"
+  },
+  {
+    id: "tarot-marsella-restaurado",
+    name: "Tarot de Marsella Tradicional",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 620,
+    priceFormatted: "$620 MXN",
+    badge: "✦ Tradición Ancestral",
+    intent: "Geometría Sagrada y Cartomancia Pura",
+    description: "Edición restaurada con los colores heráldicos y esotéricos tradicionales de los 22 Arcanos Mayores y 56 Menores.",
+    icon: "cards"
+  },
+  {
+    id: "oraculo-fases-lunares",
+    name: "Oráculo Sagrado de las Fases Lunares",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 490,
+    priceFormatted: "$490 MXN",
+    badge: "✦ Conexión Femenina",
+    intent: "Sincronía con los Ciclos y la Intuición",
+    description: "44 cartas de arte místico con bordes dorados champán. Guía para armonizar tus lecturas con los ritmos del ciclo lunar.",
+    icon: "moon"
+  },
+  {
+    id: "tarot-sagrado-femenino",
+    name: "Tarot Simbólico del Sagrado Femenino",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 690,
+    priceFormatted: "$690 MXN",
+    badge: "✦ Edición ARCANO",
+    intent: "Empoderamiento y Sabiduría Interior",
+    description: "Baraja de autor diseñada para terapeutas y consultantes enfocadas en autoconocimiento, arquetipos de la Diosa y sanación.",
+    icon: "cards"
+  },
+  {
+    id: "oraculo-diosas-arquetipos",
+    name: "Oráculo de las Diosas y Guardianas",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 520,
+    priceFormatted: "$520 MXN",
+    badge: "✦ Guía Intuitiva",
+    intent: "Canalización y Consejo Diario",
+    description: "52 cartas de gran formato con mensajes canalizados y afirmaciones de poder para cierres de lectura o meditación personal.",
+    icon: "sparkle"
+  },
+  {
+    id: "tarot-angeles-luz",
+    name: "Tarot de la Sabiduría Angélica",
+    category: "tarot",
+    categoryName: "Mazos y Oráculos",
+    price: 480,
+    priceFormatted: "$480 MXN",
+    badge: "✦ Vibración Elevada",
+    intent: "Amor Incondicional y Mensajes de Paz",
+    description: "78 arcanos ilustrados en acuarelas luminosas para lecturas dulces, sanación del aura y mensajes de aliento espiritual.",
+    icon: "cards"
+  },
+
+  // --- 2. VELAS DE INTENCIÓN Y ALQUIMIA (7) ---
+  {
+    id: "vela-miel-pura",
+    name: "Vela Alquímica de Miel 100% Cera de Abeja",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 180,
+    priceFormatted: "$180 MXN",
+    badge: "✦ Dulzura y Atracción",
+    intent: "Apertura de Caminos y Prosperidad",
+    description: "Elaborada con cera de opérculo pura y aroma natural a miel. Encender en días 11 y 22 para potenciar la energía creadora.",
+    icon: "candle"
+  },
+  {
+    id: "vela-siete-chakras",
+    name: "Vela Ritual de los 7 Chakras",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 280,
+    priceFormatted: "$280 MXN",
+    badge: "✦ Balance Energético",
+    intent: "Alineación de Centros Vitales",
+    description: "Vela columnar de 7 estratos de color y aceites esenciales consagrados para desbloquear y armonizar tu campo áurico.",
+    icon: "candle"
+  },
+  {
+    id: "vela-cuarzo-rosa-amor",
+    name: "Vela Botánica Cuarzo Rosa & Rosas",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 340,
+    priceFormatted: "$340 MXN",
+    badge: "✦ Amor Sagrado",
+    intent: "Amor Propio, Compasión y Vínculos Sanos",
+    description: "Cera de soya en vaso de vidrio místico, infusionada con capullos de rosa de Damasco y pequeños cuarzos rosa naturales.",
+    icon: "candle"
+  },
+  {
+    id: "vela-abundancia-canela",
+    name: "Vela Solar de Abundancia & Pirita",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 320,
+    priceFormatted: "$320 MXN",
+    badge: "✦ Riqueza y Éxito",
+    intent: "Atracción de Prosperidad y Victoria",
+    description: "Aroma envolvente de canela en rama, hojas de laurel de monte y astillas de pirita dorada para consagrar proyectos y negocios.",
+    icon: "candle"
+  },
+  {
+    id: "vela-negra-transmutacion",
+    name: "Vela de Corte, Transmutación y Protección",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 260,
+    priceFormatted: "$260 MXN",
+    badge: "✦ Rompe Energías Densas",
+    intent: "Corte de Lazos y Purificación Profunda",
+    description: "Cera negra de soya natural con sal negra volcánica, ruda silvestre y turmalina. Diseñada para disolver negatividad.",
+    icon: "candle"
+  },
+  {
+    id: "vela-paz-salvia-blanca",
+    name: "Vela Sagrada de Salvia Blanca y Cuarzo",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 310,
+    priceFormatted: "$310 MXN",
+    badge: "✦ Claridad Mental",
+    intent: "Limpieza del Consultorio y Calma",
+    description: "Esencia de salvia blanca silvestre con una punta de cuarzo cristal programada para mantener limpio tu espacio de consulta.",
+    icon: "candle"
+  },
+  {
+    id: "vela-luna-llena-amatista",
+    name: "Vela de Luna Llena & Amatista Intuitiva",
+    category: "velas",
+    categoryName: "Velas de Intención",
+    price: 350,
+    priceFormatted: "$350 MXN",
+    badge: "✦ Tercer Ojo",
+    intent: "Apertura Psíquica y Sueños Lúcidos",
+    description: "Notas relajantes de lavanda francesa y resina de olíbano con fragmentos de amatista uruguaya cargada bajo el plenilunio.",
+    icon: "candle"
+  },
+
+  // --- 3. INCIENSOS, RESINAS Y SAHUMERIOS (6) ---
+  {
+    id: "sahumo-salvia-blanca",
+    name: "Atado de Salvia Blanca Californiana",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 190,
+    priceFormatted: "$190 MXN",
+    badge: "✦ Purificador Maestro",
+    intent: "Despeje Inmediato del Espacio y el Aura",
+    description: "Manojo de salvia blanca natural (Salvia apiana) de recolección sustentable. Humo sagrado para purificar mazos y estancias.",
+    icon: "smoke"
+  },
+  {
+    id: "incienso-copal-blanco",
+    name: "Copal Blanco Puro de Chiapas (10 Varas)",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 150,
+    priceFormatted: "$150 MXN",
+    badge: "✦ Medicina Ancestral",
+    intent: "Apertura de Portales y Rezo Sagrado",
+    description: "Varillas artesanales gruesas de 100% resina de copal blanco silvestre. Quema lenta de 90 minutos con aroma ceremonial profundo.",
+    icon: "smoke"
+  },
+  {
+    id: "incienso-palo-santo-puro",
+    name: "Incienso Artesanal de Palo Santo Peruano",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 160,
+    priceFormatted: "$160 MXN",
+    badge: "✦ Madera Sagrada",
+    intent: "Alegría, Paz y Elevación Vibracional",
+    description: "Vara amasada a mano con madera de Palo Santo (Bursera graveolens) caída naturalmente. Dulce, amaderado y pacificador.",
+    icon: "smoke"
+  },
+  {
+    id: "sahumo-triple-proteccion",
+    name: "Sahumerio Triple: Ruda, Romero & Lavanda",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 180,
+    priceFormatted: "$180 MXN",
+    badge: "✦ Escudo Áurico",
+    intent: "Protección Contra Mal de Ojo y Envidia",
+    description: "Atado tradicional atado con hilo de algodón 100%. Combina la fuerza desterradora de la ruda con el cobijo de la lavanda.",
+    icon: "smoke"
+  },
+  {
+    id: "resina-mirra-olibano",
+    name: "Resina Mística de Mirra & Olíbano (60g)",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 220,
+    priceFormatted: "$220 MXN",
+    badge: "✦ Templo Sagrado",
+    intent: "Consagración de Altares y Conexión Divina",
+    description: "Lágrimas de resina pura para quemar sobre carbón vegetal litúrgico. Fragancia de templos antiguos y altares de sabiduría.",
+    icon: "smoke"
+  },
+  {
+    id: "incienso-sandalo-mysore",
+    name: "Incienso en Masa de Sándalo Mysore",
+    category: "inciensos",
+    categoryName: "Inciensos y Sahúmos",
+    price: 140,
+    priceFormatted: "$140 MXN",
+    badge: "✦ Paz Interior",
+    intent: "Meditación Profunda y Enfoque Mental",
+    description: "Fórmula tradicional india con polvo de sándalo noble y resinas florales. Crea una atmósfera solemne para tirar las cartas.",
+    icon: "smoke"
+  },
+
+  // --- 4. HERRAMIENTAS DE ALTAR Y LECTURA (6) ---
+  {
+    id: "tapete-terciopelo-lunar",
+    name: "Tapete de Lectura en Terciopelo Noche (65x65cm)",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 420,
+    priceFormatted: "$420 MXN",
+    badge: "✦ Base de Lectura",
+    intent: "Protección de Cartas y Atmósfera Solemne",
+    description: "Terciopelo grueso de textura suave con bordado central de fases lunares y constelaciones en hilo oro champán.",
+    icon: "crystal"
+  },
+  {
+    id: "pendulo-amatista-plata",
+    name: "Péndulo Facetado de Amatista Natural",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 290,
+    priceFormatted: "$290 MXN",
+    badge: "✦ Radiestesia",
+    intent: "Respuestas Sí/No y Testeo de Chakras",
+    description: "Punta de amatista 100% natural pulida en 6 facetas, con cadena de acero inoxidable y dije terminal de flor de loto sagrada.",
+    icon: "crystal"
+  },
+  {
+    id: "pendulo-hebreo-roble",
+    name: "Péndulo Hebreo Tradicional con 36 Etiquetas",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 560,
+    priceFormatted: "$560 MXN",
+    badge: "✦ Sanación Bioenergética",
+    intent: "Diagnóstico y Limpieza de Miagmas",
+    description: "Torneado en madera maciza de roble sin barnices químicos. Incluye manual básico y las 36 camisas rituales en hebreo bíblico.",
+    icon: "crystal"
+  },
+  {
+    id: "bolsa-satin-cuarzo",
+    name: "Bolsa de Satín Ciruela para Tarot",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 190,
+    priceFormatted: "$190 MXN",
+    badge: "✦ Resguardo Sagrado",
+    intent: "Protección Energética y Física de tu Mazo",
+    description: "Confeccionada en satín de doble faz color ciruela místico, con cordón de ajuste y un pequeño dije de amatista incrustado.",
+    icon: "sparkle"
+  },
+  {
+    id: "copa-sahumadora-barro",
+    name: "Sahumador Ritual Esmaltado en Barro Negro",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 380,
+    priceFormatted: "$380 MXN",
+    badge: "✦ Vasija Ritual",
+    intent: "Quema Segura de Resinas y Carbones",
+    description: "Pieza única hecha a mano por alfareros tradicionales, con base elevada térmica para proteger mesas de madera y altares.",
+    icon: "candle"
+  },
+  {
+    id: "campana-tibetana-limpieza",
+    name: "Campana Tibetana y Dorje de Bronce (432 Hz)",
+    category: "herramientas",
+    categoryName: "Herramientas de Altar",
+    price: 480,
+    priceFormatted: "$480 MXN",
+    badge: "✦ Sonoterapia",
+    intent: "Corte Acústico de Densidades y Bendición",
+    description: "Aleación tradicional de siete metales. Su tañido cristalino a 432 Hz disuelve bloqueos y prepara el espacio para la sesión.",
+    icon: "sparkle"
+  },
+
+  // --- 5. CRISTALES, AMULETOS Y PROTECCIÓN (5) ---
+  {
+    id: "geoda-amatista-uruguay",
+    name: "Geoda de Amatista Cristalina Calidad Extra",
+    category: "cristales",
+    categoryName: "Cristales y Amuletos",
+    price: 490,
+    priceFormatted: "$490 MXN",
+    badge: "✦ Generador Maestro",
+    intent: "Transmutación Violeta y Clarividencia",
+    description: "Pieza natural seleccionada de 200g a 300g con cristales de púrpura intenso. Ideal para reposar tu baraja y limpiarla entre lecturas.",
+    icon: "crystal"
+  },
+  {
+    id: "punta-selenita-limpiadora",
+    name: "Barra Limpiadora de Selenita Marroquí (15cm)",
+    category: "cristales",
+    categoryName: "Cristales y Amuletos",
+    price: 240,
+    priceFormatted: "$240 MXN",
+    badge: "✦ Luz Líquida",
+    intent: "Autolimpieza Instantánea de Mazos y Cristales",
+    description: "Mineral lunar de alta vibración que nunca requiere limpieza. Basta colocar tus cartas encima durante la noche para renovar su energía.",
+    icon: "crystal"
+  },
+  {
+    id: "turmalina-negra-bruto",
+    name: "Cuarzo Turmalina Negra en Bruto Protectora",
+    category: "cristales",
+    categoryName: "Cristales y Amuletos",
+    price: 160,
+    priceFormatted: "$160 MXN",
+    badge: "✦ Escudo Total",
+    intent: "Repeler Mal de Ojo y Cargas Electromagnéticas",
+    description: "Pieza mineral de fractura natural. Se coloca en la entrada del consultorio o junto a tu dispositivo de consulta online.",
+    icon: "crystal"
+  },
+  {
+    id: "esfera-cuarzo-rosa",
+    name: "Esfera Pulida de Cuarzo Rosa de Madagascar",
+    category: "cristales",
+    categoryName: "Cristales y Amuletos",
+    price: 380,
+    priceFormatted: "$380 MXN",
+    badge: "✦ Chakra Cardíaco",
+    intent: "Calidez, Empatía y Sanación de Relaciones",
+    description: "Esfera de 5 cm de diámetro con base dorada incluida. Emite una frecuencia de dulzura y escucha amorosa durante la consulta.",
+    icon: "crystal"
+  },
+  {
+    id: "amuleto-tetragramaton-plata",
+    name: "Medalla Amuleto Tetragrámaton en Plata 925",
+    category: "cristales",
+    categoryName: "Cristales y Amuletos",
+    price: 650,
+    priceFormatted: "$650 MXN",
+    badge: "✦ Protección Sagrada",
+    intent: "Defensa Contra Todo Ataque Psíquico",
+    description: "Símbolo esotérico de máxima protección fundido en Plata Ley 925 mexicana. Incluye cordón encerado y consagración ritual.",
+    icon: "sparkle"
+  }
+];
