@@ -73,11 +73,19 @@
     for (var i = 0; i < filtered.length; i++) {
       var item = filtered[i];
       var iconHtml = ICONS[item.icon] || ICONS.sparkle;
+      var visualContent = '';
+
+      if (item.image) {
+        visualContent += '<img src="' + item.image + '" alt="' + item.name + '" class="product-real-img" loading="lazy" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">';
+        visualContent += '<div class="product-visual-icon" style="display:none;">' + iconHtml + '</div>';
+      } else {
+        visualContent += '<div class="product-visual-icon">' + iconHtml + '</div>';
+      }
 
       html += '<article class="product-card" data-product-id="' + item.id + '">';
       html += '  <div class="product-visual-wrap">';
       html += '    <div class="product-visual-halo" aria-hidden="true"></div>';
-      html += '    <div class="product-visual-icon">' + iconHtml + '</div>';
+      html += '    ' + visualContent;
       html += '  </div>';
 
       html += '  <div class="product-badge-wrap">';

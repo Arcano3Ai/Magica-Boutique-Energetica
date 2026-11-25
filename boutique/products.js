@@ -12,6 +12,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Clásico Esencial",
     intent: "Claridad y Simbolismo Arquetípico",
     description: "La baraja de referencia mundial. 78 cartas de alta resistencia con la iconografía original de Pamela Colman Smith y guía en español.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "cards"
   },
   {
@@ -24,6 +25,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Tradición Ancestral",
     intent: "Geometría Sagrada y Cartomancia Pura",
     description: "Edición restaurada con los colores heráldicos y esotéricos tradicionales de los 22 Arcanos Mayores y 56 Menores.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "cards"
   },
   {
@@ -36,6 +38,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Conexión Femenina",
     intent: "Sincronía con los Ciclos y la Intuición",
     description: "44 cartas de arte místico con bordes dorados champán. Guía para armonizar tus lecturas con los ritmos del ciclo lunar.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "moon"
   },
   {
@@ -48,6 +51,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Edición ARCANO",
     intent: "Empoderamiento y Sabiduría Interior",
     description: "Baraja de autor diseñada para terapeutas y consultantes enfocadas en autoconocimiento, arquetipos de la Diosa y sanación.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "cards"
   },
   {
@@ -60,6 +64,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Guía Intuitiva",
     intent: "Canalización y Consejo Diario",
     description: "52 cartas de gran formato con mensajes canalizados y afirmaciones de poder para cierres de lectura o meditación personal.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "sparkle"
   },
   {
@@ -72,6 +77,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Vibración Elevada",
     intent: "Amor Incondicional y Mensajes de Paz",
     description: "78 arcanos ilustrados en acuarelas luminosas para lecturas dulces, sanación del aura y mensajes de aliento espiritual.",
+    image: "images/tarot-rider-waite.jpg",
     icon: "cards"
   },
 
@@ -86,6 +92,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Dulzura y Atracción",
     intent: "Apertura de Caminos y Prosperidad",
     description: "Elaborada con cera de opérculo pura y aroma natural a miel. Encender en días 11 y 22 para potenciar la energía creadora.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -98,6 +105,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Balance Energético",
     intent: "Alineación de Centros Vitales",
     description: "Vela columnar de 7 estratos de color y aceites esenciales consagrados para desbloquear y armonizar tu campo áurico.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -110,6 +118,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Amor Sagrado",
     intent: "Amor Propio, Compasión y Vínculos Sanos",
     description: "Cera de soya en vaso de vidrio místico, infusionada con capullos de rosa de Damasco y pequeños cuarzos rosa naturales.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -122,6 +131,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Riqueza y Éxito",
     intent: "Atracción de Prosperidad y Victoria",
     description: "Aroma envolvente de canela en rama, hojas de laurel de monte y astillas de pirita dorada para consagrar proyectos y negocios.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -134,6 +144,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Rompe Energías Densas",
     intent: "Corte de Lazos y Purificación Profunda",
     description: "Cera negra de soya natural con sal negra volcánica, ruda silvestre y turmalina. Diseñada para disolver negatividad.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -146,6 +157,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Claridad Mental",
     intent: "Limpieza del Consultorio y Calma",
     description: "Esencia de salvia blanca silvestre con una punta de cuarzo cristal programada para mantener limpio tu espacio de consulta.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
   {
@@ -158,6 +170,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Tercer Ojo",
     intent: "Apertura Psíquica y Sueños Lúcidos",
     description: "Notas relajantes de lavanda francesa y resina de olíbano con fragmentos de amatista uruguaya cargada bajo el plenilunio.",
+    image: "images/vela-miel-pura.jpg",
     icon: "candle"
   },
 
@@ -172,6 +185,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Purificador Maestro",
     intent: "Despeje Inmediato del Espacio y el Aura",
     description: "Manojo de salvia blanca natural (Salvia apiana) de recolección sustentable. Humo sagrado para purificar mazos y estancias.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
   {
@@ -184,6 +198,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Medicina Ancestral",
     intent: "Apertura de Portales y Rezo Sagrado",
     description: "Varillas artesanales gruesas de 100% resina de copal blanco silvestre. Quema lenta de 90 minutos con aroma ceremonial profundo.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
   {
@@ -196,6 +211,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Madera Sagrada",
     intent: "Alegría, Paz y Elevación Vibracional",
     description: "Vara amasada a mano con madera de Palo Santo (Bursera graveolens) caída naturalmente. Dulce, amaderado y pacificador.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
   {
@@ -208,6 +224,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Escudo Áurico",
     intent: "Protección Contra Mal de Ojo y Envidia",
     description: "Atado tradicional atado con hilo de algodón 100%. Combina la fuerza desterradora de la ruda con el cobijo de la lavanda.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
   {
@@ -220,6 +237,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Templo Sagrado",
     intent: "Consagración de Altares y Conexión Divina",
     description: "Lágrimas de resina pura para quemar sobre carbón vegetal litúrgico. Fragancia de templos antiguos y altares de sabiduría.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
   {
@@ -232,6 +250,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Paz Interior",
     intent: "Meditación Profunda y Enfoque Mental",
     description: "Fórmula tradicional india con polvo de sándalo noble y resinas florales. Crea una atmósfera solemne para tirar las cartas.",
+    image: "images/sahumo-salvia-blanca.jpg",
     icon: "smoke"
   },
 
@@ -246,6 +265,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Base de Lectura",
     intent: "Protección de Cartas y Atmósfera Solemne",
     description: "Terciopelo grueso de textura suave con bordado central de fases lunares y constelaciones en hilo oro champán.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "crystal"
   },
   {
@@ -258,6 +278,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Radiestesia",
     intent: "Respuestas Sí/No y Testeo de Chakras",
     description: "Punta de amatista 100% natural pulida en 6 facetas, con cadena de acero inoxidable y dije terminal de flor de loto sagrada.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "crystal"
   },
   {
@@ -270,6 +291,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Sanación Bioenergética",
     intent: "Diagnóstico y Limpieza de Miagmas",
     description: "Torneado en madera maciza de roble sin barnices químicos. Incluye manual básico y las 36 camisas rituales en hebreo bíblico.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "crystal"
   },
   {
@@ -282,6 +304,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Resguardo Sagrado",
     intent: "Protección Energética y Física de tu Mazo",
     description: "Confeccionada en satín de doble faz color ciruela místico, con cordón de ajuste y un pequeño dije de amatista incrustado.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "sparkle"
   },
   {
@@ -294,6 +317,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Vasija Ritual",
     intent: "Quema Segura de Resinas y Carbones",
     description: "Pieza única hecha a mano por alfareros tradicionales, con base elevada térmica para proteger mesas de madera y altares.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "candle"
   },
   {
@@ -306,6 +330,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Sonoterapia",
     intent: "Corte Acústico de Densidades y Bendición",
     description: "Aleación tradicional de siete metales. Su tañido cristalino a 432 Hz disuelve bloqueos y prepara el espacio para la sesión.",
+    image: "images/tapete-terciopelo-lunar.jpg",
     icon: "sparkle"
   },
 
@@ -320,6 +345,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Generador Maestro",
     intent: "Transmutación Violeta y Clarividencia",
     description: "Pieza natural seleccionada de 200g a 300g con cristales de púrpura intenso. Ideal para reposar tu baraja y limpiarla entre lecturas.",
+    image: "images/geoda-amatista-uruguay.jpg",
     icon: "crystal"
   },
   {
@@ -332,6 +358,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Luz Líquida",
     intent: "Autolimpieza Instantánea de Mazos y Cristales",
     description: "Mineral lunar de alta vibración que nunca requiere limpieza. Basta colocar tus cartas encima durante la noche para renovar su energía.",
+    image: "images/geoda-amatista-uruguay.jpg",
     icon: "crystal"
   },
   {
@@ -344,6 +371,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Escudo Total",
     intent: "Repeler Mal de Ojo y Cargas Electromagnéticas",
     description: "Pieza mineral de fractura natural. Se coloca en la entrada del consultorio o junto a tu dispositivo de consulta online.",
+    image: "images/geoda-amatista-uruguay.jpg",
     icon: "crystal"
   },
   {
@@ -356,6 +384,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Chakra Cardíaco",
     intent: "Calidez, Empatía y Sanación de Relaciones",
     description: "Esfera de 5 cm de diámetro con base dorada incluida. Emite una frecuencia de dulzura y escucha amorosa durante la consulta.",
+    image: "images/geoda-amatista-uruguay.jpg",
     icon: "crystal"
   },
   {
@@ -368,6 +397,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Protección Sagrada",
     intent: "Defensa Contra Todo Ataque Psíquico",
     description: "Símbolo esotérico de máxima protección fundido en Plata Ley 925 mexicana. Incluye cordón encerado y consagración ritual.",
+    image: "images/geoda-amatista-uruguay.jpg",
     icon: "sparkle"
   }
 ];
