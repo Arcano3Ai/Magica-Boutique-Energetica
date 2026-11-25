@@ -1733,8 +1733,10 @@ input {
   color: #FAF5F0;
 }
 
-.header-boutique-btn svg {
+.header-boutique-btn .btn-sparkle-icon {
   color: var(--gem-champagne);
+  font-size: 11px;
+  line-height: 1;
   flex-shrink: 0;
 }
 
