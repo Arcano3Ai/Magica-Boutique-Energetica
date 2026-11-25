@@ -76,7 +76,11 @@
       var visualContent = '';
 
       if (item.image) {
-        visualContent += '<img src="' + item.image + '" alt="' + item.name + '" class="product-real-img" loading="lazy" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">';
+        var imgSrc = item.image;
+        if (!imgSrc.startsWith('http') && !imgSrc.startsWith('/')) {
+          imgSrc = '/boutique/' + imgSrc.replace(/^\.?\/?/, '');
+        }
+        visualContent += '<img src="' + imgSrc + '" alt="' + item.name + '" class="product-real-img" loading="lazy" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">';
         visualContent += '<div class="product-visual-icon" style="display:none;">' + iconHtml + '</div>';
       } else {
         visualContent += '<div class="product-visual-icon">' + iconHtml + '</div>';

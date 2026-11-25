@@ -38,7 +38,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Conexión Femenina",
     intent: "Sincronía con los Ciclos y la Intuición",
     description: "44 cartas de arte místico con bordes dorados champán. Guía para armonizar tus lecturas con los ritmos del ciclo lunar.",
-    image: "images/tarot-rider-waite.jpg",
+    image: "images/oraculo-fases-lunares.jpg",
     icon: "moon"
   },
   {
@@ -51,7 +51,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Edición ARCANO",
     intent: "Empoderamiento y Sabiduría Interior",
     description: "Baraja de autor diseñada para terapeutas y consultantes enfocadas en autoconocimiento, arquetipos de la Diosa y sanación.",
-    image: "images/tarot-rider-waite.jpg",
+    image: "images/oraculo-fases-lunares.jpg",
     icon: "cards"
   },
   {
@@ -64,7 +64,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Guía Intuitiva",
     intent: "Canalización y Consejo Diario",
     description: "52 cartas de gran formato con mensajes canalizados y afirmaciones de poder para cierres de lectura o meditación personal.",
-    image: "images/tarot-rider-waite.jpg",
+    image: "images/oraculo-fases-lunares.jpg",
     icon: "sparkle"
   },
   {
@@ -105,7 +105,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Balance Energético",
     intent: "Alineación de Centros Vitales",
     description: "Vela columnar de 7 estratos de color y aceites esenciales consagrados para desbloquear y armonizar tu campo áurico.",
-    image: "images/vela-miel-pura.jpg",
+    image: "images/vela-siete-chakras.jpg",
     icon: "candle"
   },
   {
@@ -118,7 +118,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Amor Sagrado",
     intent: "Amor Propio, Compasión y Vínculos Sanos",
     description: "Cera de soya en vaso de vidrio místico, infusionada con capullos de rosa de Damasco y pequeños cuarzos rosa naturales.",
-    image: "images/vela-miel-pura.jpg",
+    image: "images/vela-siete-chakras.jpg",
     icon: "candle"
   },
   {
@@ -144,7 +144,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Rompe Energías Densas",
     intent: "Corte de Lazos y Purificación Profunda",
     description: "Cera negra de soya natural con sal negra volcánica, ruda silvestre y turmalina. Diseñada para disolver negatividad.",
-    image: "images/vela-miel-pura.jpg",
+    image: "images/vela-siete-chakras.jpg",
     icon: "candle"
   },
   {
@@ -170,7 +170,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Tercer Ojo",
     intent: "Apertura Psíquica y Sueños Lúcidos",
     description: "Notas relajantes de lavanda francesa y resina de olíbano con fragmentos de amatista uruguaya cargada bajo el plenilunio.",
-    image: "images/vela-miel-pura.jpg",
+    image: "images/vela-siete-chakras.jpg",
     icon: "candle"
   },
 
@@ -198,7 +198,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Medicina Ancestral",
     intent: "Apertura de Portales y Rezo Sagrado",
     description: "Varillas artesanales gruesas de 100% resina de copal blanco silvestre. Quema lenta de 90 minutos con aroma ceremonial profundo.",
-    image: "images/sahumo-salvia-blanca.jpg",
+    image: "images/incienso-copal-blanco.jpg",
     icon: "smoke"
   },
   {
@@ -237,7 +237,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Templo Sagrado",
     intent: "Consagración de Altares y Conexión Divina",
     description: "Lágrimas de resina pura para quemar sobre carbón vegetal litúrgico. Fragancia de templos antiguos y altares de sabiduría.",
-    image: "images/sahumo-salvia-blanca.jpg",
+    image: "images/incienso-copal-blanco.jpg",
     icon: "smoke"
   },
   {
@@ -250,7 +250,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Paz Interior",
     intent: "Meditación Profunda y Enfoque Mental",
     description: "Fórmula tradicional india con polvo de sándalo noble y resinas florales. Crea una atmósfera solemne para tirar las cartas.",
-    image: "images/sahumo-salvia-blanca.jpg",
+    image: "images/incienso-copal-blanco.jpg",
     icon: "smoke"
   },
 
@@ -397,7 +397,7 @@ window.BOUTIQUE_PRODUCTS = [
     badge: "✦ Protección Sagrada",
     intent: "Defensa Contra Todo Ataque Psíquico",
     description: "Símbolo esotérico de máxima protección fundido en Plata Ley 925 mexicana. Incluye cordón encerado y consagración ritual.",
-    image: "images/geoda-amatista-uruguay.jpg",
+    image: "images/amuleto-tetragramaton-plata.jpg",
     icon: "sparkle"
   }
 ];

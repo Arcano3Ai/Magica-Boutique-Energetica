@@ -233,7 +233,7 @@ input {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transform: translateY(2.5px); /* Ajuste óptico: baja el glifo 2.5px para centrarse perfectamente con Tarot Simbólico */
+  transform: translateY(4.5px); /* Ajuste óptico: baja el glifo 4.5px para centrarse perfectamente con el eje de Tarot Simbólico */
 }
 
 .header-symbol svg {
